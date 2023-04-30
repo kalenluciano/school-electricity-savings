@@ -1,0 +1,14 @@
+{
+	"development": {
+		"database": "school_electricity_savings_development",
+		"dialect": "postgres"
+	},
+	"test": {
+		"database": "school_electricity_savings_test",
+		"dialect": "postgres"
+	},
+	"production": {
+		"database": "school_electricity_savings_production",
+		"dialect": "postgres"
+	}
+}
