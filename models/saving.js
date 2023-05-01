@@ -25,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
 			item: DataTypes.STRING,
 			description: DataTypes.STRING,
 			amount: DataTypes.INTEGER,
-			qualification: DataTypes.ARRAY
+			qualifications: DataTypes.ARRAY
 		},
 		{
 			sequelize,

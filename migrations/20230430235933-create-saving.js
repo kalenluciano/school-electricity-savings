@@ -18,8 +18,8 @@ module.exports = {
 			amount: {
 				type: Sequelize.INTEGER
 			},
-			qualification: {
-				type: Sequelize.ARRAY
+			qualifications: {
+				type: Sequelize.ARRAY(Sequelize.TEXT)
 			},
 			createdAt: {
 				allowNull: false,
