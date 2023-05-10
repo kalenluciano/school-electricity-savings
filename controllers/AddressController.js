@@ -12,7 +12,6 @@ const GetCensusTract = async (req, res, next) => {
 		);
 		res.locals.censusTractGeographies =
 			results.data.result.addressMatches[0].geographies;
-		// res.status(200).json(results.data);
 		next();
 	} catch (error) {
 		return res.status(500).json({ error: error.message });
@@ -23,18 +22,15 @@ const GetLowIncomeByCensusTract = async (req, res, next) => {
 	try {
 		const censusTractGeographies = res.locals.censusTractGeographies;
 		const censusTractNumber =
-			censusTractGeographies['Census Tracts'][0]['GEOID'];
-		const censusTractState = censusTractGeographies['States'][0]['GEOID'];
+			censusTractGeographies['Census Tracts'][0]['TRACT'];
+		const censusTractState =
+			censusTractGeographies['Census Tracts'][0]['STATE'];
 		const censusTractCounty =
-			censusTractGeographies['Counties'][0]['GEOID'];
-		// res.send(
-		// 	`http://api.census.gov/data/2021/acs/acs5?get=NAME,S1701_C03_001E&for=tract:${censusTractNumber}&in=state:${censusTractState}+county:${censusTractCounty}&key=${process.env.API_KEY_CENSUS}`
-		// );
+			censusTractGeographies['Census Tracts'][0]['COUNTY'];
 		const results = await axios.get(
-			`http://api.census.gov/data/2021/acs/acs5?get=NAME,B17001_002E&for=state:${censusTractState}&key=${process.env.API_KEY_CENSUS}`
+			`http://api.census.gov/data/2021/acs/acs5/subject?get=NAME,S1701_C03_001E&&for=tract:${censusTractNumber}&in=state:${censusTractState}%20county:${censusTractCounty}&key=${process.env.API_KEY_CENSUS}`
 		);
-		console.log(results);
-		res.send(results);
+		res.send(results.data);
 	} catch (error) {
 		return res.status(500).json({ error: error.message });
 	}
