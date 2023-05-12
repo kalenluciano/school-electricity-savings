@@ -4,7 +4,8 @@ const AddressController = require('../controllers/AddressController');
 Router.get(
 	'/:streetAddress/:city/:state/:zipCode',
 	AddressController.GetCensusTract,
-	AddressController.GetLowIncomeByCensusTract
+	AddressController.GetPovertyPercentageByCensusTract,
+	AddressController.GetFamilyMedianIncomeByCensusTract
 );
 
 module.exports = Router;
