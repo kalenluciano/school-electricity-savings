@@ -5,7 +5,9 @@ Router.get(
 	'/:streetAddress/:city/:state/:zipCode',
 	AddressController.GetCensusTract,
 	AddressController.GetPovertyPercentageByCensusTract,
-	AddressController.GetFamilyMedianIncomeByCensusTract
+	AddressController.GetFamilyMedianIncomeByCensusTract,
+	AddressController.CheckCensusTractLowIncomeStatus,
+	AddressController.CheckIndianLandStatus
 );
 
 module.exports = Router;
