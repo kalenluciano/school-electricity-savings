@@ -9,10 +9,14 @@ module.exports = {
 		const seedData = [];
 
 		return new Promise((resolve, reject) => {
-			fs.createReadStream('../data/coal_mine_census_tracts.csv')
+			fs.createReadStream('data/coal_mine_census_tracts.csv')
 				.pipe(csv())
 				.on('data', (row) => {
-					seedData.push(row); // Push each row of the CSV into the seedData array
+					seedData.push({
+						...row,
+						createdAt: new Date(),
+						updatedAt: new Date()
+					}); // Push each row of the CSV into the seedData array
 				})
 				.on('end', async () => {
 					try {
