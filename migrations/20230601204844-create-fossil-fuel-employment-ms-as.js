@@ -27,6 +27,9 @@ module.exports = {
 			msa_non_msa_name: {
 				type: Sequelize.STRING
 			},
+			msa_unemployment: {
+				type: Sequelize.BOOLEAN
+			},
 			createdAt: {
 				allowNull: false,
 				type: Sequelize.DATE
