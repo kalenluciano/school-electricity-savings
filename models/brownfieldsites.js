@@ -20,8 +20,8 @@ module.exports = (sequelize, DataTypes) => {
 			postal_code: DataTypes.STRING,
 			county_name: DataTypes.STRING,
 			epa_id: DataTypes.STRING,
-			latitude: DataTypes.STRING,
-			longitude: DataTypes.STRING,
+			latitude: { type: DataTypes.DOUBLE, allowNull: true },
+			longitude: { type: DataTypes.DOUBLE, allowNull: true },
 			epa_region_code: DataTypes.STRING,
 			tribal_land: DataTypes.STRING
 		},

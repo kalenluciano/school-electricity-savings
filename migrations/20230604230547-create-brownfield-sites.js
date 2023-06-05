@@ -31,10 +31,12 @@ module.exports = {
 				type: Sequelize.STRING
 			},
 			latitude: {
-				type: Sequelize.STRING
+				allowNull: true,
+				type: Sequelize.DOUBLE
 			},
 			longitude: {
-				type: Sequelize.STRING
+				allowNull: true,
+				type: Sequelize.DOUBLE
 			},
 			epa_region_code: {
 				type: Sequelize.STRING

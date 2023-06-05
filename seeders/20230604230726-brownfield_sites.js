@@ -12,6 +12,12 @@ module.exports = {
 			fs.createReadStream('data/brownfield_sites.csv')
 				.pipe(csv())
 				.on('data', (row) => {
+					if (row.latitude === '') {
+						row.latitude = null;
+					}
+					if (row.longitude === '') {
+						row.longitude = null;
+					}
 					seedData.push({
 						...row,
 						createdAt: new Date(),
