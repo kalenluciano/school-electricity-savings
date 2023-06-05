@@ -1,7 +1,11 @@
 const axios = require('axios');
 const { Op, literal } = require('sequelize');
 require('dotenv').config();
-const { BrownfieldSites, FossilFuelEmploymentMSAs } = require('../models');
+const {
+	BrownfieldSites,
+	FossilFuelEmploymentMSAs,
+	CoalMineCensusTracts
+} = require('../models');
 
 const GetCensusTract = async (req, res, next) => {
 	try {
@@ -211,6 +215,22 @@ const CheckFossilFuelUnemploymentStatus = async (req, res, next) => {
 	next();
 };
 
+const CheckCoalMineStatusByCensusTract = async (req, res, next) => {
+	const censusTractGeographies = res.locals.censusTractGeographies;
+	const censusTractFipsCode =
+		censusTractGeographies['Census Tracts'][0]['GEOID'];
+	const coalMineCensusTractMatch = await CoalMineCensusTracts.findOne({
+		where: { census_tract_2020_number_fips_code: censusTractFipsCode }
+	});
+	res.locals.coalMineCensusTractMatch = coalMineCensusTractMatch;
+	if (!coalMineCensusTractMatch) {
+		res.locals.coalMineCensusTractCredit = false;
+	} else {
+		res.locals.coalMineCensusTractCredit = true;
+	}
+	res.send(res.locals);
+};
+
 module.exports = {
 	GetCensusTract,
 	GetPovertyPercentageByCensusTract,
@@ -218,5 +238,6 @@ module.exports = {
 	CheckCensusTractLowIncomeStatus,
 	CheckIndianLandStatus,
 	CheckBrownfieldSiteStatus,
-	CheckFossilFuelUnemploymentStatus
+	CheckFossilFuelUnemploymentStatus,
+	CheckCoalMineStatusByCensusTract
 };

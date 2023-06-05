@@ -9,7 +9,8 @@ Router.get(
 	AddressController.CheckCensusTractLowIncomeStatus,
 	AddressController.CheckIndianLandStatus,
 	AddressController.CheckBrownfieldSiteStatus,
-	AddressController.CheckFossilFuelUnemploymentStatus
+	AddressController.CheckFossilFuelUnemploymentStatus,
+	AddressController.CheckCoalMineStatusByCensusTract
 );
 
 module.exports = Router;
