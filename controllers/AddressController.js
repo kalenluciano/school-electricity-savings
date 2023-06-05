@@ -186,6 +186,31 @@ const CheckBrownfieldSiteStatus = async (req, res, next) => {
 	next();
 };
 
+const CheckFossilFuelUnemploymentStatus = async (req, res, next) => {
+	const censusTractGeographies = res.locals.censusTractGeographies;
+	const censusTractState = parseInt(
+		censusTractGeographies['Census Tracts'][0]['STATE']
+	);
+	const censusTractCounty = parseInt(
+		censusTractGeographies['Census Tracts'][0]['COUNTY']
+	);
+	const fossilFuelUnemploymentStatusMatch =
+		await FossilFuelEmploymentMSAs.findOne({
+			where: {
+				state_fips_code: censusTractState,
+				county_fips_code: censusTractCounty
+			}
+		});
+	res.locals.fossilFuelUnemploymentStatusMatch =
+		fossilFuelUnemploymentStatusMatch;
+	if (!fossilFuelUnemploymentStatusMatch) {
+		res.locals.fossilFuelUnemploymentStatusCredit = false;
+	} else if (fossilFuelUnemploymentStatusMatch.msa_unemployment === false) {
+		res.locals.fossilFuelUnemploymentStatusCredit = false;
+	} else res.locals.fossilFuelUnemploymentStatusCredit = true;
+	next();
+};
+
 module.exports = {
 	GetCensusTract,
 	GetPovertyPercentageByCensusTract,
