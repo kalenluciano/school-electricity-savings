@@ -1,5 +1,7 @@
 const axios = require('axios');
+const { Op, literal } = require('sequelize');
 require('dotenv').config();
+const { BrownfieldSites, FossilFuelEmploymentMSAs } = require('../models');
 
 const GetCensusTract = async (req, res, next) => {
 	try {
@@ -162,7 +164,26 @@ const CheckIndianLandStatus = async (req, res, next) => {
 			res.locals.censusTractIndianLandStatus = false;
 		}
 	}
-	res.send(res.locals);
+	next();
+};
+
+const CheckBrownfieldSiteStatus = async (req, res, next) => {
+	const latitudeStart = Math.floor(res.locals.coordinates.lat * 100) / 100;
+	const latitudeEnd = Math.ceil(res.locals.coordinates.lat * 100) / 100;
+	const longitudeStart = Math.floor(res.locals.coordinates.lng * 100) / 100;
+	const longitudeEnd = Math.ceil(res.locals.coordinates.lng * 100) / 100;
+	const brownfieldSiteMatches = await BrownfieldSites.findAll({
+		where: literal(
+			`latitude::numeric BETWEEN ${latitudeStart} AND ${latitudeEnd} AND longitude::numeric BETWEEN ${longitudeStart} AND ${longitudeEnd}`
+		)
+	});
+	res.locals.brownfieldSites = brownfieldSiteMatches;
+	if (brownfieldSiteMatches.length === 0) {
+		res.locals.brownfieldSiteCredit = false;
+	} else {
+		res.locals.brownfieldSiteCredit = true;
+	}
+	next();
 };
 
 module.exports = {
@@ -170,5 +191,7 @@ module.exports = {
 	GetPovertyPercentageByCensusTract,
 	GetFamilyMedianIncomeByCensusTract,
 	CheckCensusTractLowIncomeStatus,
-	CheckIndianLandStatus
+	CheckIndianLandStatus,
+	CheckBrownfieldSiteStatus,
+	CheckFossilFuelUnemploymentStatus
 };

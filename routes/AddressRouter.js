@@ -7,7 +7,9 @@ Router.get(
 	AddressController.GetPovertyPercentageByCensusTract,
 	AddressController.GetFamilyMedianIncomeByCensusTract,
 	AddressController.CheckCensusTractLowIncomeStatus,
-	AddressController.CheckIndianLandStatus
+	AddressController.CheckIndianLandStatus,
+	AddressController.CheckBrownfieldSiteStatus,
+	AddressController.CheckFossilFuelUnemploymentStatus
 );
 
 module.exports = Router;
