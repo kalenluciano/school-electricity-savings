@@ -10,7 +10,8 @@ Router.get(
 	AddressController.CheckIndianLandStatus,
 	AddressController.CheckBrownfieldSiteStatus,
 	AddressController.CheckFossilFuelUnemploymentStatus,
-	AddressController.CheckCoalMineStatusByCensusTract
+	AddressController.CheckCoalMineStatusByCensusTract,
+	AddressController.GetSavingsDataByAddress
 );
 
 module.exports = Router;

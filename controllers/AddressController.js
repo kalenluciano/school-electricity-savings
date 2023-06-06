@@ -4,7 +4,8 @@ require('dotenv').config();
 const {
 	BrownfieldSites,
 	FossilFuelEmploymentMSAs,
-	CoalMineCensusTracts
+	CoalMineCensusTracts,
+	Saving
 } = require('../models');
 
 const GetCensusTract = async (req, res, next) => {
@@ -228,6 +229,103 @@ const CheckCoalMineStatusByCensusTract = async (req, res, next) => {
 	} else {
 		res.locals.coalMineCensusTractCredit = true;
 	}
+	next();
+};
+
+const GetSavingsDataByAddress = async (req, res, next) => {
+	const allSavings = await Saving.findAll({
+		include: [
+			{ model: Saving, as: 'main_savings', through: { attributes: [] } }
+		]
+	});
+
+	allSavings.forEach((savings) => {
+		savings.main_savings.forEach((savingsObj) => {
+			const index = allSavings.findIndex(
+				(item) => item.id === savingsObj.id
+			);
+			if (index !== -1) {
+				allSavings.splice(index, 1);
+			}
+		});
+	});
+
+	if (
+		res.locals.censusTractLowIncomeStatus === true ||
+		res.locals.censusTractIndianLandStatus === true
+	) {
+		allSavings.forEach((savings) => {
+			if (
+				savings.item === 'Battery Storage Installation' ||
+				savings.item === 'Geothermal Heating Installation' ||
+				savings.item === 'Solar Panel Installation'
+			) {
+				savings.amount += savings.main_savings.find(
+					(subSavings) =>
+						subSavings.item === 'Low-Income or Indian Land Bonus'
+				).amount;
+			}
+		});
+	} else {
+		allSavings.forEach((savings) => {
+			if (
+				savings.item === 'Battery Storage Installation' ||
+				savings.item === 'Geothermal Heating Installation' ||
+				savings.item === 'Solar Panel Installation'
+			) {
+				let index = savings.main_savings.findIndex(
+					(subSavings) =>
+						subSavings.item === 'Low-Income or Indian Land Bonus'
+				);
+				savings.main_savings.splice(index, 1);
+			}
+		});
+	}
+
+	if (
+		res.locals.brownfieldSiteCredit === true ||
+		res.locals.fossilFuelUnemploymentStatusCredit === true ||
+		res.locals.coalMineCensusTractCredit === true
+	) {
+		allSavings.forEach((savings) => {
+			if (
+				savings.item === 'Battery Storage Installation' ||
+				savings.item === 'Geothermal Heating Installation' ||
+				savings.item === 'Solar Panel Installation'
+			) {
+				savings.amount += savings.main_savings.find(
+					(subSavings) => subSavings.item === 'Energy Community Bonus'
+				).amount;
+			}
+		});
+	} else {
+		allSavings.forEach((savings) => {
+			if (
+				savings.item === 'Battery Storage Installation' ||
+				savings.item === 'Geothermal Heating Installation' ||
+				savings.item === 'Solar Panel Installation'
+			) {
+				let index = savings.main_savings.findIndex(
+					(subSavings) => subSavings.item === 'Energy Community Bonus'
+				);
+				savings.main_savings.splice(index, 1);
+			}
+		});
+	}
+
+	allSavings.forEach((savings) => {
+		if (
+			savings.item === 'Battery Storage Installation' ||
+			savings.item === 'Geothermal Heating Installation' ||
+			savings.item === 'Solar Panel Installation'
+		) {
+			savings.amount += savings.main_savings.find(
+				(subSavings) => subSavings.item === 'US Material Bonus'
+			).amount;
+		}
+	});
+
+	res.locals.savings = allSavings;
 	res.send(res.locals);
 };
 
@@ -239,5 +337,6 @@ module.exports = {
 	CheckIndianLandStatus,
 	CheckBrownfieldSiteStatus,
 	CheckFossilFuelUnemploymentStatus,
-	CheckCoalMineStatusByCensusTract
+	CheckCoalMineStatusByCensusTract,
+	GetSavingsDataByAddress
 };
