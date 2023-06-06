@@ -19,7 +19,7 @@ module.exports = {
 				type: Sequelize.INTEGER
 			},
 			qualifications: {
-				type: Sequelize.ARRAY(Sequelize.TEXT)
+				type: Sequelize.STRING
 			},
 			createdAt: {
 				allowNull: false,
