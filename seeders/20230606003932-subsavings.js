@@ -1,30 +1,30 @@
 'use strict';
 
-const { Savings } = require('../models');
+const { Saving } = require('../models');
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
 	async up(queryInterface, Sequelize) {
 		const savingsAndSubSavings = [];
 
-		let batteryStorage = await Savings.findOne({
+		let batteryStorage = await Saving.findOne({
 			where: { item: 'Battery Storage Installation' }
 		});
-		let geothermalHeating = await Savings.findOne({
+		let geothermalHeating = await Saving.findOne({
 			where: { item: 'Geothermal Heating Installation' }
 		});
-		let solarPanel = await Savings.findOne({
+		let solarPanel = await Saving.findOne({
 			where: { item: 'Solar Panel Installation' }
 		});
 		const mainSavings = [batteryStorage, geothermalHeating, solarPanel];
 
-		let usMaterialBonus = await Savings.findOne({
+		let usMaterialBonus = await Saving.findOne({
 			where: { item: 'US Material Bonus' }
 		});
-		let lowIncomeIndianLandBonus = await Savings.findOne({
+		let lowIncomeIndianLandBonus = await Saving.findOne({
 			where: { item: 'Low-Income or Indian Land Bonus' }
 		});
-		let energyCommunityBonus = await Savings.findOne({
+		let energyCommunityBonus = await Saving.findOne({
 			where: { item: 'Energy Community Bonus' }
 		});
 		const subSavings = [
@@ -37,7 +37,9 @@ module.exports = {
 			for (let subItem of subSavings) {
 				savingsAndSubSavings.push({
 					main_savings_id: item.id,
-					sub_savings_id: subItem.id
+					sub_savings_id: subItem.id,
+					createdAt: new Date(),
+					updatedAt: new Date()
 				});
 			}
 		}
