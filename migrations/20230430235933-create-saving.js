@@ -18,9 +18,6 @@ module.exports = {
 			amount: {
 				type: Sequelize.INTEGER
 			},
-			qualifications: {
-				type: Sequelize.STRING
-			},
 			createdAt: {
 				allowNull: false,
 				type: Sequelize.DATE
