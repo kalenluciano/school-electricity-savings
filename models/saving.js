@@ -23,7 +23,7 @@ module.exports = (sequelize, DataTypes) => {
 	Saving.init(
 		{
 			item: DataTypes.STRING,
-			description: DataTypes.STRING,
+			description: DataTypes.TEXT,
 			amount: { type: DataTypes.INTEGER, allowNull: true }
 		},
 		{

@@ -22,7 +22,7 @@ module.exports = {
 			where: { item: 'US Material Bonus' }
 		});
 		let lowIncomeIndianLandBonus = await Saving.findOne({
-			where: { item: 'Low-Income or Indian Land Bonus' }
+			where: { item: 'Low-Income or Native American Land Bonus' }
 		});
 		let energyCommunityBonus = await Saving.findOne({
 			where: { item: 'Energy Community Bonus' }
