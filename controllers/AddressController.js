@@ -262,7 +262,8 @@ const GetSavingsDataByAddress = async (req, res, next) => {
 			) {
 				savings.amount += savings.main_savings.find(
 					(subSavings) =>
-						subSavings.item === 'Low-Income or Indian Land Bonus'
+						subSavings.item ===
+						'Low-Income or Native American Land Bonus'
 				).amount;
 			}
 		});
@@ -275,7 +276,8 @@ const GetSavingsDataByAddress = async (req, res, next) => {
 			) {
 				let index = savings.main_savings.findIndex(
 					(subSavings) =>
-						subSavings.item === 'Low-Income or Indian Land Bonus'
+						subSavings.item ===
+						'Low-Income or Native American Land Bonus'
 				);
 				savings.main_savings.splice(index, 1);
 			}
