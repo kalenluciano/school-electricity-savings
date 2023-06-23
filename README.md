@@ -14,7 +14,7 @@ The Inflation Reduction Act provided significant incentives to drive America tow
 
 With this understanding, I developed a user-friendly calculator that empowers environmental activists to determine the potential savings their schools are eligible for. By leveraging Census and Google Maps APIs and technologies and frameworks such as TypeScript, Next.js, Express, PostgreSQL, and Node.js, I built a full-stack application that helps schools make informed decisions about their clean energy transition.
 
-This app was inspired by (Rewiring America's household IRA savings calculator)[https://www.rewiringamerica.org/app/ira-calculator].
+This app was inspired by [Rewiring America's household IRA savings calculator](https://www.rewiringamerica.org/app/ira-calculator).
 
 ---
 
