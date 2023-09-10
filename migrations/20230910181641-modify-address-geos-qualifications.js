@@ -4,39 +4,39 @@ module.exports = {
 	up: async (queryInterface, Sequelize) => {
 		// Add foreign key constraints to the existing columns
 		await queryInterface.changeColumn(
-			'AddressGeosQualifications',
+			'address_geos_qualifications',
 			'solar_geo_battery_id',
 			{
 				type: Sequelize.INTEGER,
 				onDelete: 'CASCADE',
 				references: {
-					model: 'SolarGeoBatteryStats',
+					model: 'solar_geo_battery_stats',
 					key: 'id',
 				},
 			}
 		);
 
 		await queryInterface.changeColumn(
-			'AddressGeosQualifications',
+			'address_geos_qualifications',
 			'electric_vehicles_id',
 			{
 				type: Sequelize.INTEGER,
 				onDelete: 'CASCADE',
 				references: {
-					model: 'ElectricVehicleStats',
+					model: 'electric_vehicle_stats',
 					key: 'id',
 				},
 			}
 		);
 
 		await queryInterface.changeColumn(
-			'AddressGeosQualifications',
+			'address_geos_qualifications',
 			'ev_chargers_id',
 			{
 				type: Sequelize.INTEGER,
 				onDelete: 'CASCADE',
 				references: {
-					model: 'EVChargerStats',
+					model: 'ev_charger_stats',
 					key: 'id',
 				},
 			}
@@ -45,7 +45,7 @@ module.exports = {
 
 	down: async (queryInterface, Sequelize) => {
 		await queryInterface.changeColumn(
-			'AddressGeosQualifications',
+			'address_geos_qualifications',
 			'solar_geo_battery_id',
 			{
 				type: Sequelize.INTEGER,
@@ -53,7 +53,7 @@ module.exports = {
 		);
 
 		await queryInterface.changeColumn(
-			'AddressGeosQualifications',
+			'address_geos_qualifications',
 			'electric_vehicles_id',
 			{
 				type: Sequelize.INTEGER,
@@ -61,7 +61,7 @@ module.exports = {
 		);
 
 		await queryInterface.changeColumn(
-			'AddressGeosQualifications',
+			'address_geos_qualifications',
 			'ev_chargers_id',
 			{
 				type: Sequelize.INTEGER,
