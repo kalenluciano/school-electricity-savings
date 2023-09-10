@@ -8,7 +8,9 @@ module.exports = (sequelize, DataTypes) => {
 		 * The `models/index` file will call this method automatically.
 		 */
 		static associate(models) {
-			// define association here
+			SolarGeoBatteryStats.belongsTo(models.AddressGeosQualifications, {
+				foreignKey: 'solar_geo_battery_id',
+			});
 		}
 	}
 	SolarGeoBatteryStats.init(
