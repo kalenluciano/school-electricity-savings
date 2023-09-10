@@ -25,7 +25,7 @@ const getCensusTractGeographies = async (
 		);
 		const coordinateGeographies =
 			censusResultsByCoordinates.data.result.geographies;
-		const addressGeos = {
+		const addressGeosData = {
 			street_address: streetAddress.replaceAll('+', ' '),
 			city: city.replaceAll('+', ' '),
 			state: state.replaceAll('+', ' '),
@@ -63,10 +63,70 @@ const getCensusTractGeographies = async (
 					'Alaska Native Village Statistical Areas'
 				]?.[0]?.['AIANNH'] ?? null,
 		};
-		await AddressGeosQualifications.create(addressGeos);
+		const addressGeos = await AddressGeosQualifications.create(addressGeosData);
 		return addressGeos;
 	} catch (error) {
-		return error;
+		console.log('Error getting geographies:', error.message);
+		return { error: error.message };
+	}
+};
+
+const getLowIncomeStats = async (
+	censusTractNumber,
+	censusTractCounty,
+	censusTractState,
+	msaCbsaCode
+) => {
+	try {
+		const lowIncomeStats = {};
+
+		// Get census tract poverty rate and family median income
+		const censusTractIncomeResults = await axios.get(
+			`http://api.census.gov/data/2021/acs/acs5/subject?get=NAME,S1701_C03_001E,S1903_C03_015E&for=tract:${censusTractNumber}&in=state:${censusTractState}%20county:${censusTractCounty}&key=${process.env.API_KEY_CENSUS}`
+		);
+		lowIncomeStats.census_tract_poverty_rate =
+			censusTractIncomeResults?.data?.[1]?.[1];
+		lowIncomeStats.census_tract_family_median_income =
+			censusTractIncomeResults?.data?.[1]?.[2];
+
+		// If the poverty rate is low and address is in a metro area, get MSA family median income
+		if (lowIncomeStats.census_tract_poverty_rate < 20 && msaCbsaCode !== null) {
+			const metropolitanAreaMedianFamilyIncomeResults = await axios.get(
+				`http://api.census.gov/data/2021/acs/acs5/subject?get=NAME,S1903_C03_015E&for=metropolitan%20statistical%20area/micropolitan%20statistical%20area:${msaCbsaCode}&key=${process.env.API_KEY_CENSUS}`
+			);
+			lowIncomeStats.metro_area_family_median_income =
+				metropolitanAreaMedianFamilyIncomeResults.data[1][1];
+		}
+
+		// Get state median family income
+		const stateMedianFamilyIncomeResults = await axios.get(
+			`http://api.census.gov/data/2021/acs/acs5/subject?get=NAME,S1903_C03_015E&for=state:${censusTractState}&key=${process.env.API_KEY_CENSUS}`
+		);
+		lowIncomeStats.state_family_median_income =
+			stateMedianFamilyIncomeResults.data[1][1];
+
+		// Check low income status
+		if (lowIncomeStats.census_tract_poverty_rate >= 20) {
+			lowIncomeStats.low_income_status = true;
+		} else if (
+			lowIncomeStats.census_tract_family_median_income <=
+			0.8 * lowIncomeStats.state_family_median_income
+		) {
+			lowIncomeStats.low_income_status = true;
+		} else if (msaCbsaCode !== null) {
+			if (
+				lowIncomeStats.census_tract_family_median_income <=
+				0.8 * lowIncomeStats.metro_area_family_median_income
+			) {
+				lowIncomeStats.low_income_status = true;
+			}
+		} else {
+			lowIncomeStats.low_income_status = false;
+		}
+		return lowIncomeStats;
+	} catch (error) {
+		console.log('Error getting poverty rate by census tract:', error.message);
+		return { error: error.message };
 	}
 };
 
@@ -82,88 +142,18 @@ const CalculateQualifications = async (req, res) => {
 			state,
 			zipCode
 		);
-
-		res.send(addressGeos);
-	} catch (error) {
-		return res.status(500).json({ error: error.message });
-	}
-};
-
-const GetPovertyPercentageByCensusTract = async (req, res, next) => {
-	try {
-		const censusTractGeographies = res.locals.censusTractGeographies;
-		const censusTractNumber =
-			censusTractGeographies['Census Tracts'][0]['TRACT'];
-		const censusTractState =
-			censusTractGeographies['Census Tracts'][0]['STATE'];
-		const censusTractCounty =
-			censusTractGeographies['Census Tracts'][0]['COUNTY'];
-		const censusTractPovertyPercentResults = await axios.get(
-			`http://api.census.gov/data/2021/acs/acs5/subject?get=NAME,S1701_C03_001E&for=tract:${censusTractNumber}&in=state:${censusTractState}%20county:${censusTractCounty}&key=${process.env.API_KEY_CENSUS}`
+		censusTractFipsCode = addressGeos.census_tract_fips_code;
+		countyFipsCode = addressGeos.county_fips_code;
+		stateFipsCode = addressGeos.state_fips_code;
+		msaCbsaCode = addressGeos?.msa_cbsa_code ?? null;
+		const lowIncomeStats = await getLowIncomeStats(
+			censusTractFipsCode,
+			countyFipsCode,
+			stateFipsCode,
+			msaCbsaCode
 		);
-		res.locals.censusTractPovertyPercent =
-			censusTractPovertyPercentResults.data[1][1];
-		next();
-	} catch (error) {
-		return res.status(500).json({ error: error.message });
-	}
-};
-
-const GetFamilyMedianIncomeByCensusTract = async (req, res, next) => {
-	try {
-		if (res.locals.censusTractPovertyPercent >= 20) {
-			next();
-		}
-		const censusTractGeographies = res.locals.censusTractGeographies;
-		const censusTractNumber =
-			censusTractGeographies['Census Tracts'][0]['TRACT'];
-		const censusTractState =
-			censusTractGeographies['Census Tracts'][0]['STATE'];
-		const censusTractCounty =
-			censusTractGeographies['Census Tracts'][0]['COUNTY'];
-		const censusTractMedianFamilyIncomeResults = await axios.get(
-			`http://api.census.gov/data/2021/acs/acs5/subject?get=NAME,S1903_C03_015E&for=tract:${censusTractNumber}&in=state:${censusTractState}%20county:${censusTractCounty}&key=${process.env.API_KEY_CENSUS}`
-		);
-		res.locals.censusTractMedianFamilyIncome =
-			censusTractMedianFamilyIncomeResults.data[1][1];
-		if (censusTractGeographies['Metropolitan Statistical Areas']) {
-			const metropolitanAreaMedianFamilyIncomeResults = await axios.get(
-				`http://api.census.gov/data/2021/acs/acs5/subject?get=NAME,S1903_C03_015E&for=metropolitan%20statistical%20area/micropolitan%20statistical%20area:${censusTractGeographies['Metropolitan Statistical Areas'][0]['CBSA']}&key=${process.env.API_KEY_CENSUS}`
-			);
-			res.locals.metropolitanAreaMedianFamilyIncome =
-				metropolitanAreaMedianFamilyIncomeResults.data[1][1];
-		}
-		const stateMedianFamilyIncomeResults = await axios.get(
-			`http://api.census.gov/data/2021/acs/acs5/subject?get=NAME,S1903_C03_015E&for=state:${censusTractState}&key=${process.env.API_KEY_CENSUS}`
-		);
-		res.locals.stateMedianFamilyIncome =
-			stateMedianFamilyIncomeResults.data[1][1];
-		next();
-	} catch (error) {
-		return res.status(500).json({ error: error.message });
-	}
-};
-
-const CheckCensusTractLowIncomeStatus = async (req, res, next) => {
-	try {
-		if (res.locals.censusTractPovertyPercent >= 20) {
-			res.locals.censusTractLowIncomeStatus = true;
-		} else if (
-			res.locals.censusTractMedianFamilyIncome <=
-			0.8 * res.locals.stateMedianFamilyIncome
-		) {
-			res.locals.censusTractLowIncomeStatus = true;
-		} else if (res.locals.metropolitanAreaMedianFamilyIncome) {
-			if (
-				res.locals.censusTractMedianFamilyIncome <=
-				0.8 * res.locals.metropolitanAreaMedianFamilyIncome
-			) {
-				res.locals.censusTractLowIncomeStatus = true;
-			} else {
-				res.locals.censusTractLowIncomeStatus = false;
-			}
-		}
-		next();
+		const solarGeoBatteryData = { ...lowIncomeStats };
+		res.send(solarGeoBatteryData);
 	} catch (error) {
 		return res.status(500).json({ error: error.message });
 	}
