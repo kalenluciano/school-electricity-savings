@@ -27,7 +27,7 @@ module.exports = (sequelize, DataTypes) => {
 			census_tract_fips_code: DataTypes.INTEGER,
 			county_fips_code: DataTypes.INTEGER,
 			msa_cbsa_code: DataTypes.INTEGER,
-			state_fips_code: DataTypes.STRING,
+			state_fips_code: DataTypes.INTEGER,
 			tribal_census_tract_fips_code: DataTypes.STRING,
 			tribal_census_block_fips_code: DataTypes.STRING,
 			off_reservation_aiannh_code: DataTypes.INTEGER,
