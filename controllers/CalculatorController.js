@@ -9,7 +9,7 @@ const {
 	AddressGeosQualifications,
 } = require('../models');
 
-const GetCensusTractGeographies = async (
+const getCensusTractGeographies = async (
 	streetAddress,
 	city,
 	state,
@@ -76,15 +76,13 @@ const CalculateQualifications = async (req, res) => {
 		const city = req.params.city.replaceAll('%20', '+');
 		const state = req.params.state.replaceAll('%20', '+');
 		const zipCode = req.params.zipCode.replaceAll('%20', '+');
-		console.log('calculating qualifications...');
-		const addressGeos = await GetCensusTractGeographies(
+		const addressGeos = await getCensusTractGeographies(
 			streetAddress,
 			city,
 			state,
 			zipCode
 		);
-		console.log(addressGeos);
-		console.log('calculation complete');
+
 		res.send(addressGeos);
 	} catch (error) {
 		return res.status(500).json({ error: error.message });
@@ -368,14 +366,5 @@ const GetSavingsDataByAddress = async (req, res, next) => {
 };
 
 module.exports = {
-	GetCensusTractGeographies,
-	GetPovertyPercentageByCensusTract,
-	GetFamilyMedianIncomeByCensusTract,
-	CheckCensusTractLowIncomeStatus,
-	CheckIndianLandStatus,
-	CheckBrownfieldSiteStatus,
-	CheckFossilFuelUnemploymentStatus,
-	CheckCoalMineStatusByCensusTract,
-	GetSavingsDataByAddress,
 	CalculateQualifications,
 };
