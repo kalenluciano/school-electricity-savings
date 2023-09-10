@@ -52,7 +52,7 @@ module.exports = {
 				type: Sequelize.INTEGER,
 			},
 			state_fips_code: {
-				type: Sequelize.STRING,
+				type: Sequelize.INTEGER,
 			},
 			tribal_census_tract_fips_code: {
 				type: Sequelize.STRING,
