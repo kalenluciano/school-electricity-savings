@@ -5,46 +5,87 @@ const {
 	BrownfieldSites,
 	FossilFuelEmploymentMSAs,
 	CoalMineCensusTracts,
-	Saving
+	Saving,
+	AddressGeosQualifications,
 } = require('../models');
 
-const GetCensusTract = async (req, res, next) => {
+const GetCensusTractGeographies = async (
+	streetAddress,
+	city,
+	state,
+	zipCode
+) => {
+	try {
+		const googleResults = await axios.get(
+			`https://maps.googleapis.com/maps/api/geocode/json?address=${streetAddress}%20${city}%20${state}%20${zipCode}&key=${process.env.API_KEY_GOOGLE}`
+		);
+		const coordinates = googleResults.data.results[0].geometry.location;
+		const censusResultsByCoordinates = await axios.get(
+			`https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=${coordinates.lng}&y=${coordinates.lat}&benchmark=Public_AR_Census2020&vintage=Census2020_Census2020&format=json&layers=6,10,34,36,2,4,42,76`
+		);
+		const coordinateGeographies =
+			censusResultsByCoordinates.data.result.geographies;
+		const addressGeos = {
+			street_address: streetAddress.replaceAll('+', ' '),
+			city: city.replaceAll('+', ' '),
+			state: state.replaceAll('+', ' '),
+			zip_code: zipCode.replaceAll('+', ' '),
+			coordinates_lng: coordinates.lng,
+			coordinates_lat: coordinates.lat,
+			census_tract_geoid:
+				coordinateGeographies?.['Census Tracts']?.[0]?.['GEOID'] ?? null,
+			census_tract_fips_code:
+				coordinateGeographies?.['Census Tracts']?.[0]?.['TRACT'] ?? null,
+			county_fips_code:
+				coordinateGeographies?.['Census Tracts']?.[0]?.['COUNTY'] ?? null,
+			msa_cbsa_code:
+				coordinateGeographies?.['Metropolitan Statistical Areas']?.[0]?.[
+					'CBSA'
+				] ?? null,
+			state_fips_code:
+				coordinateGeographies?.['Census Tracts']?.[0]?.['STATE'] ?? null,
+			tribal_census_tract_fips_code:
+				coordinateGeographies?.['Tribal Census Tracts']?.[0]?.['TTRACT'] ??
+				null,
+			tribal_census_block_fips_code:
+				coordinateGeographies?.['Tribal Block Groups']?.[0]?.['TBLKGRP'] ??
+				null,
+			off_reservation_aiannh_code:
+				coordinateGeographies?.['Off-Reservation Trust Lands']?.[0]?.[
+					'AIANNH'
+				] ?? null,
+			reservation_aiannh_code:
+				coordinateGeographies?.['Federal American Indian Reservations']?.[0]?.[
+					'AIANNH'
+				] ?? null,
+			alaska_native_village_aiannh_code:
+				coordinateGeographies?.[
+					'Alaska Native Village Statistical Areas'
+				]?.[0]?.['AIANNH'] ?? null,
+		};
+		await AddressGeosQualifications.create(addressGeos);
+		return addressGeos;
+	} catch (error) {
+		return error;
+	}
+};
+
+const CalculateQualifications = async (req, res) => {
 	try {
 		const streetAddress = req.params.streetAddress.replaceAll('%20', '+');
 		const city = req.params.city.replaceAll('%20', '+');
 		const state = req.params.state.replaceAll('%20', '+');
 		const zipCode = req.params.zipCode.replaceAll('%20', '+');
-		const results = await axios.get(
-			`https://geocoding.geo.census.gov/geocoder/geographies/address?street=${streetAddress}&city=${city}&state=${state}&zip=${zipCode}&benchmark=Public_AR_Census2020&vintage=Census2020_Census2020&format=json&layers=6,10,34,36,2,4,42,76`
+		console.log('calculating qualifications...');
+		const addressGeos = await GetCensusTractGeographies(
+			streetAddress,
+			city,
+			state,
+			zipCode
 		);
-		if (results.data.result.addressMatches.length < 1) {
-			const googleStreetAddress = req.params.streetAddress.replaceAll(
-				'+',
-				'%20'
-			);
-			const googleCity = req.params.city.replaceAll('+', '%20');
-			const googleState = req.params.state.replaceAll('+', '%20');
-			const googleZipCode = req.params.zipCode.replaceAll('+', '%20');
-			const googleResults = await axios.get(
-				`https://maps.googleapis.com/maps/api/geocode/json?address=${googleStreetAddress}%20${googleCity}%20${googleState}%20${googleZipCode}&key=${process.env.API_KEY_GOOGLE}`
-			);
-			const coordinates = googleResults.data.results[0].geometry.location;
-			const coordinateResults = await axios.get(
-				`https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=${coordinates.lng}&y=${coordinates.lat}&benchmark=Public_AR_Census2020&vintage=Census2020_Census2020&format=json&layers=6,10,34,36,2,4,42,76`
-			);
-			res.locals.coordinates = coordinates;
-			res.locals.censusTractGeographies =
-				coordinateResults.data.result.geographies;
-		} else {
-			res.locals.coordinates = {};
-			res.locals.coordinates.lng =
-				results.data.result.addressMatches[0].coordinates.x;
-			res.locals.coordinates.lat =
-				results.data.result.addressMatches[0].coordinates.y;
-			res.locals.censusTractGeographies =
-				results.data.result.addressMatches[0].geographies;
-		}
-		next();
+		console.log(addressGeos);
+		console.log('calculation complete');
+		res.send(addressGeos);
 	} catch (error) {
 		return res.status(500).json({ error: error.message });
 	}
@@ -160,8 +201,7 @@ const CheckIndianLandStatus = async (req, res, next) => {
 			`https://api.census.gov/data/2010/dec/sf1?get=PCT003001&for=tract:${censusTractNumber2010}&in=state:${censusTractState2010}%20county:${censusTractCounty2010}&key=${process.env.API_KEY_CENSUS}`
 		);
 		if (
-			populationOfCensusTractTribeMembers2010 /
-				populationOfCensusTract2010 >=
+			populationOfCensusTractTribeMembers2010 / populationOfCensusTract2010 >=
 			0.5
 		) {
 			res.locals.censusTractIndianLandStatus = true;
@@ -180,7 +220,7 @@ const CheckBrownfieldSiteStatus = async (req, res, next) => {
 	const brownfieldSiteMatches = await BrownfieldSites.findAll({
 		where: literal(
 			`latitude::numeric BETWEEN ${latitudeStart} AND ${latitudeEnd} AND longitude::numeric BETWEEN ${longitudeStart} AND ${longitudeEnd}`
-		)
+		),
 	});
 	res.locals.brownfieldSites = brownfieldSiteMatches;
 	if (brownfieldSiteMatches.length === 0) {
@@ -203,8 +243,8 @@ const CheckFossilFuelUnemploymentStatus = async (req, res, next) => {
 		await FossilFuelEmploymentMSAs.findOne({
 			where: {
 				state_fips_code: censusTractState,
-				county_fips_code: censusTractCounty
-			}
+				county_fips_code: censusTractCounty,
+			},
 		});
 	res.locals.fossilFuelUnemploymentStatusMatch =
 		fossilFuelUnemploymentStatusMatch;
@@ -221,7 +261,7 @@ const CheckCoalMineStatusByCensusTract = async (req, res, next) => {
 	const censusTractFipsCode =
 		censusTractGeographies['Census Tracts'][0]['GEOID'];
 	const coalMineCensusTractMatch = await CoalMineCensusTracts.findOne({
-		where: { census_tract_2020_number_fips_code: censusTractFipsCode }
+		where: { census_tract_2020_number_fips_code: censusTractFipsCode },
 	});
 	res.locals.coalMineCensusTractMatch = coalMineCensusTractMatch;
 	if (!coalMineCensusTractMatch) {
@@ -235,15 +275,13 @@ const CheckCoalMineStatusByCensusTract = async (req, res, next) => {
 const GetSavingsDataByAddress = async (req, res, next) => {
 	const allSavings = await Saving.findAll({
 		include: [
-			{ model: Saving, as: 'main_savings', through: { attributes: [] } }
-		]
+			{ model: Saving, as: 'main_savings', through: { attributes: [] } },
+		],
 	});
 
 	allSavings.forEach((savings) => {
 		savings.main_savings.forEach((savingsObj) => {
-			const index = allSavings.findIndex(
-				(item) => item.id === savingsObj.id
-			);
+			const index = allSavings.findIndex((item) => item.id === savingsObj.id);
 			if (index !== -1) {
 				allSavings.splice(index, 1);
 			}
@@ -262,8 +300,7 @@ const GetSavingsDataByAddress = async (req, res, next) => {
 			) {
 				savings.amount += savings.main_savings.find(
 					(subSavings) =>
-						subSavings.item ===
-						'Low-Income or Native American Land Bonus'
+						subSavings.item === 'Low-Income or Native American Land Bonus'
 				).amount;
 			}
 		});
@@ -276,8 +313,7 @@ const GetSavingsDataByAddress = async (req, res, next) => {
 			) {
 				let index = savings.main_savings.findIndex(
 					(subSavings) =>
-						subSavings.item ===
-						'Low-Income or Native American Land Bonus'
+						subSavings.item === 'Low-Income or Native American Land Bonus'
 				);
 				savings.main_savings.splice(index, 1);
 			}
@@ -332,7 +368,7 @@ const GetSavingsDataByAddress = async (req, res, next) => {
 };
 
 module.exports = {
-	GetCensusTract,
+	GetCensusTractGeographies,
 	GetPovertyPercentageByCensusTract,
 	GetFamilyMedianIncomeByCensusTract,
 	CheckCensusTractLowIncomeStatus,
@@ -340,5 +376,6 @@ module.exports = {
 	CheckBrownfieldSiteStatus,
 	CheckFossilFuelUnemploymentStatus,
 	CheckCoalMineStatusByCensusTract,
-	GetSavingsDataByAddress
+	GetSavingsDataByAddress,
+	CalculateQualifications,
 };

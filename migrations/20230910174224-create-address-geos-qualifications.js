@@ -31,7 +31,7 @@ module.exports = {
 				type: Sequelize.STRING,
 			},
 			zip_code: {
-				type: Sequelize.INTEGER,
+				type: Sequelize.STRING,
 			},
 			coordinates_lng: {
 				type: Sequelize.DOUBLE,
@@ -40,19 +40,19 @@ module.exports = {
 				type: Sequelize.DOUBLE,
 			},
 			census_tract_geoid: {
-				type: Sequelize.INTEGER,
+				type: Sequelize.STRING,
 			},
 			census_tract_fips_code: {
-				type: Sequelize.INTEGER,
+				type: Sequelize.STRING,
 			},
 			county_fips_code: {
-				type: Sequelize.INTEGER,
+				type: Sequelize.STRING,
 			},
 			msa_cbsa_code: {
-				type: Sequelize.INTEGER,
+				type: Sequelize.STRING,
 			},
 			state_fips_code: {
-				type: Sequelize.INTEGER,
+				type: Sequelize.STRING,
 			},
 			tribal_census_tract_fips_code: {
 				type: Sequelize.STRING,
@@ -61,13 +61,13 @@ module.exports = {
 				type: Sequelize.STRING,
 			},
 			off_reservation_aiannh_code: {
-				type: Sequelize.INTEGER,
+				type: Sequelize.STRING,
 			},
 			reservation_aiannh_code: {
-				type: Sequelize.INTEGER,
+				type: Sequelize.STRING,
 			},
 			alaska_native_village_aiannh_code: {
-				type: Sequelize.INTEGER,
+				type: Sequelize.STRING,
 			},
 			createdAt: {
 				allowNull: false,
