@@ -13,9 +13,30 @@ module.exports = (sequelize, DataTypes) => {
 	}
 	AddressGeosQualifications.init(
 		{
-			solar_geo_battery_id: DataTypes.INTEGER,
-			electric_vehicles_id: DataTypes.INTEGER,
-			ev_chargers_id: DataTypes.INTEGER,
+			solar_geo_battery_id: {
+				type: DataTypes.INTEGER,
+				onDelete: 'CASCADE',
+				references: {
+					model: 'SolarGeoBatteryStats',
+					key: 'id',
+				},
+			},
+			electric_vehicles_id: {
+				type: DataTypes.INTEGER,
+				onDelete: 'CASCADE',
+				references: {
+					model: 'ElectricVehicleStats', // Update with the actual table name
+					key: 'id',
+				},
+			},
+			ev_chargers_id: {
+				type: DataTypes.INTEGER,
+				onDelete: 'CASCADE',
+				references: {
+					model: 'EVChargerStats',
+					key: 'id',
+				},
+			},
 			street_address: DataTypes.STRING,
 			street_address_2: DataTypes.STRING,
 			city: DataTypes.STRING,
