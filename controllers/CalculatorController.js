@@ -94,7 +94,7 @@ const getLowIncomeStats = async (
 			const metropolitanAreaMedianFamilyIncomeResults = await axios.get(
 				`http://api.census.gov/data/2021/acs/acs5/subject?get=NAME,S1903_C03_015E&for=metropolitan%20statistical%20area/micropolitan%20statistical%20area:${msaCbsaCode}&key=${process.env.API_KEY_CENSUS}`
 			);
-			lowIncomeStats.metro_area_family_median_income =
+			lowIncomeStats['metro_area_family_median_income'] =
 				metropolitanAreaMedianFamilyIncomeResults.data[1][1];
 		}
 
@@ -116,7 +116,7 @@ const getLowIncomeStats = async (
 		} else if (msaCbsaCode !== null) {
 			if (
 				lowIncomeStats.census_tract_family_median_income <=
-				0.8 * lowIncomeStats.metro_area_family_median_income
+				0.8 * lowIncomeStats['metro_area_family_median_income']
 			) {
 				lowIncomeStats.low_income_status = true;
 			}
@@ -130,49 +130,45 @@ const getLowIncomeStats = async (
 	}
 };
 
-const CalculateQualifications = async (req, res) => {
-	try {
-		const streetAddress = req.params.streetAddress.replaceAll('%20', '+');
-		const city = req.params.city.replaceAll('%20', '+');
-		const state = req.params.state.replaceAll('%20', '+');
-		const zipCode = req.params.zipCode.replaceAll('%20', '+');
-		const addressGeos = await getCensusTractGeographies(
-			streetAddress,
-			city,
-			state,
-			zipCode
-		);
-		censusTractFipsCode = addressGeos.census_tract_fips_code;
-		countyFipsCode = addressGeos.county_fips_code;
-		stateFipsCode = addressGeos.state_fips_code;
-		msaCbsaCode = addressGeos?.msa_cbsa_code ?? null;
-		const lowIncomeStats = await getLowIncomeStats(
-			censusTractFipsCode,
-			countyFipsCode,
-			stateFipsCode,
-			msaCbsaCode
-		);
-		const solarGeoBatteryData = { ...lowIncomeStats };
-		res.send(solarGeoBatteryData);
-	} catch (error) {
-		return res.status(500).json({ error: error.message });
-	}
-};
+const getIndianLandStats = async (
+	tribalBlockGroup,
+	tribalCensusTract,
+	offReservationTrustLands,
+	alaskaNativeVillageStatAreas,
+	federalAmericanIndianReservation,
+	coordinatesLat,
+	coordinatesLng
+) => {
+	const indianLandStats = {};
 
-const CheckIndianLandStatus = async (req, res, next) => {
-	const censusTractGeographies = res.locals.censusTractGeographies;
 	if (
-		censusTractGeographies['Tribal Block Group'] ||
-		censusTractGeographies['Tribal Census Tracts'] ||
-		censusTractGeographies['Off-Reservation Trust Lands'] ||
-		censusTractGeographies['Alaska Native Village Statistical Areas'] ||
-		censusTractGeographies['Federal American Indian Reservations']
+		tribalBlockGroup ||
+		tribalCensusTract ||
+		offReservationTrustLands ||
+		alaskaNativeVillageStatAreas ||
+		federalAmericanIndianReservation
 	) {
-		res.locals.censusTractIndianLandStatus = true;
+		// Set Indian land stats
+		indianLandStats.indian_land_status = true;
+		if (federalAmericanIndianReservation) {
+			indianLandStats.federal_american_indian_reservation = true;
+		} else {
+			indianLandStats.federal_american_indian_reservation = false;
+		}
+		if (offReservationTrustLands) {
+			indianLandStats.off_reservation_trust_land = true;
+		} else {
+			indianLandStats.off_reservation_trust_land = false;
+		}
+		if (alaskaNativeVillageStatAreas) {
+			indianLandStats.alaska_native_village = true;
+		} else {
+			indianLandStats.alaska_native_village = false;
+		}
 	} else {
-		const coordinates = res.locals.coordinates;
+		// If Indian land status is still false, check if the census tract has a majority of the population enrolled in a Tribe
 		const coordinateCensusTract2010 = await axios.get(
-			`https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=${coordinates.lng}&y=${coordinates.lat}&benchmark=Public_AR_Current&vintage=Census2010_Current&format=json`
+			`https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=${coordinatesLng}&y=${coordinatesLat}&benchmark=Public_AR_Current&vintage=Census2010_Current&format=json`
 		);
 		const censusTract2010Geographies =
 			coordinateCensusTract2010.data.result.geographies;
@@ -188,16 +184,78 @@ const CheckIndianLandStatus = async (req, res, next) => {
 		const populationOfCensusTractTribeMembers2010 = await axios.get(
 			`https://api.census.gov/data/2010/dec/sf1?get=PCT003001&for=tract:${censusTractNumber2010}&in=state:${censusTractState2010}%20county:${censusTractCounty2010}&key=${process.env.API_KEY_CENSUS}`
 		);
+
+		// Calculate if there is a majority of the population enrolled in a Tribe
 		if (
 			populationOfCensusTractTribeMembers2010 / populationOfCensusTract2010 >=
 			0.5
 		) {
-			res.locals.censusTractIndianLandStatus = true;
+			indianLandStats.majority_tribe_members = true;
+			indianLandStats.indian_land_status = true;
 		} else {
-			res.locals.censusTractIndianLandStatus = false;
+			indianLandStats.majority_tribe_members = false;
+			indianLandStats.indian_land_status = false;
 		}
 	}
-	next();
+
+	return indianLandStats;
+};
+
+const CalculateQualifications = async (req, res) => {
+	try {
+		// Get census tract geographies
+		const streetAddress = req.params.streetAddress.replaceAll('%20', '+');
+		const city = req.params.city.replaceAll('%20', '+');
+		const state = req.params.state.replaceAll('%20', '+');
+		const zipCode = req.params.zipCode.replaceAll('%20', '+');
+		const addressGeos = await getCensusTractGeographies(
+			streetAddress,
+			city,
+			state,
+			zipCode
+		);
+
+		// Get low income stats
+		const censusTractFipsCode = addressGeos.census_tract_fips_code;
+		const countyFipsCode = addressGeos.county_fips_code;
+		const stateFipsCode = addressGeos.state_fips_code;
+		const msaCbsaCode = addressGeos?.msa_cbsa_code ?? null;
+		const lowIncomeStats = await getLowIncomeStats(
+			censusTractFipsCode,
+			countyFipsCode,
+			stateFipsCode,
+			msaCbsaCode
+		);
+
+		// Get Indian land stats
+		const tribalBlockGroup = addressGeos.tribal_census_block_fips_code;
+		const tribalCensusTract = addressGeos.tribal_census_tract_fips_code;
+		const offReservationTrustLands = addressGeos.off_reservation_aiannh_code;
+		const alaskaNativeVillageStatAreas =
+			addressGeos.alaska_native_village_aiannh_code;
+		const federalAmericanIndianReservation =
+			addressGeos.reservation_aiannh_code;
+		const coordinatesLat = addressGeos.coordinates_lat;
+		const coordinatesLng = addressGeos.coordinates_lng;
+		const indianLandStats = await getIndianLandStats(
+			tribalBlockGroup,
+			tribalCensusTract,
+			offReservationTrustLands,
+			alaskaNativeVillageStatAreas,
+			federalAmericanIndianReservation,
+			coordinatesLat,
+			coordinatesLng
+		);
+
+		const solarGeoBatteryData = {
+			...addressGeos.dataValues,
+			...lowIncomeStats,
+			...indianLandStats,
+		};
+		res.send(solarGeoBatteryData);
+	} catch (error) {
+		return res.status(500).json({ error: error.message });
+	}
 };
 
 const CheckBrownfieldSiteStatus = async (req, res, next) => {
