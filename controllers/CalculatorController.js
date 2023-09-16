@@ -201,6 +201,25 @@ const getIndianLandStats = async (
 	return indianLandStats;
 };
 
+const getBrownfieldSiteStats = async (coordinatesLat, coordinatesLng) => {
+	const brownfieldSiteStats = {};
+	const latitudeStart = Math.floor(coordinatesLat * 100) / 100;
+	const latitudeEnd = Math.ceil(coordinatesLat * 100) / 100;
+	const longitudeStart = Math.floor(coordinatesLng * 100) / 100;
+	const longitudeEnd = Math.ceil(coordinatesLng * 100) / 100;
+	const brownfieldSiteMatches = await BrownfieldSites.findAll({
+		where: literal(
+			`latitude::numeric BETWEEN ${latitudeStart} AND ${latitudeEnd} AND longitude::numeric BETWEEN ${longitudeStart} AND ${longitudeEnd}`
+		),
+	});
+	if (brownfieldSiteMatches.length === 0) {
+		brownfieldSiteStats.brownfield_site_status = false;
+	} else {
+		brownfieldSiteStats.brownfield_site_status = true;
+	}
+	return brownfieldSiteStats;
+};
+
 const CalculateQualifications = async (req, res) => {
 	try {
 		// Get census tract geographies
@@ -247,34 +266,22 @@ const CalculateQualifications = async (req, res) => {
 			coordinatesLng
 		);
 
+		// Get brownfield site stats
+		const brownfieldSiteStats = await getBrownfieldSiteStats(
+			coordinatesLat,
+			coordinatesLng
+		);
+
 		const solarGeoBatteryData = {
 			...addressGeos.dataValues,
 			...lowIncomeStats,
 			...indianLandStats,
+			...brownfieldSiteStats,
 		};
 		res.send(solarGeoBatteryData);
 	} catch (error) {
 		return res.status(500).json({ error: error.message });
 	}
-};
-
-const CheckBrownfieldSiteStatus = async (req, res, next) => {
-	const latitudeStart = Math.floor(res.locals.coordinates.lat * 100) / 100;
-	const latitudeEnd = Math.ceil(res.locals.coordinates.lat * 100) / 100;
-	const longitudeStart = Math.floor(res.locals.coordinates.lng * 100) / 100;
-	const longitudeEnd = Math.ceil(res.locals.coordinates.lng * 100) / 100;
-	const brownfieldSiteMatches = await BrownfieldSites.findAll({
-		where: literal(
-			`latitude::numeric BETWEEN ${latitudeStart} AND ${latitudeEnd} AND longitude::numeric BETWEEN ${longitudeStart} AND ${longitudeEnd}`
-		),
-	});
-	res.locals.brownfieldSites = brownfieldSiteMatches;
-	if (brownfieldSiteMatches.length === 0) {
-		res.locals.brownfieldSiteCredit = false;
-	} else {
-		res.locals.brownfieldSiteCredit = true;
-	}
-	next();
 };
 
 const CheckFossilFuelUnemploymentStatus = async (req, res, next) => {
