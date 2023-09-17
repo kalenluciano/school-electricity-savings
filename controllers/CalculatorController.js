@@ -251,6 +251,19 @@ const getFossilFuelUnemploymentStats = async (
 	return fossilFuelUnemploymentStats;
 };
 
+const getCoalMineStatus = async (censusTractGeoId) => {
+	const coalMineStats = {};
+	const coalMineCensusTractMatch = await CoalMineCensusTracts.findOne({
+		where: { census_tract_2020_number_fips_code: censusTractGeoId },
+	});
+	if (!coalMineCensusTractMatch) {
+		coalMineStats.coal_mine_status = false;
+	} else {
+		coalMineStats.coal_mine_status = true;
+	}
+	return coalMineStats;
+};
+
 const CalculateQualifications = async (req, res) => {
 	try {
 		// Get census tract geographies
@@ -303,10 +316,15 @@ const CalculateQualifications = async (req, res) => {
 			coordinatesLng
 		);
 
+		// Get fossil fuel unemployment stats
 		const fossilFuelUnemploymentStats = await getFossilFuelUnemploymentStats(
 			countyFipsCode,
 			stateFipsCode
 		);
+
+		// Get coal mine stats
+		const censusTractGeoId = addressGeos.census_tract_geoid;
+		const coalMineStats = await getCoalMineStatus(censusTractGeoId);
 
 		const solarGeoBatteryData = {
 			...addressGeos.dataValues,
@@ -314,27 +332,12 @@ const CalculateQualifications = async (req, res) => {
 			...indianLandStats,
 			...brownfieldSiteStats,
 			...fossilFuelUnemploymentStats,
+			...coalMineStats,
 		};
 		res.send(solarGeoBatteryData);
 	} catch (error) {
 		return res.status(500).json({ error: error.message });
 	}
-};
-
-const CheckCoalMineStatusByCensusTract = async (req, res, next) => {
-	const censusTractGeographies = res.locals.censusTractGeographies;
-	const censusTractFipsCode =
-		censusTractGeographies['Census Tracts'][0]['GEOID'];
-	const coalMineCensusTractMatch = await CoalMineCensusTracts.findOne({
-		where: { census_tract_2020_number_fips_code: censusTractFipsCode },
-	});
-	res.locals.coalMineCensusTractMatch = coalMineCensusTractMatch;
-	if (!coalMineCensusTractMatch) {
-		res.locals.coalMineCensusTractCredit = false;
-	} else {
-		res.locals.coalMineCensusTractCredit = true;
-	}
-	next();
 };
 
 const GetSavingsDataByAddress = async (req, res, next) => {
