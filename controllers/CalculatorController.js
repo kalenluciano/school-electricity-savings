@@ -220,6 +220,37 @@ const getBrownfieldSiteStats = async (coordinatesLat, coordinatesLng) => {
 	return brownfieldSiteStats;
 };
 
+const getFossilFuelUnemploymentStats = async (
+	countyFipsCode,
+	stateFipsCode
+) => {
+	const fossilFuelUnemploymentStats = {};
+	const fossilFuelUnemploymentStatusMatch =
+		await FossilFuelEmploymentMSAs.findOne({
+			where: {
+				state_fips_code: stateFipsCode,
+				county_fips_code: countyFipsCode,
+			},
+		});
+	if (!fossilFuelUnemploymentStatusMatch) {
+		fossilFuelUnemploymentStats.fossil_fuel_employment_status = false;
+	} else if (fossilFuelUnemploymentStatusMatch.msa_unemployment === false) {
+		fossilFuelUnemploymentStats.fossil_fuel_employment_status = false;
+		fossilFuelUnemploymentStats.msa_non_msa_name =
+			fossilFuelUnemploymentStatusMatch.msa_non_msa_name;
+		fossilFuelUnemploymentStats.msa_non_msa_unemployment_rate =
+			fossilFuelUnemploymentStatusMatch.msa_unemployment_value;
+	} else {
+		fossilFuelUnemploymentStats.fossil_fuel_employment_status = true;
+		fossilFuelUnemploymentStats.msa_non_msa_name =
+			fossilFuelUnemploymentStatusMatch.msa_non_msa_name;
+		fossilFuelUnemploymentStats.msa_non_msa_unemployment_rate =
+			fossilFuelUnemploymentStatusMatch.msa_unemployment_value;
+	}
+
+	return fossilFuelUnemploymentStats;
+};
+
 const CalculateQualifications = async (req, res) => {
 	try {
 		// Get census tract geographies
@@ -272,41 +303,22 @@ const CalculateQualifications = async (req, res) => {
 			coordinatesLng
 		);
 
+		const fossilFuelUnemploymentStats = await getFossilFuelUnemploymentStats(
+			countyFipsCode,
+			stateFipsCode
+		);
+
 		const solarGeoBatteryData = {
 			...addressGeos.dataValues,
 			...lowIncomeStats,
 			...indianLandStats,
 			...brownfieldSiteStats,
+			...fossilFuelUnemploymentStats,
 		};
 		res.send(solarGeoBatteryData);
 	} catch (error) {
 		return res.status(500).json({ error: error.message });
 	}
-};
-
-const CheckFossilFuelUnemploymentStatus = async (req, res, next) => {
-	const censusTractGeographies = res.locals.censusTractGeographies;
-	const censusTractState = parseInt(
-		censusTractGeographies['Census Tracts'][0]['STATE']
-	);
-	const censusTractCounty = parseInt(
-		censusTractGeographies['Census Tracts'][0]['COUNTY']
-	);
-	const fossilFuelUnemploymentStatusMatch =
-		await FossilFuelEmploymentMSAs.findOne({
-			where: {
-				state_fips_code: censusTractState,
-				county_fips_code: censusTractCounty,
-			},
-		});
-	res.locals.fossilFuelUnemploymentStatusMatch =
-		fossilFuelUnemploymentStatusMatch;
-	if (!fossilFuelUnemploymentStatusMatch) {
-		res.locals.fossilFuelUnemploymentStatusCredit = false;
-	} else if (fossilFuelUnemploymentStatusMatch.msa_unemployment === false) {
-		res.locals.fossilFuelUnemploymentStatusCredit = false;
-	} else res.locals.fossilFuelUnemploymentStatusCredit = true;
-	next();
 };
 
 const CheckCoalMineStatusByCensusTract = async (req, res, next) => {

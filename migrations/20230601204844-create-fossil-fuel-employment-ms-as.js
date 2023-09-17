@@ -7,40 +7,41 @@ module.exports = {
 				allowNull: false,
 				autoIncrement: true,
 				primaryKey: true,
-				type: Sequelize.INTEGER
+				type: Sequelize.INTEGER,
 			},
 			state_fips_code: {
-				type: Sequelize.INTEGER
+				type: Sequelize.INTEGER,
 			},
 			county_fips_code: {
-				type: Sequelize.INTEGER
+				type: Sequelize.INTEGER,
 			},
 			state_name: {
-				type: Sequelize.STRING
+				type: Sequelize.STRING,
 			},
 			county_entity_name: {
-				type: Sequelize.STRING
+				type: Sequelize.STRING,
 			},
 			msa_non_msa_code: {
-				type: Sequelize.INTEGER
+				type: Sequelize.INTEGER,
 			},
 			msa_non_msa_name: {
-				type: Sequelize.STRING
+				type: Sequelize.STRING,
 			},
 			msa_unemployment: {
-				type: Sequelize.BOOLEAN
+				type: Sequelize.BOOLEAN,
 			},
+			msa_unemployment_value: { type: Sequelize.INTEGER },
 			createdAt: {
 				allowNull: false,
-				type: Sequelize.DATE
+				type: Sequelize.DATE,
 			},
 			updatedAt: {
 				allowNull: false,
-				type: Sequelize.DATE
-			}
+				type: Sequelize.DATE,
+			},
 		});
 	},
 	async down(queryInterface, Sequelize) {
 		await queryInterface.dropTable('fossil_fuel_employment_msas');
-	}
+	},
 };
