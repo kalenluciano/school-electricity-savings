@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { Op, literal } = require('sequelize');
+const { Op, literal, where } = require('sequelize');
 require('dotenv').config();
 const {
 	BrownfieldSites,
@@ -7,6 +7,7 @@ const {
 	CoalMineCensusTracts,
 	Saving,
 	AddressGeosQualifications,
+	SolarGeoBatteryStats,
 } = require('../models');
 
 const getCensusTractGeographies = async (
@@ -264,6 +265,42 @@ const getCoalMineStatus = async (censusTractGeoId) => {
 	return coalMineStats;
 };
 
+const calculateSolarGeoBatteryStats = async (
+	addressGeos,
+	solarGeoBatteryData
+) => {
+	// Calculate credits
+	solarGeoBatteryData.base_credit = 30;
+	solarGeoBatteryData.additional_credit = 0;
+	if (
+		solarGeoBatteryData.low_income_status ||
+		solarGeoBatteryData.indian_land_status
+	) {
+		solarGeoBatteryData.additional_credit += 10;
+	}
+	if (
+		solarGeoBatteryData.coal_mine_status ||
+		solarGeoBatteryData.fossil_fuel_employment_status ||
+		solarGeoBatteryData.brownfield_site_status
+	) {
+		solarGeoBatteryData.additional_credit += 10;
+	}
+	solarGeoBatteryData.total_tax_credit =
+		solarGeoBatteryData.additional_credit + solarGeoBatteryData.base_credit;
+
+	// Store calculations and data
+	const solarGeoBatterStats = await SolarGeoBatteryStats.create(
+		solarGeoBatteryData
+	);
+	await AddressGeosQualifications.update(
+		{
+			solar_geo_battery_id: solarGeoBatterStats.id,
+		},
+		{ where: { id: addressGeos.id } }
+	);
+	return solarGeoBatterStats;
+};
+
 const CalculateQualifications = async (req, res) => {
 	try {
 		// Get census tract geographies
@@ -326,15 +363,20 @@ const CalculateQualifications = async (req, res) => {
 		const censusTractGeoId = addressGeos.census_tract_geoid;
 		const coalMineStats = await getCoalMineStatus(censusTractGeoId);
 
+		// Calculate and store solar/geo/battery data
 		const solarGeoBatteryData = {
-			...addressGeos.dataValues,
 			...lowIncomeStats,
 			...indianLandStats,
 			...brownfieldSiteStats,
 			...fossilFuelUnemploymentStats,
 			...coalMineStats,
 		};
-		res.send(solarGeoBatteryData);
+		const solarGeoBatteryStats = await calculateSolarGeoBatteryStats(
+			addressGeos,
+			solarGeoBatteryData
+		);
+
+		res.send(solarGeoBatteryStats);
 	} catch (error) {
 		return res.status(500).json({ error: error.message });
 	}
