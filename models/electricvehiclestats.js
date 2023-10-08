@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
 		 */
 		static associate(models) {
 			ElectricVehicleStats.belongsTo(models.AddressGeosQualifications, {
-				foreignKey: 'electric_vehicles_id',
+				foreignKey: 'id',
 			});
 		}
 	}
