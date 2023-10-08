@@ -23,7 +23,7 @@ module.exports = {
 				type: Sequelize.BOOLEAN,
 			},
 			census_tract_poverty_rate: {
-				type: Sequelize.INTEGER,
+				type: Sequelize.FLOAT,
 			},
 			census_tract_family_median_income: {
 				type: Sequelize.INTEGER,
@@ -59,7 +59,7 @@ module.exports = {
 				type: Sequelize.STRING,
 			},
 			msa_non_msa_unemployment_rate: {
-				type: Sequelize.INTEGER,
+				type: Sequelize.FLOAT,
 			},
 			brownfield_site_status: {
 				type: Sequelize.BOOLEAN,

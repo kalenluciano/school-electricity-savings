@@ -1,8 +1,8 @@
 const Router = require('express').Router();
-const AddressRouter = require('./AddressRouter');
+const CalculatorRouter = require('./CalculatorRouter');
 const SavingsRouter = require('./SavingsRouter');
 
-Router.use('/address', AddressRouter);
+Router.use('/address', CalculatorRouter);
 Router.use('/savings', SavingsRouter);
 
 module.exports = Router;

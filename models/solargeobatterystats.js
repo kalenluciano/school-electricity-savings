@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
 		 */
 		static associate(models) {
 			SolarGeoBatteryStats.belongsTo(models.AddressGeosQualifications, {
-				foreignKey: 'solar_geo_battery_id',
+				foreignKey: 'id',
 			});
 		}
 	}
@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
 			base_credit: { type: DataTypes.INTEGER, defaultValue: 30 },
 			additional_credit: DataTypes.INTEGER,
 			low_income_status: DataTypes.BOOLEAN,
-			census_tract_poverty_rate: DataTypes.INTEGER,
+			census_tract_poverty_rate: DataTypes.FLOAT,
 			census_tract_family_median_income: DataTypes.INTEGER,
 			metro_area_family_median_income: DataTypes.INTEGER,
 			state_family_median_income: DataTypes.INTEGER,
@@ -31,7 +31,7 @@ module.exports = (sequelize, DataTypes) => {
 			coal_mine_status: DataTypes.BOOLEAN,
 			fossil_fuel_employment_status: DataTypes.BOOLEAN,
 			msa_non_msa_name: DataTypes.STRING,
-			msa_non_msa_unemployment_rate: DataTypes.INTEGER,
+			msa_non_msa_unemployment_rate: DataTypes.FLOAT,
 			brownfield_site_status: DataTypes.BOOLEAN,
 		},
 		{

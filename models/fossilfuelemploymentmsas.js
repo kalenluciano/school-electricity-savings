@@ -19,12 +19,13 @@ module.exports = (sequelize, DataTypes) => {
 			county_entity_name: DataTypes.STRING,
 			msa_non_msa_code: DataTypes.INTEGER,
 			msa_non_msa_name: DataTypes.STRING,
-			msa_unemployment: DataTypes.BOOLEAN
+			msa_unemployment: DataTypes.BOOLEAN,
+			msa_unemployment_value: DataTypes.INTEGER,
 		},
 		{
 			sequelize,
 			modelName: 'FossilFuelEmploymentMSAs',
-			tableName: 'fossil_fuel_employment_msas'
+			tableName: 'fossil_fuel_employment_msas',
 		}
 	);
 	return FossilFuelEmploymentMSAs;

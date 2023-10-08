@@ -1,0 +1,976 @@
+state,st_abbr,countyname,pollutant,revoked_naaqs,area_name,split,yr2021,yr2022,yr2023,effec_rede,nonattain,class,part,population,fips_state,fips_cnty,pollorder,composid,exportdt
+ALASKA,AK,Fairbanks North Star Borough,PM-2.5 (2006),,"Fairbanks, AK",FALSE,21,22,23,  -   -,Yes,Serious,P,87456,02,090,d,PM-2.5.2006.Fairbanks,9/30/2023
+ARIZONA,AZ,Cochise County,PM-10 (1987),,"Cochise County; Paul Spur/Douglas planning area, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,17495,04,003,B,PM-10.1990.Douglas,9/30/2023
+ARIZONA,AZ,Gila County,8-Hour Ozone (2015),,"Phoenix-Mesa, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,56,04,007,e,Ozone_8-hr.2015.Phoenix,9/30/2023
+ARIZONA,AZ,Gila County,Lead (2008),,"Hayden, AZ",FALSE,21,22,23,  -   -,Yes,,P,1284,04,007,A,Lead.2008.Hayden,9/30/2023
+ARIZONA,AZ,Gila County,PM-10 (1987),,"Hayden, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,1587,04,007,B,PM-10.1990.Hayden,9/30/2023
+ARIZONA,AZ,Gila County,PM-10 (1987),,"Miami, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,15218,04,007,B,PM-10.1990.Miami,9/30/2023
+ARIZONA,AZ,Gila County,Sulfur Dioxide (2010),,"Hayden, AZ",FALSE,21,22,23,  -   -,Yes,,P,1284,04,007,A,SO2.2010.Hayden,9/30/2023
+ARIZONA,AZ,Gila County,Sulfur Dioxide (2010),,"Miami, AZ",FALSE,21,22,23,  -   -,Yes,,P,14995,04,007,A,SO2.2010.Miami,9/30/2023
+ARIZONA,AZ,Maricopa County,8-Hour Ozone (2008),,"Phoenix-Mesa, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,3802415,04,013,e,Ozone_8-hr.2008.Phoenix,9/30/2023
+ARIZONA,AZ,Maricopa County,8-Hour Ozone (2015),,"Phoenix-Mesa, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,3802075,04,013,e,Ozone_8-hr.2015.Phoenix,9/30/2023
+ARIZONA,AZ,Maricopa County,PM-10 (1987),,"Maricopa and Pinal Counties; Phoenix planning area, AZ",FALSE,21,22,23,  -   -,Yes,Serious,P,3817145,04,013,A,PM-10.1990.Phoenix,9/30/2023
+ARIZONA,AZ,Pima County,PM-10 (1987),,"Pima County; Rillito planning area, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,588,04,019,B,PM-10.1990.Rillito,9/30/2023
+ARIZONA,AZ,Pinal County,8-Hour Ozone (2008),,"Phoenix-Mesa, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,47212,04,021,e,Ozone_8-hr.2008.Phoenix,9/30/2023
+ARIZONA,AZ,Pinal County,8-Hour Ozone (2015),,"Phoenix-Mesa, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,143009,04,021,e,Ozone_8-hr.2015.Phoenix,9/30/2023
+ARIZONA,AZ,Pinal County,Lead (2008),,"Hayden, AZ",FALSE,21,22,23,  -   -,Yes,,P,3346,04,021,A,Lead.2008.Hayden,9/30/2023
+ARIZONA,AZ,Pinal County,PM-10 (1987),,"Hayden, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,9461,04,021,B,PM-10.1990.Hayden,9/30/2023
+ARIZONA,AZ,Pinal County,PM-10 (1987),,"Maricopa and Pinal Counties; Phoenix planning area, AZ",FALSE,21,22,23,  -   -,Yes,Serious,P,35840,04,021,A,PM-10.1990.Phoenix,9/30/2023
+ARIZONA,AZ,Pinal County,PM-10 (1987),,"Miami, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,0,04,021,B,PM-10.1990.Miami,9/30/2023
+ARIZONA,AZ,Pinal County,PM-10 (1987),,"Pinal County (part); West Pinal, AZ",FALSE,21,22,23,  -   -,Yes,Serious,P,283032,04,021,A,PM-10.1990.Pinal_Co,9/30/2023
+ARIZONA,AZ,Pinal County,PM-2.5 (2006),,"West Central Pinal, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,52314,04,021,e,PM-2.5.2006.Pinal_Co,9/30/2023
+ARIZONA,AZ,Pinal County,Sulfur Dioxide (1971),,"Hayden (Pinal County), AZ",FALSE,21,22,23,  -   -,Yes,Primary,P,4844,04,021,A,SO2.1978.Hayden,9/30/2023
+ARIZONA,AZ,Pinal County,Sulfur Dioxide (2010),,"Hayden, AZ",FALSE,21,22,23,  -   -,Yes,,P,3346,04,021,A,SO2.2010.Hayden,9/30/2023
+ARIZONA,AZ,Santa Cruz County,PM-10 (1987),,"Santa Cruz County; Nogales planning area, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,30359,04,023,B,PM-10.1990.Nogales,9/30/2023
+ARIZONA,AZ,Yuma County,8-Hour Ozone (2015),,"Yuma, AZ",FALSE,21,22,23,  -   -,Yes,Marginal,P,87254,04,027,f,Ozone_8-hr.2015.Yuma,9/30/2023
+ARIZONA,AZ,Yuma County,PM-10 (1987),,"Yuma, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,100710,04,027,B,PM-10.1990.Yuma,9/30/2023
+CALIFORNIA,CA,Alameda County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,1510271,06,001,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,Alameda County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,1510271,06,001,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,Alameda County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,1510271,06,001,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,Amador County,8-Hour Ozone (2015),,"Amador County, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,38091,06,005,f,Ozone_8-hr.2015.Amador_Co,9/30/2023
+CALIFORNIA,CA,Butte County,8-Hour Ozone (2008),,"Chico (Butte County), CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,220000,06,007,f,Ozone_8-hr.2008.Chico,9/30/2023
+CALIFORNIA,CA,Butte County,8-Hour Ozone (2015),,"Butte County, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,220000,06,007,f,Ozone_8-hr.2015.Chico,9/30/2023
+CALIFORNIA,CA,Calaveras County,8-Hour Ozone (2008),,"Calaveras County, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,45578,06,009,f,Ozone_8-hr.2008.Calaveras_Co,9/30/2023
+CALIFORNIA,CA,Calaveras County,8-Hour Ozone (2015),,"Calaveras County, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,45578,06,009,f,Ozone_8-hr.2015.Calaveras_Co,9/30/2023
+CALIFORNIA,CA,Contra Costa County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,1049025,06,013,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,Contra Costa County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,1049025,06,013,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,Contra Costa County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,1049025,06,013,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,El Dorado County,8-Hour Ozone (2008),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,150517,06,017,c,Ozone_8-hr.2008.Sacramento,9/30/2023
+CALIFORNIA,CA,El Dorado County,8-Hour Ozone (2015),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,150297,06,017,d,Ozone_8-hr.2015.Sacramento,9/30/2023
+CALIFORNIA,CA,El Dorado County,PM-2.5 (2006),,"Sacramento, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,144214,06,017,e,PM-2.5.2006.Sacramento,9/30/2023
+CALIFORNIA,CA,Fresno County,8-Hour Ozone (2008),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,930450,06,019,a,Ozone_8-hr.2008.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Fresno County,8-Hour Ozone (2015),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,930450,06,019,a,Ozone_8-hr.2015.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Fresno County,PM-2.5 (1997),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,930450,06,019,d,PM-2.5.1997.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Fresno County,PM-2.5 (2006),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,930450,06,019,d,PM-2.5.2006.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Fresno County,PM-2.5 (2012),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,930450,06,019,A,PM-2.5.2012.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Imperial County,8-Hour Ozone (2008),,"Imperial County, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,174528,06,025,e,Ozone_8-hr.2008.Imperial_Co,9/30/2023
+CALIFORNIA,CA,Imperial County,8-Hour Ozone (2015),,"Imperial County, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,174528,06,025,f,Ozone_8-hr.2015.Imperial_Co,9/30/2023
+CALIFORNIA,CA,Imperial County,PM-2.5 (2006),,"Imperial County, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,154061,06,025,e,PM-2.5.2006.Imperial_Co,9/30/2023
+CALIFORNIA,CA,Imperial County,PM-2.5 (2012),,"Imperial County, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,154061,06,025,B,PM-2.5.2012.Imperial_Co,9/30/2023
+CALIFORNIA,CA,Inyo County,PM-10 (1987),,"Inyo County; Owens Valley planning area, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,7333,06,027,A,PM-10.1990.Owens_Valley,9/30/2023
+CALIFORNIA,CA,Kern County,8-Hour Ozone (2008),,"Kern County (Eastern Kern), CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,95176,06,029,c,Ozone_8-hr.2008.East_Kern,9/30/2023
+CALIFORNIA,CA,Kern County,8-Hour Ozone (2008),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,710337,06,029,a,Ozone_8-hr.2008.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kern County,8-Hour Ozone (2015),,"Kern County (Eastern Kern), CA",FALSE,21,22,23,  -   -,Yes,Serious,P,95066,06,029,d,Ozone_8-hr.2015.East_Kern,9/30/2023
+CALIFORNIA,CA,Kern County,8-Hour Ozone (2015),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,709869,06,029,a,Ozone_8-hr.2015.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kern County,PM-10 (1987),,"East Kern County, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,125950,06,029,A,PM-10.1990.East_Kern,9/30/2023
+CALIFORNIA,CA,Kern County,PM-2.5 (1997),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,710137,06,029,d,PM-2.5.1997.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kern County,PM-2.5 (2006),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,710137,06,029,d,PM-2.5.2006.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kern County,PM-2.5 (2012),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,710137,06,029,A,PM-2.5.2012.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kings County,8-Hour Ozone (2008),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,152982,06,031,a,Ozone_8-hr.2008.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kings County,8-Hour Ozone (2015),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,152982,06,031,a,Ozone_8-hr.2015.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kings County,PM-2.5 (1997),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,152982,06,031,d,PM-2.5.1997.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kings County,PM-2.5 (2006),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,152982,06,031,d,PM-2.5.2006.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kings County,PM-2.5 (2012),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,152982,06,031,A,PM-2.5.2012.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Los Angeles County,8-Hour Ozone (2008),,"Los Angeles-San Bernardino Counties (West Mojave Desert), CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,378742,06,037,c,Ozone_8-hr.2008.LA-Desert,9/30/2023
+CALIFORNIA,CA,Los Angeles County,8-Hour Ozone (2008),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,9442967,06,037,a,Ozone_8-hr.2008.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Los Angeles County,8-Hour Ozone (2015),,"Los Angeles-San Bernardino Counties (West Mojave Desert), CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,377429,06,037,c,Ozone_8-hr.2015.LA-Desert,9/30/2023
+CALIFORNIA,CA,Los Angeles County,8-Hour Ozone (2015),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,9428411,06,037,a,Ozone_8-hr.2015.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Los Angeles County,Lead (2008),,"Los Angeles County-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,,P,9436927,06,037,A,Lead.2008.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Los Angeles County,PM-2.5 (1997),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,9438565,06,037,e,PM-2.5.1997.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Los Angeles County,PM-2.5 (2006),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,9438565,06,037,d,PM-2.5.2006.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Los Angeles County,PM-2.5 (2012),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,9438565,06,037,A,PM-2.5.2012.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Madera County,8-Hour Ozone (2008),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,150865,06,039,a,Ozone_8-hr.2008.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Madera County,8-Hour Ozone (2015),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,150865,06,039,a,Ozone_8-hr.2015.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Madera County,PM-2.5 (1997),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,150865,06,039,d,PM-2.5.1997.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Madera County,PM-2.5 (2006),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,150865,06,039,d,PM-2.5.2006.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Madera County,PM-2.5 (2012),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,150865,06,039,A,PM-2.5.2012.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Marin County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,252409,06,041,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,Marin County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,252409,06,041,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,Marin County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,252409,06,041,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,Mariposa County,8-Hour Ozone (2008),,"Mariposa County, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,18251,06,043,e,Ozone_8-hr.2008.Mariposa_Co,9/30/2023
+CALIFORNIA,CA,Mariposa County,8-Hour Ozone (2015),,"Mariposa County, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,18251,06,043,e,Ozone_8-hr.2015.Mariposa_Co,9/30/2023
+CALIFORNIA,CA,Merced County,8-Hour Ozone (2008),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,255793,06,047,a,Ozone_8-hr.2008.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Merced County,8-Hour Ozone (2015),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,255793,06,047,a,Ozone_8-hr.2015.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Merced County,PM-2.5 (1997),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,255793,06,047,d,PM-2.5.1997.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Merced County,PM-2.5 (2006),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,255793,06,047,d,PM-2.5.2006.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Merced County,PM-2.5 (2012),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,255793,06,047,A,PM-2.5.2012.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Mono County,PM-10 (1987),,"Mono Basin, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,285,06,051,B,PM-10.1990.Mono_Basin,9/30/2023
+CALIFORNIA,CA,Napa County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,136484,06,055,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,Napa County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,136484,06,055,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,Napa County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,136484,06,055,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,Nevada County,8-Hour Ozone (2008),,"Nevada County (Western part), CA",FALSE,21,22,23,  -   -,Yes,Serious,P,82107,06,057,d,Ozone_8-hr.2008.Nevada_Co,9/30/2023
+CALIFORNIA,CA,Nevada County,8-Hour Ozone (2015),,"Nevada County (Western part), CA",FALSE,21,22,23,  -   -,Yes,Serious,P,82042,06,057,d,Ozone_8-hr.2015.Nevada_Co,9/30/2023
+CALIFORNIA,CA,Orange County,8-Hour Ozone (2008),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,3010232,06,059,a,Ozone_8-hr.2008.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Orange County,8-Hour Ozone (2015),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,3010232,06,059,a,Ozone_8-hr.2015.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Orange County,PM-2.5 (1997),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,3010232,06,059,e,PM-2.5.1997.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Orange County,PM-2.5 (2006),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,3010232,06,059,d,PM-2.5.2006.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Orange County,PM-2.5 (2012),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,3010232,06,059,A,PM-2.5.2012.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Placer County,8-Hour Ozone (2008),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,338093,06,061,c,Ozone_8-hr.2008.Sacramento,9/30/2023
+CALIFORNIA,CA,Placer County,8-Hour Ozone (2015),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,337840,06,061,d,Ozone_8-hr.2015.Sacramento,9/30/2023
+CALIFORNIA,CA,Placer County,PM-2.5 (2006),,"Sacramento, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,314319,06,061,e,PM-2.5.2006.Sacramento,9/30/2023
+CALIFORNIA,CA,Plumas County,PM-2.5 (2012),,"Plumas County, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,5843,06,063,A,PM-2.5.2012.Plumas_Co,9/30/2023
+CALIFORNIA,CA,Riverside County,8-Hour Ozone (2008),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,1739657,06,065,a,Ozone_8-hr.2008.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Riverside County,8-Hour Ozone (2008),,"Morongo Band of Mission Indians, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,913,06,065,c,Ozone_8-hr.2008.Morongo,9/30/2023
+CALIFORNIA,CA,Riverside County,8-Hour Ozone (2008),,"Pechanga Band of Luiseno Mission Indians of the Pechanga Reservation, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,2730,06,065,e,Ozone_8-hr.2008.Pechanga,9/30/2023
+CALIFORNIA,CA,Riverside County,8-Hour Ozone (2008),,"Riverside County (Coachella Valley), CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,425806,06,065,a,Ozone_8-hr.2008.Coachella_Valley,9/30/2023
+CALIFORNIA,CA,Riverside County,8-Hour Ozone (2015),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,1737528,06,065,a,Ozone_8-hr.2015.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Riverside County,8-Hour Ozone (2015),,"Morongo Band of Mission Indians, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,932,06,065,d,Ozone_8-hr.2015.Morongo,9/30/2023
+CALIFORNIA,CA,Riverside County,8-Hour Ozone (2015),,"Pechanga Band of Luiseno Mission Indians of the Pechanga Reservation, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,639,06,065,e,Ozone_8-hr.2015.Pechanga,9/30/2023
+CALIFORNIA,CA,Riverside County,8-Hour Ozone (2015),,"Riverside County (Coachella Valley), CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,425029,06,065,c,Ozone_8-hr.2015.Coachella_Valley,9/30/2023
+CALIFORNIA,CA,Riverside County,PM-10 (1987),,"Riverside County; Coachella Valley planning area, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,257794,06,065,A,PM-10.1990.Coachella_Valley,9/30/2023
+CALIFORNIA,CA,Riverside County,PM-2.5 (1997),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,1740912,06,065,e,PM-2.5.1997.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Riverside County,PM-2.5 (2006),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,1740819,06,065,d,PM-2.5.2006.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Riverside County,PM-2.5 (2012),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,1740819,06,065,A,PM-2.5.2012.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Sacramento County,8-Hour Ozone (2008),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,W,1418788,06,067,c,Ozone_8-hr.2008.Sacramento,9/30/2023
+CALIFORNIA,CA,Sacramento County,8-Hour Ozone (2015),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,1418788,06,067,d,Ozone_8-hr.2015.Sacramento,9/30/2023
+CALIFORNIA,CA,Sacramento County,PM-2.5 (2006),,"Sacramento, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,1418788,06,067,e,PM-2.5.2006.Sacramento,9/30/2023
+CALIFORNIA,CA,San Bernardino County,8-Hour Ozone (2008),,"Los Angeles-San Bernardino Counties (West Mojave Desert), CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,489638,06,071,c,Ozone_8-hr.2008.LA-Desert,9/30/2023
+CALIFORNIA,CA,San Bernardino County,8-Hour Ozone (2008),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,1526629,06,071,a,Ozone_8-hr.2008.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,San Bernardino County,8-Hour Ozone (2015),,"Los Angeles-San Bernardino Counties (West Mojave Desert), CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,489531,06,071,c,Ozone_8-hr.2015.LA-Desert,9/30/2023
+CALIFORNIA,CA,San Bernardino County,8-Hour Ozone (2015),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,1526600,06,071,a,Ozone_8-hr.2015.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,San Bernardino County,PM-10 (1987),,"San Bernardino County, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,237418,06,071,B,PM-10.1990.San_Bernardino_Co,9/30/2023
+CALIFORNIA,CA,San Bernardino County,PM-10 (1987),,"Trona, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,4167,06,071,B,PM-10.1990.Trona,9/30/2023
+CALIFORNIA,CA,San Bernardino County,PM-2.5 (1997),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,1526626,06,071,e,PM-2.5.1997.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,San Bernardino County,PM-2.5 (2006),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,1526626,06,071,d,PM-2.5.2006.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,San Bernardino County,PM-2.5 (2012),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,1526626,06,071,A,PM-2.5.2012.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,San Diego County,8-Hour Ozone (2008),,"Pechanga Band of Luiseno Mission Indians of the Pechanga Reservation, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,114,06,073,e,Ozone_8-hr.2008.Pechanga,9/30/2023
+CALIFORNIA,CA,San Diego County,8-Hour Ozone (2008),,"San Diego County, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,3095199,06,073,c,Ozone_8-hr.2008.San_Diego,9/30/2023
+CALIFORNIA,CA,San Diego County,8-Hour Ozone (2015),,"Pechanga Band of Luiseno Mission Indians of the Pechanga Reservation, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,13,06,073,e,Ozone_8-hr.2015.Pechanga,9/30/2023
+CALIFORNIA,CA,San Diego County,8-Hour Ozone (2015),,"San Diego County, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,3077287,06,073,c,Ozone_8-hr.2015.San_Diego,9/30/2023
+CALIFORNIA,CA,San Francisco County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,805235,06,075,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,San Francisco County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,805235,06,075,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,San Francisco County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,805235,06,075,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,San Joaquin County,8-Hour Ozone (2008),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,685306,06,077,a,Ozone_8-hr.2008.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,San Joaquin County,8-Hour Ozone (2015),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,685306,06,077,a,Ozone_8-hr.2015.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,San Joaquin County,PM-2.5 (1997),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,685306,06,077,d,PM-2.5.1997.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,San Joaquin County,PM-2.5 (2006),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,685306,06,077,d,PM-2.5.2006.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,San Joaquin County,PM-2.5 (2012),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,685306,06,077,A,PM-2.5.2012.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,San Luis Obispo County,8-Hour Ozone (2008),,"San Luis Obispo (Eastern San Luis Obispo), CA",FALSE,21,22,23,  -   -,Yes,Marginal,P,1649,06,079,f,Ozone_8-hr.2008.San_Luis_Obispo,9/30/2023
+CALIFORNIA,CA,San Luis Obispo County,8-Hour Ozone (2015),,"San Luis Obispo (Eastern part), CA",FALSE,21,22,23,  -   -,Yes,Marginal,P,1290,06,079,f,Ozone_8-hr.2015.San_Luis_Obispo,9/30/2023
+CALIFORNIA,CA,San Mateo County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,718451,06,081,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,San Mateo County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,718451,06,081,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,San Mateo County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,718451,06,081,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,Santa Clara County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,1781642,06,085,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,Santa Clara County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,1781642,06,085,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,Santa Clara County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,1781642,06,085,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,Solano County,8-Hour Ozone (2008),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,129377,06,095,c,Ozone_8-hr.2008.Sacramento,9/30/2023
+CALIFORNIA,CA,Solano County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,P,285082,06,095,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,Solano County,8-Hour Ozone (2015),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,129291,06,095,d,Ozone_8-hr.2015.Sacramento,9/30/2023
+CALIFORNIA,CA,Solano County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,P,284053,06,095,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,Solano County,PM-2.5 (2006),,"Sacramento, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,129588,06,095,e,PM-2.5.2006.Sacramento,9/30/2023
+CALIFORNIA,CA,Solano County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,284288,06,095,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,Sonoma County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,P,434421,06,097,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,Sonoma County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,P,431795,06,097,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,Sonoma County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,433262,06,097,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,Stanislaus County,8-Hour Ozone (2008),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,514453,06,099,a,Ozone_8-hr.2008.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Stanislaus County,8-Hour Ozone (2015),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,514453,06,099,a,Ozone_8-hr.2015.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Stanislaus County,PM-2.5 (1997),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,514453,06,099,d,PM-2.5.1997.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Stanislaus County,PM-2.5 (2006),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,514453,06,099,d,PM-2.5.2006.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Stanislaus County,PM-2.5 (2012),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,514453,06,099,A,PM-2.5.2012.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Sutter County,8-Hour Ozone (2008),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,3433,06,101,c,Ozone_8-hr.2008.Sacramento,9/30/2023
+CALIFORNIA,CA,Sutter County,8-Hour Ozone (2015),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,3383,06,101,d,Ozone_8-hr.2015.Sacramento,9/30/2023
+CALIFORNIA,CA,Sutter County,8-Hour Ozone (2015),,"Sutter Buttes, CA",FALSE,21,22,23,  -   -,Yes,Marginal,P,3,06,101,f,Ozone_8-hr.2015.Sutter_Buttes,9/30/2023
+CALIFORNIA,CA,Tehama County,8-Hour Ozone (2008),,"Tuscan Buttes, CA",FALSE,21,22,23,  -   -,Yes,Marginal,P,0,06,103,f,Ozone_8-hr.2008.Tuscan_Buttes,9/30/2023
+CALIFORNIA,CA,Tehama County,8-Hour Ozone (2015),,"Tuscan Buttes, CA",FALSE,21,22,23,  -   -,Yes,Marginal (Rural Transport),P,0,06,103,g,Ozone_8-hr.2015.Tuscan_Buttes,9/30/2023
+CALIFORNIA,CA,Tulare County,8-Hour Ozone (2008),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,442179,06,107,a,Ozone_8-hr.2008.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Tulare County,8-Hour Ozone (2015),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,442179,06,107,a,Ozone_8-hr.2015.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Tulare County,PM-2.5 (1997),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,442179,06,107,d,PM-2.5.1997.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Tulare County,PM-2.5 (2006),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,442179,06,107,d,PM-2.5.2006.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Tulare County,PM-2.5 (2012),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,442179,06,107,A,PM-2.5.2012.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Tuolumne County,8-Hour Ozone (2015),,"Tuolumne County, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,55365,06,109,f,Ozone_8-hr.2015.Tuolumne_Co,9/30/2023
+CALIFORNIA,CA,Ventura County,8-Hour Ozone (2008),,"Ventura County, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,823262,06,111,d,Ozone_8-hr.2008.Ventura_Co,9/30/2023
+CALIFORNIA,CA,Ventura County,8-Hour Ozone (2015),,"Ventura County, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,820808,06,111,d,Ozone_8-hr.2015.Ventura_Co,9/30/2023
+CALIFORNIA,CA,Yolo County,8-Hour Ozone (2008),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,W,200849,06,113,c,Ozone_8-hr.2008.Sacramento,9/30/2023
+CALIFORNIA,CA,Yolo County,8-Hour Ozone (2015),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,200849,06,113,d,Ozone_8-hr.2015.Sacramento,9/30/2023
+CALIFORNIA,CA,Yolo County,PM-2.5 (2006),,"Sacramento, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,199151,06,113,e,PM-2.5.2006.Sacramento,9/30/2023
+COLORADO,CO,Adams County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,W,441603,08,001,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Adams County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,W,441603,08,001,e,Ozone_8-hr.2015.Denver,9/30/2023
+COLORADO,CO,Arapahoe County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,W,572003,08,005,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Arapahoe County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,W,572003,08,005,e,Ozone_8-hr.2015.Denver,9/30/2023
+COLORADO,CO,Boulder County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,W,294567,08,013,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Boulder County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,W,294567,08,013,e,Ozone_8-hr.2015.Denver,9/30/2023
+COLORADO,CO,Broomfield County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,W,55889,08,014,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Broomfield County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,W,55889,08,014,e,Ozone_8-hr.2015.Denver,9/30/2023
+COLORADO,CO,Denver County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,W,600158,08,031,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Denver County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,W,600158,08,031,e,Ozone_8-hr.2015.Denver,9/30/2023
+COLORADO,CO,Douglas County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,W,285465,08,035,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Douglas County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,W,285465,08,035,e,Ozone_8-hr.2015.Denver,9/30/2023
+COLORADO,CO,Jefferson County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,W,534543,08,059,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Jefferson County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,W,534543,08,059,e,Ozone_8-hr.2015.Denver,9/30/2023
+COLORADO,CO,Larimer County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,P,294389,08,069,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Larimer County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,P,294170,08,069,e,Ozone_8-hr.2015.Denver,9/30/2023
+COLORADO,CO,Weld County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,P,251522,08,123,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Weld County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,W,252825,08,123,e,Ozone_8-hr.2015.Denver,9/30/2023
+CONNECTICUT,CT,Fairfield County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,916829,09,001,c,Ozone_8-hr.2008.New_York,9/30/2023
+CONNECTICUT,CT,Fairfield County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,916829,09,001,e,Ozone_8-hr.2015.New_York,9/30/2023
+CONNECTICUT,CT,Hartford County,8-Hour Ozone (2008),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Serious,W,894014,09,003,d,Ozone_8-hr.2008.Connecticut,9/30/2023
+CONNECTICUT,CT,Hartford County,8-Hour Ozone (2015),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,894014,09,003,e,Ozone_8-hr.2015.Connecticut,9/30/2023
+CONNECTICUT,CT,Litchfield County,8-Hour Ozone (2008),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Serious,W,189927,09,005,d,Ozone_8-hr.2008.Connecticut,9/30/2023
+CONNECTICUT,CT,Litchfield County,8-Hour Ozone (2015),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,189927,09,005,e,Ozone_8-hr.2015.Connecticut,9/30/2023
+CONNECTICUT,CT,Middlesex County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,165676,09,007,c,Ozone_8-hr.2008.New_York,9/30/2023
+CONNECTICUT,CT,Middlesex County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,165676,09,007,e,Ozone_8-hr.2015.New_York,9/30/2023
+CONNECTICUT,CT,New Haven County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,862477,09,009,c,Ozone_8-hr.2008.New_York,9/30/2023
+CONNECTICUT,CT,New Haven County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,862477,09,009,e,Ozone_8-hr.2015.New_York,9/30/2023
+CONNECTICUT,CT,New London County,8-Hour Ozone (2008),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Serious,W,274055,09,011,d,Ozone_8-hr.2008.Connecticut,9/30/2023
+CONNECTICUT,CT,New London County,8-Hour Ozone (2015),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,274055,09,011,e,Ozone_8-hr.2015.Connecticut,9/30/2023
+CONNECTICUT,CT,Tolland County,8-Hour Ozone (2008),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Serious,W,152691,09,013,d,Ozone_8-hr.2008.Connecticut,9/30/2023
+CONNECTICUT,CT,Tolland County,8-Hour Ozone (2015),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,152691,09,013,e,Ozone_8-hr.2015.Connecticut,9/30/2023
+CONNECTICUT,CT,Windham County,8-Hour Ozone (2008),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Serious,W,118428,09,015,d,Ozone_8-hr.2008.Connecticut,9/30/2023
+CONNECTICUT,CT,Windham County,8-Hour Ozone (2015),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,118428,09,015,e,Ozone_8-hr.2015.Connecticut,9/30/2023
+DELAWARE,DE,New Castle County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,538479,10,003,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+DELAWARE,DE,New Castle County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,538479,10,003,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+DELAWARE,DE,Sussex County,8-Hour Ozone (2008),,"Seaford, DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,197145,10,005,f,Ozone_8-hr.2008.Sussex_Co,9/30/2023
+DISTRICT OF COLUMBIA,DC,District of Columbia,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,601723,11,001,e,Ozone_8-hr.2015.Washington,9/30/2023
+GUAM,GU,Guam,Sulfur Dioxide (1971),,"Piti, GU",FALSE,21,22,23,  -   -,Yes,Primary,P,1000,66,010,A,SO2.1978.Piti,9/30/2023
+GUAM,GU,Guam,Sulfur Dioxide (1971),,"Tanguisson, GU",FALSE,21,22,23,  -   -,Yes,Primary,P,1000,66,010,A,SO2.1978.Tanguisson,9/30/2023
+GUAM,GU,Guam,Sulfur Dioxide (2010),,"Piti-Cabras, GU",FALSE,21,22,23,  -   -,Yes,,P,6116,66,010,A,SO2.2010.Piti-Cabras,9/30/2023
+IDAHO,ID,Bannock County,PM-10 (1987),,"Power-Bannock Counties; Fort Hall Indian Reservation, ID",FALSE,21,22,23,  -   -,Yes,Moderate,P,315,16,005,B,PM-10.1990.Fort_Hall,9/30/2023
+IDAHO,ID,Power County,PM-10 (1987),,"Power-Bannock Counties; Fort Hall Indian Reservation, ID",FALSE,21,22,23,  -   -,Yes,Moderate,P,276,16,077,B,PM-10.1990.Fort_Hall,9/30/2023
+ILLINOIS,IL,Cook County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,W,5194675,17,031,e,Ozone_8-hr.2015.Chicago,9/30/2023
+ILLINOIS,IL,DuPage County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,W,916924,17,043,e,Ozone_8-hr.2015.Chicago,9/30/2023
+ILLINOIS,IL,Grundy County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,19251,17,063,e,Ozone_8-hr.2015.Chicago,9/30/2023
+ILLINOIS,IL,Kane County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,W,515269,17,089,e,Ozone_8-hr.2015.Chicago,9/30/2023
+ILLINOIS,IL,Kendall County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,49334,17,093,e,Ozone_8-hr.2015.Chicago,9/30/2023
+ILLINOIS,IL,Lake County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,W,703462,17,097,e,Ozone_8-hr.2015.Chicago,9/30/2023
+ILLINOIS,IL,Madison County,8-Hour Ozone (2015),,"St. Louis, MO-IL",FALSE,21,22,23,  -   -,Yes,Moderate,W,269282,17,119,e,Ozone_8-hr.2015.St_Louis,9/30/2023
+ILLINOIS,IL,Madison County,Sulfur Dioxide (2010),,"Alton Township, IL",FALSE,21,22,23,  -   -,Yes,,P,0,17,119,A,SO2.2010.Alton,9/30/2023
+ILLINOIS,IL,McHenry County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,W,308760,17,111,e,Ozone_8-hr.2015.Chicago,9/30/2023
+ILLINOIS,IL,Monroe County,8-Hour Ozone (2015),,"St. Louis, MO-IL",FALSE,21,22,23,  -   -,Yes,Moderate,W,32957,17,133,e,Ozone_8-hr.2015.St_Louis,9/30/2023
+ILLINOIS,IL,St. Clair County,8-Hour Ozone (2015),,"St. Louis, MO-IL",FALSE,21,22,23,  -   -,Yes,Moderate,W,270056,17,163,e,Ozone_8-hr.2015.St_Louis,9/30/2023
+ILLINOIS,IL,Will County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,W,677560,17,197,e,Ozone_8-hr.2015.Chicago,9/30/2023
+INDIANA,IN,Huntington County,Sulfur Dioxide (2010),,"Huntington, IN",FALSE,21,22,23,  -   -,Yes,,P,20838,18,069,A,SO2.2010.Huntington_IN,9/30/2023
+INDIANA,IN,Lake County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,421162,18,089,e,Ozone_8-hr.2015.Chicago,9/30/2023
+INDIANA,IN,Porter County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,140700,18,127,e,Ozone_8-hr.2015.Chicago,9/30/2023
+IOWA,IA,Muscatine County,Sulfur Dioxide (2010),,"Muscatine, IA",FALSE,21,22,23,  -   -,Yes,,P,30329,19,139,A,SO2.2010.Muscatine_Co,9/30/2023
+KANSAS,KS,Saline County,Lead (2008),,"Saline County, KS",FALSE,21,22,23,  -   -,Yes,,P,9,20,169,A,Lead.2008.Salina,9/30/2023
+KENTUCKY,KY,Boone County,8-Hour Ozone (2015),,"Cincinnati, OH-KY",TRUE,21,22,23,  -   -,Yes,Moderate,P,113158,21,015,e,Ozone_8-hr.2015.Cincinnati,9/30/2023
+KENTUCKY,KY,Bullitt County,8-Hour Ozone (2015),,"Louisville, KY-IN",TRUE,21,22,23,  -   -,Yes,Moderate,W,74319,21,029,e,Ozone_8-hr.2015.Louisville,9/30/2023
+KENTUCKY,KY,Campbell County,8-Hour Ozone (2015),,"Cincinnati, OH-KY",TRUE,21,22,23,  -   -,Yes,Moderate,P,82634,21,037,e,Ozone_8-hr.2015.Cincinnati,9/30/2023
+KENTUCKY,KY,Henderson County,Sulfur Dioxide (2010),,"Henderson-Webster Counties, KY",FALSE,21,22,23,  -   -,Yes,,P,3783,21,101,A,SO2.2010.Henderson_Webster_Cos,9/30/2023
+KENTUCKY,KY,Jefferson County,8-Hour Ozone (2015),,"Louisville, KY-IN",TRUE,21,22,23,  -   -,Yes,Moderate,W,741096,21,111,e,Ozone_8-hr.2015.Louisville,9/30/2023
+KENTUCKY,KY,Kenton County,8-Hour Ozone (2015),,"Cincinnati, OH-KY",TRUE,21,22,23,  -   -,Yes,Moderate,P,152176,21,117,e,Ozone_8-hr.2015.Cincinnati,9/30/2023
+KENTUCKY,KY,Oldham County,8-Hour Ozone (2015),,"Louisville, KY-IN",TRUE,21,22,23,  -   -,Yes,Moderate,W,60316,21,185,e,Ozone_8-hr.2015.Louisville,9/30/2023
+KENTUCKY,KY,Webster County,Sulfur Dioxide (2010),,"Henderson-Webster Counties, KY",FALSE,21,22,23,  -   -,Yes,,P,3149,21,233,A,SO2.2010.Henderson_Webster_Cos,9/30/2023
+LOUISIANA,LA,Evangeline Parish,Sulfur Dioxide (2010),,"Evangeline Parish (Partial), LA",FALSE,21,22,23,  -   -,Yes,,P,124,22,039,A,SO2.2010.Evangeline_Par,9/30/2023
+LOUISIANA,LA,St. Bernard Parish,Sulfur Dioxide (2010),,"St. Bernard Parish, LA",FALSE,21,22,23,  -   -,Yes,,W,35897,22,087,A,SO2.2010.St_Bernard_Par,9/30/2023
+MARYLAND,MD,Anne Arundel County,8-Hour Ozone (2008),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,537656,24,003,e,Ozone_8-hr.2008.Baltimore,9/30/2023
+MARYLAND,MD,Anne Arundel County,8-Hour Ozone (2015),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,537656,24,003,e,Ozone_8-hr.2015.Baltimore,9/30/2023
+MARYLAND,MD,Anne Arundel County,Sulfur Dioxide (2010),,"Anne Arundel County and Baltimore County, MD",FALSE,21,22,23,  -   -,Yes,,P,479620,24,003,A,SO2.2010.Baltimore,9/30/2023
+MARYLAND,MD,Baltimore County,8-Hour Ozone (2008),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,805029,24,005,e,Ozone_8-hr.2008.Baltimore,9/30/2023
+MARYLAND,MD,Baltimore County,8-Hour Ozone (2015),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,805029,24,005,e,Ozone_8-hr.2015.Baltimore,9/30/2023
+MARYLAND,MD,Baltimore County,Sulfur Dioxide (2010),,"Anne Arundel County and Baltimore County, MD",FALSE,21,22,23,  -   -,Yes,,P,510713,24,005,A,SO2.2010.Baltimore,9/30/2023
+MARYLAND,MD,Baltimore city,8-Hour Ozone (2008),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,620961,24,510,e,Ozone_8-hr.2008.Baltimore,9/30/2023
+MARYLAND,MD,Baltimore city,8-Hour Ozone (2015),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,620961,24,510,e,Ozone_8-hr.2015.Baltimore,9/30/2023
+MARYLAND,MD,Calvert County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,88737,24,009,e,Ozone_8-hr.2015.Washington,9/30/2023
+MARYLAND,MD,Carroll County,8-Hour Ozone (2008),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,167134,24,013,e,Ozone_8-hr.2008.Baltimore,9/30/2023
+MARYLAND,MD,Carroll County,8-Hour Ozone (2015),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,167134,24,013,e,Ozone_8-hr.2015.Baltimore,9/30/2023
+MARYLAND,MD,Cecil County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,101108,24,015,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+MARYLAND,MD,Cecil County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,101108,24,015,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+MARYLAND,MD,Charles County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,146551,24,017,e,Ozone_8-hr.2015.Washington,9/30/2023
+MARYLAND,MD,Frederick County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,233385,24,021,e,Ozone_8-hr.2015.Washington,9/30/2023
+MARYLAND,MD,Harford County,8-Hour Ozone (2008),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,244826,24,025,e,Ozone_8-hr.2008.Baltimore,9/30/2023
+MARYLAND,MD,Harford County,8-Hour Ozone (2015),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,244826,24,025,e,Ozone_8-hr.2015.Baltimore,9/30/2023
+MARYLAND,MD,Howard County,8-Hour Ozone (2008),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,287085,24,027,e,Ozone_8-hr.2008.Baltimore,9/30/2023
+MARYLAND,MD,Howard County,8-Hour Ozone (2015),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,287085,24,027,e,Ozone_8-hr.2015.Baltimore,9/30/2023
+MARYLAND,MD,Montgomery County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,971777,24,031,e,Ozone_8-hr.2015.Washington,9/30/2023
+MARYLAND,MD,Prince George's County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,863420,24,033,e,Ozone_8-hr.2015.Washington,9/30/2023
+MASSACHUSETTS,MA,Dukes County,8-Hour Ozone (2008),,"Dukes County, MA",FALSE,21,22,23,  -   -,Yes,Marginal,W,16535,25,007,f,Ozone_8-hr.2008.Dukes_Co,9/30/2023
+MICHIGAN,MI,Allegan County,8-Hour Ozone (2015),,"Allegan County, MI",FALSE,21,22,23,  -   -,Yes,Moderate,P,46615,26,005,e,Ozone_8-hr.2015.Allegan_Co,9/30/2023
+MICHIGAN,MI,Berrien County,8-Hour Ozone (2015),,"Berrien County, MI",FALSE,21,22,23,  -   -,Yes,Moderate,W,156813,26,021,e,Ozone_8-hr.2015.Benton_Harbor,9/30/2023
+MICHIGAN,MI,Muskegon County,8-Hour Ozone (2015),,"Muskegon County, MI",FALSE,21,22,23,  -   -,Yes,Moderate,P,146852,26,121,e,Ozone_8-hr.2015.Muskegon,9/30/2023
+MICHIGAN,MI,St. Clair County,Sulfur Dioxide (2010),,"St. Clair, MI",FALSE,21,22,23,  -   -,Yes,,P,52102,26,147,A,SO2.2010.St_Clair,9/30/2023
+MICHIGAN,MI,Wayne County,Sulfur Dioxide (2010),,"Detroit, MI",FALSE,21,22,23,  -   -,Yes,,P,254079,26,163,A,SO2.2010.Detroit,9/30/2023
+MINNESOTA,MN,Dakota County,Lead (2008),,"Eagan, MN",FALSE,21,22,23,  -   -,Yes,,P,8997,27,037,A,Lead.2008.Eagan,9/30/2023
+MISSOURI,MO,Dent County,Lead (2008),,"Iron, Dent, and Reynolds Counties, MO",FALSE,21,22,23,  -   -,Yes,,P,106,29,065,A,Lead.2008.Iron,9/30/2023
+MISSOURI,MO,Franklin County,8-Hour Ozone (2015),,"St. Louis, MO-IL",FALSE,21,22,23,  -   -,Yes,Moderate,P,18108,29,071,e,Ozone_8-hr.2015.St_Louis,9/30/2023
+MISSOURI,MO,Iron County,Lead (2008),,"Iron, Dent, and Reynolds Counties, MO",FALSE,21,22,23,  -   -,Yes,,P,253,29,093,A,Lead.2008.Iron,9/30/2023
+MISSOURI,MO,Jefferson County,8-Hour Ozone (2015),,"St. Louis, MO-IL",FALSE,21,22,23,  -   -,Yes,Moderate,W,218733,29,099,e,Ozone_8-hr.2015.St_Louis,9/30/2023
+MISSOURI,MO,Jefferson County,Lead (1978),,"Jefferson County (part); Herculaneum, MO",FALSE,21,22,23,  -   -,Yes,,P,2560,29,099,A,Lead.1992.Herculaneum,9/30/2023
+MISSOURI,MO,Jefferson County,Lead (2008),,"Jefferson County, MO",FALSE,21,22,23,  -   -,Yes,,P,4814,29,099,A,Lead.2008.Herculaneum,9/30/2023
+MISSOURI,MO,New Madrid County,Sulfur Dioxide (2010),,"New Madrid County, MO",FALSE,21,22,23,  -   -,Yes,,P,2,29,143,A,SO2.2010.New_Madrid_Co,9/30/2023
+MISSOURI,MO,Reynolds County,Lead (2008),,"Iron, Dent, and Reynolds Counties, MO",FALSE,21,22,23,  -   -,Yes,,P,101,29,179,A,Lead.2008.Iron,9/30/2023
+MISSOURI,MO,St. Charles County,8-Hour Ozone (2015),,"St. Louis, MO-IL",FALSE,21,22,23,  -   -,Yes,Moderate,W,360485,29,183,e,Ozone_8-hr.2015.St_Louis,9/30/2023
+MISSOURI,MO,St. Louis County,8-Hour Ozone (2015),,"St. Louis, MO-IL",FALSE,21,22,23,  -   -,Yes,Moderate,W,998954,29,189,e,Ozone_8-hr.2015.St_Louis,9/30/2023
+MISSOURI,MO,St. Louis city,8-Hour Ozone (2015),,"St. Louis, MO-IL",FALSE,21,22,23,  -   -,Yes,Moderate,W,319294,29,510,e,Ozone_8-hr.2015.St_Louis,9/30/2023
+MONTANA,MT,Lake County,PM-10 (1987),,"Lake County; Polson, MT",FALSE,21,22,23,  -   -,Yes,Moderate,P,4099,30,047,B,PM-10.1990.Polson,9/30/2023
+MONTANA,MT,Lake County,PM-10 (1987),,"Lake County; Ronan, MT",FALSE,21,22,23,  -   -,Yes,Moderate,P,2734,30,047,B,PM-10.1990.Ronan,9/30/2023
+MONTANA,MT,Rosebud County,PM-10 (1987),,"Rosebud County; Lame Deer, MT",FALSE,21,22,23,  -   -,Yes,Moderate,P,527,30,087,B,PM-10.1990.Lame_Deer,9/30/2023
+MONTANA,MT,Yellowstone County,Sulfur Dioxide (1971),,"Laurel Area (Yellowstone County), MT",FALSE,21,22,23,  -   -,Yes,Primary,P,6525,30,111,A,SO2.1978.Laurel,9/30/2023
+NEVADA,NV,Clark County,8-Hour Ozone (2015),,"Las Vegas, NV",FALSE,21,22,23,  -   -,Yes,Moderate,P,1892250,32,003,e,Ozone_8-hr.2015.Las_Vegas,9/30/2023
+NEW JERSEY,NJ,Atlantic County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,274549,34,001,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Atlantic County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,274549,34,001,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Bergen County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,905116,34,003,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Bergen County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,905116,34,003,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Burlington County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,448734,34,005,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Burlington County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,448734,34,005,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Camden County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,513657,34,007,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Camden County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,513657,34,007,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Cape May County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,97265,34,009,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Cape May County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,97265,34,009,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Cumberland County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,156898,34,011,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Cumberland County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,156898,34,011,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Essex County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,783969,34,013,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Essex County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,783969,34,013,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Gloucester County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,288288,34,015,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Gloucester County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,288288,34,015,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Hudson County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,634266,34,017,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Hudson County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,634266,34,017,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Hunterdon County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,128349,34,019,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Hunterdon County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,128349,34,019,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Mercer County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,366513,34,021,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Mercer County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,366513,34,021,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Middlesex County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,809858,34,023,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Middlesex County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,809858,34,023,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Monmouth County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,630380,34,025,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Monmouth County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,630380,34,025,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Morris County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,492276,34,027,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Morris County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,492276,34,027,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Ocean County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,576567,34,029,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Ocean County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,576567,34,029,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Passaic County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,501226,34,031,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Passaic County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,501226,34,031,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Salem County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,66083,34,033,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Salem County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,66083,34,033,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Somerset County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,323444,34,035,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Somerset County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,323444,34,035,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Sussex County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,149265,34,037,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Sussex County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,149265,34,037,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Union County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,536499,34,039,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Union County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,536499,34,039,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Warren County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,108692,34,041,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Warren County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,108692,34,041,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Warren County,Sulfur Dioxide (1971),,"Warren County, NJ",FALSE,21,22,23,  -   -,Yes,"Primary, Secondary",P,108696,34,041,B,SO2.1978.Warren_Co,9/30/2023
+NEW MEXICO,NM,Dona Ana County,8-Hour Ozone (2015),,"El Paso-Las Cruces, TX-NM",FALSE,21,22,23,  -   -,Yes,Marginal,P,12675,35,013,f,Ozone_8-hr.2015.El_Paso,9/30/2023
+NEW MEXICO,NM,Dona Ana County,PM-10 (1987),,"Dona Ana County; Anthony, NM",FALSE,21,22,23,  -   -,Yes,Moderate,P,3096,35,013,B,PM-10.1990.Anthony,9/30/2023
+NEW YORK,NY,Bronx County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,1385108,36,005,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,Bronx County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,1385108,36,005,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW YORK,NY,Chautauqua County,8-Hour Ozone (2008),,"Jamestown, NY",FALSE,21,22,23,  -   -,Yes,Marginal,W,134905,36,013,f,Ozone_8-hr.2008.Jamestown,9/30/2023
+NEW YORK,NY,Kings County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,2504700,36,047,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,Kings County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,2504700,36,047,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW YORK,NY,Nassau County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,1339532,36,059,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,Nassau County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,1339532,36,059,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW YORK,NY,New York County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,1585873,36,061,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,New York County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,1585873,36,061,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW YORK,NY,New York County,PM-10 (1987),,"New York County, NY",FALSE,21,22,23,  -   -,Yes,Moderate,W,1585873,36,061,B,PM-10.1990.New_York,9/30/2023
+NEW YORK,NY,Queens County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,2230722,36,081,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,Queens County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,2230722,36,081,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW YORK,NY,Richmond County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,468730,36,085,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,Richmond County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,468730,36,085,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW YORK,NY,Rockland County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,311687,36,087,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,Rockland County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,311687,36,087,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW YORK,NY,St. Lawrence County,Sulfur Dioxide (2010),,"St. Lawrence County, NY",FALSE,21,22,23,  -   -,Yes,,P,11922,36,089,A,SO2.2010.St_Lawrence_Co,9/30/2023
+NEW YORK,NY,Suffolk County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,1493350,36,103,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,Suffolk County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,1493350,36,103,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW YORK,NY,Westchester County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,949113,36,119,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,Westchester County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,949113,36,119,e,Ozone_8-hr.2015.New_York,9/30/2023
+OHIO,OH,Cuyahoga County,8-Hour Ozone (2015),,"Cleveland, OH",FALSE,21,22,23,  -   -,Yes,Moderate,W,1280122,39,035,e,Ozone_8-hr.2015.Cleveland,9/30/2023
+OHIO,OH,Geauga County,8-Hour Ozone (2015),,"Cleveland, OH",FALSE,21,22,23,  -   -,Yes,Moderate,W,93389,39,055,e,Ozone_8-hr.2015.Cleveland,9/30/2023
+OHIO,OH,Lake County,8-Hour Ozone (2015),,"Cleveland, OH",FALSE,21,22,23,  -   -,Yes,Moderate,W,230041,39,085,e,Ozone_8-hr.2015.Cleveland,9/30/2023
+OHIO,OH,Lorain County,8-Hour Ozone (2015),,"Cleveland, OH",FALSE,21,22,23,  -   -,Yes,Moderate,W,301356,39,093,e,Ozone_8-hr.2015.Cleveland,9/30/2023
+OHIO,OH,Medina County,8-Hour Ozone (2015),,"Cleveland, OH",FALSE,21,22,23,  -   -,Yes,Moderate,W,172332,39,103,e,Ozone_8-hr.2015.Cleveland,9/30/2023
+OHIO,OH,Morgan County,Sulfur Dioxide (2010),,"Muskingum River, OH",FALSE,21,22,23,  -   -,Yes,,P,743,39,115,A,SO2.2010.Muskingum_River,9/30/2023
+OHIO,OH,Portage County,8-Hour Ozone (2015),,"Cleveland, OH",FALSE,21,22,23,  -   -,Yes,Moderate,W,161419,39,133,e,Ozone_8-hr.2015.Cleveland,9/30/2023
+OHIO,OH,Stark County,Lead (2008),,"Canton-Stark County, OH",FALSE,,,23,  -   -,Yes,,P,6188,39,151,A,Lead.2008.Canton,9/30/2023
+OHIO,OH,Summit County,8-Hour Ozone (2015),,"Cleveland, OH",FALSE,21,22,23,  -   -,Yes,Moderate,W,541781,39,153,e,Ozone_8-hr.2015.Cleveland,9/30/2023
+OHIO,OH,Washington County,Sulfur Dioxide (2010),,"Muskingum River, OH",FALSE,21,22,23,  -   -,Yes,,P,3713,39,167,A,SO2.2010.Muskingum_River,9/30/2023
+OREGON,OR,Klamath County,PM-2.5 (2006),,"Klamath Falls, OR",FALSE,21,22,23,  -   -,Yes,Moderate,P,46969,41,035,e,PM-2.5.2006.Klamath_Falls,9/30/2023
+PENNSYLVANIA,PA,Allegheny County,8-Hour Ozone (2008),,"Pittsburgh-Beaver Valley, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,1223348,42,003,f,Ozone_8-hr.2008.Pittsburgh,9/30/2023
+PENNSYLVANIA,PA,Allegheny County,PM-2.5 (1997),,"Liberty-Clairton, PA",FALSE,21,22,23,  -   -,Yes,Moderate,P,20789,42,003,e,PM-2.5.1997.Liberty-Clairton,9/30/2023
+PENNSYLVANIA,PA,Allegheny County,PM-2.5 (2006),,"Liberty-Clairton, PA",FALSE,21,22,23,  -   -,Yes,Moderate,P,20789,42,003,e,PM-2.5.2006.Liberty-Clairton,9/30/2023
+PENNSYLVANIA,PA,Allegheny County,PM-2.5 (2012),,"Allegheny County, PA",FALSE,21,22,23,  -   -,Yes,Moderate,W,1223348,42,003,B,PM-2.5.2012.Allegheny_Co,9/30/2023
+PENNSYLVANIA,PA,Allegheny County,Sulfur Dioxide (2010),,"Allegheny, PA",FALSE,21,22,23,  -   -,Yes,,P,126934,42,003,A,SO2.2010.Liberty-Clairton,9/30/2023
+PENNSYLVANIA,PA,Armstrong County,8-Hour Ozone (2008),,"Pittsburgh-Beaver Valley, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,68941,42,005,f,Ozone_8-hr.2008.Pittsburgh,9/30/2023
+PENNSYLVANIA,PA,Armstrong County,Sulfur Dioxide (1971),,"Armstrong County: Madison, Mahoning, Boggs, Washington, Pine, PA",FALSE,21,22,23,  -   -,Yes,Primary,P,4516,42,005,A,SO2.1978.Armstrong_Co,9/30/2023
+PENNSYLVANIA,PA,Armstrong County,Sulfur Dioxide (2010),,"Indiana, PA",FALSE,21,22,23,  -   -,Yes,,P,3898,42,005,A,SO2.2010.Indiana_Co,9/30/2023
+PENNSYLVANIA,PA,Beaver County,8-Hour Ozone (2008),,"Pittsburgh-Beaver Valley, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,170539,42,007,f,Ozone_8-hr.2008.Pittsburgh,9/30/2023
+PENNSYLVANIA,PA,Beaver County,Lead (2008),,"Lower Beaver Valley, PA",FALSE,21,22,23,  -   -,Yes,,P,17654,42,007,A,Lead.2008.Lower_Beaver_Valley,9/30/2023
+PENNSYLVANIA,PA,Beaver County,Sulfur Dioxide (2010),,"Beaver, PA",FALSE,21,22,23,  -   -,Yes,,P,14780,42,007,A,SO2.2010.Lower_Beaver_Valley,9/30/2023
+PENNSYLVANIA,PA,Berks County,8-Hour Ozone (2008),,"Reading, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,411442,42,011,f,Ozone_8-hr.2008.Reading,9/30/2023
+PENNSYLVANIA,PA,Berks County,Lead (2008),,"Lyons, PA",FALSE,21,22,23,  -   -,Yes,,P,19480,42,011,A,Lead.2008.Lyons,9/30/2023
+PENNSYLVANIA,PA,Berks County,Lead (2008),,"North Reading, PA",FALSE,21,22,23,  -   -,Yes,,P,29334,42,011,A,Lead.2008.Reading,9/30/2023
+PENNSYLVANIA,PA,Bucks County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,625249,42,017,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Bucks County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,625249,42,017,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Butler County,8-Hour Ozone (2008),,"Pittsburgh-Beaver Valley, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,183862,42,019,f,Ozone_8-hr.2008.Pittsburgh,9/30/2023
+PENNSYLVANIA,PA,Carbon County,8-Hour Ozone (2008),,"Allentown-Bethlehem-Easton, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,65249,42,025,f,Ozone_8-hr.2008.Allentown,9/30/2023
+PENNSYLVANIA,PA,Chester County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,498886,42,029,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Chester County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,498886,42,029,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Delaware County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,558979,42,045,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Delaware County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,558979,42,045,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Fayette County,8-Hour Ozone (2008),,"Pittsburgh-Beaver Valley, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,136606,42,051,f,Ozone_8-hr.2008.Pittsburgh,9/30/2023
+PENNSYLVANIA,PA,Indiana County,Sulfur Dioxide (2010),,"Indiana, PA",FALSE,21,22,23,  -   -,Yes,,W,88880,42,063,A,SO2.2010.Indiana_Co,9/30/2023
+PENNSYLVANIA,PA,Lancaster County,8-Hour Ozone (2008),,"Lancaster, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,519445,42,071,f,Ozone_8-hr.2008.Lancaster,9/30/2023
+PENNSYLVANIA,PA,Lehigh County,8-Hour Ozone (2008),,"Allentown-Bethlehem-Easton, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,349497,42,077,f,Ozone_8-hr.2008.Allentown,9/30/2023
+PENNSYLVANIA,PA,Montgomery County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,799874,42,091,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Montgomery County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,799874,42,091,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Northampton County,8-Hour Ozone (2008),,"Allentown-Bethlehem-Easton, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,297735,42,095,f,Ozone_8-hr.2008.Allentown,9/30/2023
+PENNSYLVANIA,PA,Philadelphia County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,1526006,42,101,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Philadelphia County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,1526006,42,101,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Warren County,Sulfur Dioxide (2010),,"Warren, PA",FALSE,21,22,23,  -   -,Yes,,P,18056,42,123,A,SO2.2010.Warren_Co,9/30/2023
+PENNSYLVANIA,PA,Washington County,8-Hour Ozone (2008),,"Pittsburgh-Beaver Valley, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,207820,42,125,f,Ozone_8-hr.2008.Pittsburgh,9/30/2023
+PENNSYLVANIA,PA,Westmoreland County,8-Hour Ozone (2008),,"Pittsburgh-Beaver Valley, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,365169,42,129,f,Ozone_8-hr.2008.Pittsburgh,9/30/2023
+PUERTO RICO,PR,Arecibo Municipio,Lead (2008),,"Arecibo, PR",FALSE,21,22,23,  -   -,Yes,,P,32185,72,013,A,Lead.2008.Arecibo,9/30/2023
+PUERTO RICO,PR,Bayamon Municipio,Sulfur Dioxide (2010),,"San Juan, PR",FALSE,21,22,23,  -   -,Yes,,P,22921,72,021,A,SO2.2010.San_Juan,9/30/2023
+PUERTO RICO,PR,Catano Municipio,Sulfur Dioxide (2010),,"San Juan, PR",FALSE,21,22,23,  -   -,Yes,,W,28140,72,033,A,SO2.2010.San_Juan,9/30/2023
+PUERTO RICO,PR,Guaynabo Municipio,Sulfur Dioxide (2010),,"San Juan, PR",FALSE,21,22,23,  -   -,Yes,,P,23802,72,061,A,SO2.2010.San_Juan,9/30/2023
+PUERTO RICO,PR,Salinas Municipio,Sulfur Dioxide (2010),,"Guayama-Salinas, PR",FALSE,21,22,23,  -   -,Yes,,P,23401,72,123,A,SO2.2010.Guayama-Salinas,9/30/2023
+PUERTO RICO,PR,San Juan Municipio,Sulfur Dioxide (2010),,"San Juan, PR",FALSE,21,22,23,  -   -,Yes,,P,147963,72,127,A,SO2.2010.San_Juan,9/30/2023
+PUERTO RICO,PR,Toa Baja Municipio,Sulfur Dioxide (2010),,"San Juan, PR",FALSE,21,22,23,  -   -,Yes,,P,52441,72,137,A,SO2.2010.San_Juan,9/30/2023
+TENNESSEE,TN,Sullivan County,Sulfur Dioxide (2010),,"Sullivan County, TN",FALSE,21,22,23,  -   -,Yes,,P,15289,47,163,A,SO2.2010.Kingsport,9/30/2023
+TEXAS,TX,Anderson County,Sulfur Dioxide (2010),,"Freestone and Anderson Counties, TX",FALSE,21,22,23,  -   -,Yes,,P,7,48,001,A,SO2.2010.Freestone_Anderson_Cos,9/30/2023
+TEXAS,TX,Bexar County,8-Hour Ozone (2015),,"San Antonio, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,1714773,48,029,e,Ozone_8-hr.2015.San_Antonio,9/30/2023
+TEXAS,TX,Brazoria County,8-Hour Ozone (2008),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,313166,48,039,c,Ozone_8-hr.2008.Houston,9/30/2023
+TEXAS,TX,Brazoria County,8-Hour Ozone (2015),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,313166,48,039,e,Ozone_8-hr.2015.Houston,9/30/2023
+TEXAS,TX,Chambers County,8-Hour Ozone (2008),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,35096,48,071,c,Ozone_8-hr.2008.Houston,9/30/2023
+TEXAS,TX,Chambers County,8-Hour Ozone (2015),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,35096,48,071,e,Ozone_8-hr.2015.Houston,9/30/2023
+TEXAS,TX,Collin County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,782341,48,085,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Collin County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,782341,48,085,e,Ozone_8-hr.2015.Dallas,9/30/2023
+TEXAS,TX,Dallas County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,2368139,48,113,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Dallas County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,2368139,48,113,e,Ozone_8-hr.2015.Dallas,9/30/2023
+TEXAS,TX,Denton County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,662614,48,121,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Denton County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,662614,48,121,e,Ozone_8-hr.2015.Dallas,9/30/2023
+TEXAS,TX,El Paso County,8-Hour Ozone (2015),,"El Paso-Las Cruces, TX-NM",FALSE,21,22,23,  -   -,Yes,Marginal,W,800647,48,141,f,Ozone_8-hr.2015.El_Paso,9/30/2023
+TEXAS,TX,El Paso County,PM-10 (1987),,"El Paso County, TX",FALSE,21,22,23,  -   -,Yes,Moderate,P,649121,48,141,B,PM-10.1990.El_Paso,9/30/2023
+TEXAS,TX,Ellis County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,149610,48,139,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Ellis County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,149610,48,139,e,Ozone_8-hr.2015.Dallas,9/30/2023
+TEXAS,TX,Fort Bend County,8-Hour Ozone (2008),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,585375,48,157,c,Ozone_8-hr.2008.Houston,9/30/2023
+TEXAS,TX,Fort Bend County,8-Hour Ozone (2015),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,585375,48,157,e,Ozone_8-hr.2015.Houston,9/30/2023
+TEXAS,TX,Freestone County,Sulfur Dioxide (2010),,"Freestone and Anderson Counties, TX",FALSE,21,22,23,  -   -,Yes,,P,4087,48,161,A,SO2.2010.Freestone_Anderson_Cos,9/30/2023
+TEXAS,TX,Galveston County,8-Hour Ozone (2008),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,291309,48,167,c,Ozone_8-hr.2008.Houston,9/30/2023
+TEXAS,TX,Galveston County,8-Hour Ozone (2015),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,291309,48,167,e,Ozone_8-hr.2015.Houston,9/30/2023
+TEXAS,TX,Harris County,8-Hour Ozone (2008),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,4092459,48,201,c,Ozone_8-hr.2008.Houston,9/30/2023
+TEXAS,TX,Harris County,8-Hour Ozone (2015),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,4092459,48,201,e,Ozone_8-hr.2015.Houston,9/30/2023
+TEXAS,TX,Howard County,Sulfur Dioxide (2010),,"Howard County, TX",FALSE,21,22,23,  -   -,Yes,,P,281,48,227,A,SO2.2010.Howard_Co,9/30/2023
+TEXAS,TX,Hutchinson County,Sulfur Dioxide (2010),,"Hutchinson County, TX",FALSE,21,22,23,  -   -,Yes,,P,14593,48,233,A,SO2.2010.Hutchinson_Co,9/30/2023
+TEXAS,TX,Johnson County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,150934,48,251,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Johnson County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,150934,48,251,e,Ozone_8-hr.2015.Dallas,9/30/2023
+TEXAS,TX,Kaufman County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,103350,48,257,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Kaufman County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,103350,48,257,e,Ozone_8-hr.2015.Dallas,9/30/2023
+TEXAS,TX,Liberty County,8-Hour Ozone (2008),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,75643,48,291,c,Ozone_8-hr.2008.Houston,9/30/2023
+TEXAS,TX,Montgomery County,8-Hour Ozone (2008),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,455746,48,339,c,Ozone_8-hr.2008.Houston,9/30/2023
+TEXAS,TX,Montgomery County,8-Hour Ozone (2015),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,455746,48,339,e,Ozone_8-hr.2015.Houston,9/30/2023
+TEXAS,TX,Navarro County,Sulfur Dioxide (2010),,"Navarro County, TX",FALSE,21,22,23,  -   -,Yes,,P,1593,48,349,A,SO2.2010.Navarro_Co,9/30/2023
+TEXAS,TX,Panola County,Sulfur Dioxide (2010),,"Rusk and Panola Counties, TX",FALSE,21,22,23,  -   -,Yes,,P,24,48,365,A,SO2.2010.Rusk_Panola_Cos,9/30/2023
+TEXAS,TX,Parker County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,116927,48,367,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Parker County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,116927,48,367,e,Ozone_8-hr.2015.Dallas,9/30/2023
+TEXAS,TX,Rockwall County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,78337,48,397,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Rusk County,Sulfur Dioxide (2010),,"Rusk and Panola Counties, TX",FALSE,21,22,23,  -   -,Yes,,P,1656,48,401,A,SO2.2010.Rusk_Panola_Cos,9/30/2023
+TEXAS,TX,Tarrant County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,1809034,48,439,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Tarrant County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,1809034,48,439,e,Ozone_8-hr.2015.Dallas,9/30/2023
+TEXAS,TX,Titus County,Sulfur Dioxide (2010),,"Titus County, TX",FALSE,21,22,23,  -   -,Yes,,P,211,48,449,A,SO2.2010.Titus_Co,9/30/2023
+TEXAS,TX,Waller County,8-Hour Ozone (2008),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,43205,48,473,c,Ozone_8-hr.2008.Houston,9/30/2023
+TEXAS,TX,Wise County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,59127,48,497,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Wise County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,59127,48,497,e,Ozone_8-hr.2015.Dallas,9/30/2023
+UTAH,UT,Box Elder County,PM-2.5 (2006),,"Salt Lake City, UT",FALSE,21,22,23,  -   -,Yes,Serious,P,49057,49,003,d,PM-2.5.2006.Salt_Lake,9/30/2023
+UTAH,UT,Davis County,8-Hour Ozone (2015),,"Northern Wasatch Front, UT",FALSE,21,22,23,  -   -,Yes,Moderate,W,306479,49,011,e,Ozone_8-hr.2015.Salt_Lake,9/30/2023
+UTAH,UT,Davis County,PM-2.5 (2006),,"Salt Lake City, UT",FALSE,21,22,23,  -   -,Yes,Serious,W,306479,49,011,d,PM-2.5.2006.Salt_Lake,9/30/2023
+UTAH,UT,Duchesne County,8-Hour Ozone (2015),,"Uinta Basin, UT",FALSE,21,22,23,  -   -,Yes,Marginal,P,15338,49,013,f,Ozone_8-hr.2015.Uinta_Basin,9/30/2023
+UTAH,UT,Salt Lake County,8-Hour Ozone (2015),,"Northern Wasatch Front, UT",FALSE,21,22,23,  -   -,Yes,Moderate,W,1029655,49,035,e,Ozone_8-hr.2015.Salt_Lake,9/30/2023
+UTAH,UT,Salt Lake County,PM-2.5 (2006),,"Salt Lake City, UT",FALSE,21,22,23,  -   -,Yes,Serious,W,1029655,49,035,d,PM-2.5.2006.Salt_Lake,9/30/2023
+UTAH,UT,Salt Lake County,Sulfur Dioxide (1971),,"Salt Lake County, UT",FALSE,21,22,23,  -   -,Yes,"Primary, Secondary",W,1029655,49,035,B,SO2.1978.Salt_Lake,9/30/2023
+UTAH,UT,Tooele County,8-Hour Ozone (2015),,"Northern Wasatch Front, UT",FALSE,21,22,23,  -   -,Yes,Moderate,P,54857,49,045,e,Ozone_8-hr.2015.Salt_Lake,9/30/2023
+UTAH,UT,Tooele County,PM-2.5 (2006),,"Salt Lake City, UT",FALSE,21,22,23,  -   -,Yes,Serious,P,54958,49,045,d,PM-2.5.2006.Salt_Lake,9/30/2023
+UTAH,UT,Tooele County,Sulfur Dioxide (1971),,"Tooele County, UT",FALSE,21,22,23,  -   -,Yes,"Primary, Secondary",P,58218,49,045,B,SO2.1978.Tooele_Co,9/30/2023
+UTAH,UT,Uintah County,8-Hour Ozone (2015),,"Uinta Basin, UT",FALSE,21,22,23,  -   -,Yes,Marginal,P,31979,49,047,f,Ozone_8-hr.2015.Uinta_Basin,9/30/2023
+UTAH,UT,Utah County,8-Hour Ozone (2015),,"Southern Wasatch Front, UT",FALSE,21,22,23,  -   -,Yes,Marginal,P,515895,49,049,f,Ozone_8-hr.2015.Provo,9/30/2023
+UTAH,UT,Utah County,PM-2.5 (2006),,"Provo, UT",FALSE,21,22,23,  -   -,Yes,Serious,P,517537,49,049,d,PM-2.5.2006.Provo,9/30/2023
+UTAH,UT,Weber County,8-Hour Ozone (2015),,"Northern Wasatch Front, UT",FALSE,21,22,23,  -   -,Yes,Moderate,P,224583,49,057,e,Ozone_8-hr.2015.Salt_Lake,9/30/2023
+UTAH,UT,Weber County,PM-2.5 (2006),,"Salt Lake City, UT",FALSE,21,22,23,  -   -,Yes,Serious,P,224988,49,057,d,PM-2.5.2006.Salt_Lake,9/30/2023
+VIRGINIA,VA,Alexandria city,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,139966,51,510,e,Ozone_8-hr.2015.Washington,9/30/2023
+VIRGINIA,VA,Arlington County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,207627,51,013,e,Ozone_8-hr.2015.Washington,9/30/2023
+VIRGINIA,VA,Fairfax County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,1081726,51,059,e,Ozone_8-hr.2015.Washington,9/30/2023
+VIRGINIA,VA,Fairfax city,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,22565,51,600,e,Ozone_8-hr.2015.Washington,9/30/2023
+VIRGINIA,VA,Falls Church city,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,12332,51,610,e,Ozone_8-hr.2015.Washington,9/30/2023
+VIRGINIA,VA,Giles County,Sulfur Dioxide (2010),,"Giles County, VA",FALSE,21,22,23,  -   -,Yes,,P,183,51,071,A,SO2.2010.Giles_Co,9/30/2023
+VIRGINIA,VA,Loudoun County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,312311,51,107,e,Ozone_8-hr.2015.Washington,9/30/2023
+VIRGINIA,VA,Manassas Park city,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,14273,51,685,e,Ozone_8-hr.2015.Washington,9/30/2023
+VIRGINIA,VA,Manassas city,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,37821,51,683,e,Ozone_8-hr.2015.Washington,9/30/2023
+VIRGINIA,VA,Prince William County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,402002,51,153,e,Ozone_8-hr.2015.Washington,9/30/2023
+WASHINGTON,WA,Whatcom County,Sulfur Dioxide (2010),,"Whatcom County, WA",FALSE,21,22,23,  -   -,Yes,,P,32,53,073,A,SO2.2010.Whatcom_Co,9/30/2023
+WISCONSIN,WI,Kenosha County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,127547,55,059,e,Ozone_8-hr.2015.Chicago,9/30/2023
+WISCONSIN,WI,Milwaukee County,8-Hour Ozone (2015),,"Milwaukee, WI",FALSE,21,22,23,  -   -,Yes,Moderate,W,947735,55,079,e,Ozone_8-hr.2015.Milwaukee,9/30/2023
+WISCONSIN,WI,Ozaukee County,8-Hour Ozone (2015),,"Milwaukee, WI",FALSE,21,22,23,  -   -,Yes,Moderate,W,86395,55,089,e,Ozone_8-hr.2015.Milwaukee,9/30/2023
+WISCONSIN,WI,Racine County,8-Hour Ozone (2015),,"Milwaukee, WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,152786,55,101,e,Ozone_8-hr.2015.Milwaukee,9/30/2023
+WISCONSIN,WI,Sheboygan County,8-Hour Ozone (2015),,"Sheboygan County, WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,67710,55,117,e,Ozone_8-hr.2015.Sheboygan,9/30/2023
+WISCONSIN,WI,Washington County,8-Hour Ozone (2015),,"Milwaukee, WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,77434,55,131,e,Ozone_8-hr.2015.Milwaukee,9/30/2023
+WISCONSIN,WI,Waukesha County,8-Hour Ozone (2015),,"Milwaukee, WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,383334,55,133,e,Ozone_8-hr.2015.Milwaukee,9/30/2023
+WYOMING,WY,Lincoln County,8-Hour Ozone (2008),,"Upper Green River Basin Area, WY",FALSE,21,22,23,  -   -,Yes,Marginal,P,799,56,023,f,Ozone_8-hr.2008.Green_River,9/30/2023
+WYOMING,WY,Sublette County,8-Hour Ozone (2008),,"Upper Green River Basin Area, WY",FALSE,21,22,23,  -   -,Yes,Marginal,W,10247,56,035,f,Ozone_8-hr.2008.Green_River,9/30/2023
+WYOMING,WY,Sweetwater County,8-Hour Ozone (2008),,"Upper Green River Basin Area, WY",FALSE,21,22,23,  -   -,Yes,Marginal,P,452,56,037,f,Ozone_8-hr.2008.Green_River,9/30/2023
+state,st_abbr,countyname,pollutant,revoked_naaqs,area_name,split,yr2021,yr2022,yr2023,effec_rede,nonattain,class,part,population,fips_state,fips_cnty,pollorder,composid,exportdt
+ALASKA,AK,Fairbanks North Star Borough,PM-2.5 (2006),,"Fairbanks, AK",FALSE,21,22,23,  -   -,Yes,Serious,P,87456,02,090,d,PM-2.5.2006.Fairbanks,9/30/2023
+ARIZONA,AZ,Cochise County,PM-10 (1987),,"Cochise County; Paul Spur/Douglas planning area, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,17495,04,003,B,PM-10.1990.Douglas,9/30/2023
+ARIZONA,AZ,Gila County,8-Hour Ozone (2015),,"Phoenix-Mesa, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,56,04,007,e,Ozone_8-hr.2015.Phoenix,9/30/2023
+ARIZONA,AZ,Gila County,Lead (2008),,"Hayden, AZ",FALSE,21,22,23,  -   -,Yes,,P,1284,04,007,A,Lead.2008.Hayden,9/30/2023
+ARIZONA,AZ,Gila County,PM-10 (1987),,"Hayden, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,1587,04,007,B,PM-10.1990.Hayden,9/30/2023
+ARIZONA,AZ,Gila County,PM-10 (1987),,"Miami, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,15218,04,007,B,PM-10.1990.Miami,9/30/2023
+ARIZONA,AZ,Gila County,Sulfur Dioxide (2010),,"Hayden, AZ",FALSE,21,22,23,  -   -,Yes,,P,1284,04,007,A,SO2.2010.Hayden,9/30/2023
+ARIZONA,AZ,Gila County,Sulfur Dioxide (2010),,"Miami, AZ",FALSE,21,22,23,  -   -,Yes,,P,14995,04,007,A,SO2.2010.Miami,9/30/2023
+ARIZONA,AZ,Maricopa County,8-Hour Ozone (2008),,"Phoenix-Mesa, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,3802415,04,013,e,Ozone_8-hr.2008.Phoenix,9/30/2023
+ARIZONA,AZ,Maricopa County,8-Hour Ozone (2015),,"Phoenix-Mesa, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,3802075,04,013,e,Ozone_8-hr.2015.Phoenix,9/30/2023
+ARIZONA,AZ,Maricopa County,PM-10 (1987),,"Maricopa and Pinal Counties; Phoenix planning area, AZ",FALSE,21,22,23,  -   -,Yes,Serious,P,3817145,04,013,A,PM-10.1990.Phoenix,9/30/2023
+ARIZONA,AZ,Pima County,PM-10 (1987),,"Pima County; Rillito planning area, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,588,04,019,B,PM-10.1990.Rillito,9/30/2023
+ARIZONA,AZ,Pinal County,8-Hour Ozone (2008),,"Phoenix-Mesa, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,47212,04,021,e,Ozone_8-hr.2008.Phoenix,9/30/2023
+ARIZONA,AZ,Pinal County,8-Hour Ozone (2015),,"Phoenix-Mesa, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,143009,04,021,e,Ozone_8-hr.2015.Phoenix,9/30/2023
+ARIZONA,AZ,Pinal County,Lead (2008),,"Hayden, AZ",FALSE,21,22,23,  -   -,Yes,,P,3346,04,021,A,Lead.2008.Hayden,9/30/2023
+ARIZONA,AZ,Pinal County,PM-10 (1987),,"Hayden, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,9461,04,021,B,PM-10.1990.Hayden,9/30/2023
+ARIZONA,AZ,Pinal County,PM-10 (1987),,"Maricopa and Pinal Counties; Phoenix planning area, AZ",FALSE,21,22,23,  -   -,Yes,Serious,P,35840,04,021,A,PM-10.1990.Phoenix,9/30/2023
+ARIZONA,AZ,Pinal County,PM-10 (1987),,"Miami, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,0,04,021,B,PM-10.1990.Miami,9/30/2023
+ARIZONA,AZ,Pinal County,PM-10 (1987),,"Pinal County (part); West Pinal, AZ",FALSE,21,22,23,  -   -,Yes,Serious,P,283032,04,021,A,PM-10.1990.Pinal_Co,9/30/2023
+ARIZONA,AZ,Pinal County,PM-2.5 (2006),,"West Central Pinal, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,52314,04,021,e,PM-2.5.2006.Pinal_Co,9/30/2023
+ARIZONA,AZ,Pinal County,Sulfur Dioxide (1971),,"Hayden (Pinal County), AZ",FALSE,21,22,23,  -   -,Yes,Primary,P,4844,04,021,A,SO2.1978.Hayden,9/30/2023
+ARIZONA,AZ,Pinal County,Sulfur Dioxide (2010),,"Hayden, AZ",FALSE,21,22,23,  -   -,Yes,,P,3346,04,021,A,SO2.2010.Hayden,9/30/2023
+ARIZONA,AZ,Santa Cruz County,PM-10 (1987),,"Santa Cruz County; Nogales planning area, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,30359,04,023,B,PM-10.1990.Nogales,9/30/2023
+ARIZONA,AZ,Yuma County,8-Hour Ozone (2015),,"Yuma, AZ",FALSE,21,22,23,  -   -,Yes,Marginal,P,87254,04,027,f,Ozone_8-hr.2015.Yuma,9/30/2023
+ARIZONA,AZ,Yuma County,PM-10 (1987),,"Yuma, AZ",FALSE,21,22,23,  -   -,Yes,Moderate,P,100710,04,027,B,PM-10.1990.Yuma,9/30/2023
+CALIFORNIA,CA,Alameda County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,1510271,06,001,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,Alameda County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,1510271,06,001,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,Alameda County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,1510271,06,001,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,Amador County,8-Hour Ozone (2015),,"Amador County, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,38091,06,005,f,Ozone_8-hr.2015.Amador_Co,9/30/2023
+CALIFORNIA,CA,Butte County,8-Hour Ozone (2008),,"Chico (Butte County), CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,220000,06,007,f,Ozone_8-hr.2008.Chico,9/30/2023
+CALIFORNIA,CA,Butte County,8-Hour Ozone (2015),,"Butte County, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,220000,06,007,f,Ozone_8-hr.2015.Chico,9/30/2023
+CALIFORNIA,CA,Calaveras County,8-Hour Ozone (2008),,"Calaveras County, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,45578,06,009,f,Ozone_8-hr.2008.Calaveras_Co,9/30/2023
+CALIFORNIA,CA,Calaveras County,8-Hour Ozone (2015),,"Calaveras County, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,45578,06,009,f,Ozone_8-hr.2015.Calaveras_Co,9/30/2023
+CALIFORNIA,CA,Contra Costa County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,1049025,06,013,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,Contra Costa County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,1049025,06,013,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,Contra Costa County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,1049025,06,013,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,El Dorado County,8-Hour Ozone (2008),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,150517,06,017,c,Ozone_8-hr.2008.Sacramento,9/30/2023
+CALIFORNIA,CA,El Dorado County,8-Hour Ozone (2015),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,150297,06,017,d,Ozone_8-hr.2015.Sacramento,9/30/2023
+CALIFORNIA,CA,El Dorado County,PM-2.5 (2006),,"Sacramento, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,144214,06,017,e,PM-2.5.2006.Sacramento,9/30/2023
+CALIFORNIA,CA,Fresno County,8-Hour Ozone (2008),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,930450,06,019,a,Ozone_8-hr.2008.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Fresno County,8-Hour Ozone (2015),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,930450,06,019,a,Ozone_8-hr.2015.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Fresno County,PM-2.5 (1997),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,930450,06,019,d,PM-2.5.1997.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Fresno County,PM-2.5 (2006),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,930450,06,019,d,PM-2.5.2006.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Fresno County,PM-2.5 (2012),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,930450,06,019,A,PM-2.5.2012.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Imperial County,8-Hour Ozone (2008),,"Imperial County, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,174528,06,025,e,Ozone_8-hr.2008.Imperial_Co,9/30/2023
+CALIFORNIA,CA,Imperial County,8-Hour Ozone (2015),,"Imperial County, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,174528,06,025,f,Ozone_8-hr.2015.Imperial_Co,9/30/2023
+CALIFORNIA,CA,Imperial County,PM-2.5 (2006),,"Imperial County, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,154061,06,025,e,PM-2.5.2006.Imperial_Co,9/30/2023
+CALIFORNIA,CA,Imperial County,PM-2.5 (2012),,"Imperial County, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,154061,06,025,B,PM-2.5.2012.Imperial_Co,9/30/2023
+CALIFORNIA,CA,Inyo County,PM-10 (1987),,"Inyo County; Owens Valley planning area, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,7333,06,027,A,PM-10.1990.Owens_Valley,9/30/2023
+CALIFORNIA,CA,Kern County,8-Hour Ozone (2008),,"Kern County (Eastern Kern), CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,95176,06,029,c,Ozone_8-hr.2008.East_Kern,9/30/2023
+CALIFORNIA,CA,Kern County,8-Hour Ozone (2008),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,710337,06,029,a,Ozone_8-hr.2008.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kern County,8-Hour Ozone (2015),,"Kern County (Eastern Kern), CA",FALSE,21,22,23,  -   -,Yes,Serious,P,95066,06,029,d,Ozone_8-hr.2015.East_Kern,9/30/2023
+CALIFORNIA,CA,Kern County,8-Hour Ozone (2015),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,709869,06,029,a,Ozone_8-hr.2015.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kern County,PM-10 (1987),,"East Kern County, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,125950,06,029,A,PM-10.1990.East_Kern,9/30/2023
+CALIFORNIA,CA,Kern County,PM-2.5 (1997),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,710137,06,029,d,PM-2.5.1997.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kern County,PM-2.5 (2006),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,710137,06,029,d,PM-2.5.2006.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kern County,PM-2.5 (2012),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,710137,06,029,A,PM-2.5.2012.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kings County,8-Hour Ozone (2008),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,152982,06,031,a,Ozone_8-hr.2008.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kings County,8-Hour Ozone (2015),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,152982,06,031,a,Ozone_8-hr.2015.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kings County,PM-2.5 (1997),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,152982,06,031,d,PM-2.5.1997.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kings County,PM-2.5 (2006),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,152982,06,031,d,PM-2.5.2006.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Kings County,PM-2.5 (2012),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,152982,06,031,A,PM-2.5.2012.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Los Angeles County,8-Hour Ozone (2008),,"Los Angeles-San Bernardino Counties (West Mojave Desert), CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,378742,06,037,c,Ozone_8-hr.2008.LA-Desert,9/30/2023
+CALIFORNIA,CA,Los Angeles County,8-Hour Ozone (2008),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,9442967,06,037,a,Ozone_8-hr.2008.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Los Angeles County,8-Hour Ozone (2015),,"Los Angeles-San Bernardino Counties (West Mojave Desert), CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,377429,06,037,c,Ozone_8-hr.2015.LA-Desert,9/30/2023
+CALIFORNIA,CA,Los Angeles County,8-Hour Ozone (2015),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,9428411,06,037,a,Ozone_8-hr.2015.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Los Angeles County,Lead (2008),,"Los Angeles County-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,,P,9436927,06,037,A,Lead.2008.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Los Angeles County,PM-2.5 (1997),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,9438565,06,037,e,PM-2.5.1997.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Los Angeles County,PM-2.5 (2006),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,9438565,06,037,d,PM-2.5.2006.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Los Angeles County,PM-2.5 (2012),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,9438565,06,037,A,PM-2.5.2012.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Madera County,8-Hour Ozone (2008),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,150865,06,039,a,Ozone_8-hr.2008.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Madera County,8-Hour Ozone (2015),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,150865,06,039,a,Ozone_8-hr.2015.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Madera County,PM-2.5 (1997),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,150865,06,039,d,PM-2.5.1997.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Madera County,PM-2.5 (2006),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,150865,06,039,d,PM-2.5.2006.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Madera County,PM-2.5 (2012),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,150865,06,039,A,PM-2.5.2012.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Marin County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,252409,06,041,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,Marin County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,252409,06,041,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,Marin County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,252409,06,041,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,Mariposa County,8-Hour Ozone (2008),,"Mariposa County, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,18251,06,043,e,Ozone_8-hr.2008.Mariposa_Co,9/30/2023
+CALIFORNIA,CA,Mariposa County,8-Hour Ozone (2015),,"Mariposa County, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,18251,06,043,e,Ozone_8-hr.2015.Mariposa_Co,9/30/2023
+CALIFORNIA,CA,Merced County,8-Hour Ozone (2008),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,255793,06,047,a,Ozone_8-hr.2008.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Merced County,8-Hour Ozone (2015),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,255793,06,047,a,Ozone_8-hr.2015.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Merced County,PM-2.5 (1997),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,255793,06,047,d,PM-2.5.1997.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Merced County,PM-2.5 (2006),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,255793,06,047,d,PM-2.5.2006.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Merced County,PM-2.5 (2012),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,255793,06,047,A,PM-2.5.2012.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Mono County,PM-10 (1987),,"Mono Basin, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,285,06,051,B,PM-10.1990.Mono_Basin,9/30/2023
+CALIFORNIA,CA,Napa County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,136484,06,055,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,Napa County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,136484,06,055,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,Napa County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,136484,06,055,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,Nevada County,8-Hour Ozone (2008),,"Nevada County (Western part), CA",FALSE,21,22,23,  -   -,Yes,Serious,P,82107,06,057,d,Ozone_8-hr.2008.Nevada_Co,9/30/2023
+CALIFORNIA,CA,Nevada County,8-Hour Ozone (2015),,"Nevada County (Western part), CA",FALSE,21,22,23,  -   -,Yes,Serious,P,82042,06,057,d,Ozone_8-hr.2015.Nevada_Co,9/30/2023
+CALIFORNIA,CA,Orange County,8-Hour Ozone (2008),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,3010232,06,059,a,Ozone_8-hr.2008.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Orange County,8-Hour Ozone (2015),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,3010232,06,059,a,Ozone_8-hr.2015.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Orange County,PM-2.5 (1997),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,3010232,06,059,e,PM-2.5.1997.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Orange County,PM-2.5 (2006),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,3010232,06,059,d,PM-2.5.2006.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Orange County,PM-2.5 (2012),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,3010232,06,059,A,PM-2.5.2012.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Placer County,8-Hour Ozone (2008),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,338093,06,061,c,Ozone_8-hr.2008.Sacramento,9/30/2023
+CALIFORNIA,CA,Placer County,8-Hour Ozone (2015),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,337840,06,061,d,Ozone_8-hr.2015.Sacramento,9/30/2023
+CALIFORNIA,CA,Placer County,PM-2.5 (2006),,"Sacramento, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,314319,06,061,e,PM-2.5.2006.Sacramento,9/30/2023
+CALIFORNIA,CA,Plumas County,PM-2.5 (2012),,"Plumas County, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,5843,06,063,A,PM-2.5.2012.Plumas_Co,9/30/2023
+CALIFORNIA,CA,Riverside County,8-Hour Ozone (2008),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,1739657,06,065,a,Ozone_8-hr.2008.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Riverside County,8-Hour Ozone (2008),,"Morongo Band of Mission Indians, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,913,06,065,c,Ozone_8-hr.2008.Morongo,9/30/2023
+CALIFORNIA,CA,Riverside County,8-Hour Ozone (2008),,"Pechanga Band of Luiseno Mission Indians of the Pechanga Reservation, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,2730,06,065,e,Ozone_8-hr.2008.Pechanga,9/30/2023
+CALIFORNIA,CA,Riverside County,8-Hour Ozone (2008),,"Riverside County (Coachella Valley), CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,425806,06,065,a,Ozone_8-hr.2008.Coachella_Valley,9/30/2023
+CALIFORNIA,CA,Riverside County,8-Hour Ozone (2015),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,1737528,06,065,a,Ozone_8-hr.2015.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Riverside County,8-Hour Ozone (2015),,"Morongo Band of Mission Indians, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,932,06,065,d,Ozone_8-hr.2015.Morongo,9/30/2023
+CALIFORNIA,CA,Riverside County,8-Hour Ozone (2015),,"Pechanga Band of Luiseno Mission Indians of the Pechanga Reservation, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,639,06,065,e,Ozone_8-hr.2015.Pechanga,9/30/2023
+CALIFORNIA,CA,Riverside County,8-Hour Ozone (2015),,"Riverside County (Coachella Valley), CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,425029,06,065,c,Ozone_8-hr.2015.Coachella_Valley,9/30/2023
+CALIFORNIA,CA,Riverside County,PM-10 (1987),,"Riverside County; Coachella Valley planning area, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,257794,06,065,A,PM-10.1990.Coachella_Valley,9/30/2023
+CALIFORNIA,CA,Riverside County,PM-2.5 (1997),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,1740912,06,065,e,PM-2.5.1997.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Riverside County,PM-2.5 (2006),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,1740819,06,065,d,PM-2.5.2006.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Riverside County,PM-2.5 (2012),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,1740819,06,065,A,PM-2.5.2012.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,Sacramento County,8-Hour Ozone (2008),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,W,1418788,06,067,c,Ozone_8-hr.2008.Sacramento,9/30/2023
+CALIFORNIA,CA,Sacramento County,8-Hour Ozone (2015),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,1418788,06,067,d,Ozone_8-hr.2015.Sacramento,9/30/2023
+CALIFORNIA,CA,Sacramento County,PM-2.5 (2006),,"Sacramento, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,1418788,06,067,e,PM-2.5.2006.Sacramento,9/30/2023
+CALIFORNIA,CA,San Bernardino County,8-Hour Ozone (2008),,"Los Angeles-San Bernardino Counties (West Mojave Desert), CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,489638,06,071,c,Ozone_8-hr.2008.LA-Desert,9/30/2023
+CALIFORNIA,CA,San Bernardino County,8-Hour Ozone (2008),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,1526629,06,071,a,Ozone_8-hr.2008.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,San Bernardino County,8-Hour Ozone (2015),,"Los Angeles-San Bernardino Counties (West Mojave Desert), CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,489531,06,071,c,Ozone_8-hr.2015.LA-Desert,9/30/2023
+CALIFORNIA,CA,San Bernardino County,8-Hour Ozone (2015),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Extreme,P,1526600,06,071,a,Ozone_8-hr.2015.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,San Bernardino County,PM-10 (1987),,"San Bernardino County, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,237418,06,071,B,PM-10.1990.San_Bernardino_Co,9/30/2023
+CALIFORNIA,CA,San Bernardino County,PM-10 (1987),,"Trona, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,4167,06,071,B,PM-10.1990.Trona,9/30/2023
+CALIFORNIA,CA,San Bernardino County,PM-2.5 (1997),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,1526626,06,071,e,PM-2.5.1997.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,San Bernardino County,PM-2.5 (2006),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,1526626,06,071,d,PM-2.5.2006.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,San Bernardino County,PM-2.5 (2012),,"Los Angeles-South Coast Air Basin, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,1526626,06,071,A,PM-2.5.2012.LA-South_Coast,9/30/2023
+CALIFORNIA,CA,San Diego County,8-Hour Ozone (2008),,"Pechanga Band of Luiseno Mission Indians of the Pechanga Reservation, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,114,06,073,e,Ozone_8-hr.2008.Pechanga,9/30/2023
+CALIFORNIA,CA,San Diego County,8-Hour Ozone (2008),,"San Diego County, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,3095199,06,073,c,Ozone_8-hr.2008.San_Diego,9/30/2023
+CALIFORNIA,CA,San Diego County,8-Hour Ozone (2015),,"Pechanga Band of Luiseno Mission Indians of the Pechanga Reservation, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,13,06,073,e,Ozone_8-hr.2015.Pechanga,9/30/2023
+CALIFORNIA,CA,San Diego County,8-Hour Ozone (2015),,"San Diego County, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,3077287,06,073,c,Ozone_8-hr.2015.San_Diego,9/30/2023
+CALIFORNIA,CA,San Francisco County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,805235,06,075,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,San Francisco County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,805235,06,075,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,San Francisco County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,805235,06,075,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,San Joaquin County,8-Hour Ozone (2008),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,685306,06,077,a,Ozone_8-hr.2008.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,San Joaquin County,8-Hour Ozone (2015),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,685306,06,077,a,Ozone_8-hr.2015.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,San Joaquin County,PM-2.5 (1997),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,685306,06,077,d,PM-2.5.1997.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,San Joaquin County,PM-2.5 (2006),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,685306,06,077,d,PM-2.5.2006.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,San Joaquin County,PM-2.5 (2012),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,685306,06,077,A,PM-2.5.2012.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,San Luis Obispo County,8-Hour Ozone (2008),,"San Luis Obispo (Eastern San Luis Obispo), CA",FALSE,21,22,23,  -   -,Yes,Marginal,P,1649,06,079,f,Ozone_8-hr.2008.San_Luis_Obispo,9/30/2023
+CALIFORNIA,CA,San Luis Obispo County,8-Hour Ozone (2015),,"San Luis Obispo (Eastern part), CA",FALSE,21,22,23,  -   -,Yes,Marginal,P,1290,06,079,f,Ozone_8-hr.2015.San_Luis_Obispo,9/30/2023
+CALIFORNIA,CA,San Mateo County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,718451,06,081,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,San Mateo County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,718451,06,081,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,San Mateo County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,718451,06,081,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,Santa Clara County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,1781642,06,085,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,Santa Clara County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,1781642,06,085,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,Santa Clara County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,W,1781642,06,085,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,Solano County,8-Hour Ozone (2008),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,129377,06,095,c,Ozone_8-hr.2008.Sacramento,9/30/2023
+CALIFORNIA,CA,Solano County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,P,285082,06,095,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,Solano County,8-Hour Ozone (2015),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,129291,06,095,d,Ozone_8-hr.2015.Sacramento,9/30/2023
+CALIFORNIA,CA,Solano County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,P,284053,06,095,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,Solano County,PM-2.5 (2006),,"Sacramento, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,129588,06,095,e,PM-2.5.2006.Sacramento,9/30/2023
+CALIFORNIA,CA,Solano County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,284288,06,095,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,Sonoma County,8-Hour Ozone (2008),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,P,434421,06,097,f,Ozone_8-hr.2008.San_Francisco,9/30/2023
+CALIFORNIA,CA,Sonoma County,8-Hour Ozone (2015),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Marginal,P,431795,06,097,f,Ozone_8-hr.2015.San_Francisco,9/30/2023
+CALIFORNIA,CA,Sonoma County,PM-2.5 (2006),,"San Francisco Bay Area, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,433262,06,097,e,PM-2.5.2006.San_Francisco,9/30/2023
+CALIFORNIA,CA,Stanislaus County,8-Hour Ozone (2008),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,514453,06,099,a,Ozone_8-hr.2008.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Stanislaus County,8-Hour Ozone (2015),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,514453,06,099,a,Ozone_8-hr.2015.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Stanislaus County,PM-2.5 (1997),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,514453,06,099,d,PM-2.5.1997.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Stanislaus County,PM-2.5 (2006),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,514453,06,099,d,PM-2.5.2006.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Stanislaus County,PM-2.5 (2012),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,514453,06,099,A,PM-2.5.2012.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Sutter County,8-Hour Ozone (2008),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,P,3433,06,101,c,Ozone_8-hr.2008.Sacramento,9/30/2023
+CALIFORNIA,CA,Sutter County,8-Hour Ozone (2015),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,3383,06,101,d,Ozone_8-hr.2015.Sacramento,9/30/2023
+CALIFORNIA,CA,Sutter County,8-Hour Ozone (2015),,"Sutter Buttes, CA",FALSE,21,22,23,  -   -,Yes,Marginal,P,3,06,101,f,Ozone_8-hr.2015.Sutter_Buttes,9/30/2023
+CALIFORNIA,CA,Tehama County,8-Hour Ozone (2008),,"Tuscan Buttes, CA",FALSE,21,22,23,  -   -,Yes,Marginal,P,0,06,103,f,Ozone_8-hr.2008.Tuscan_Buttes,9/30/2023
+CALIFORNIA,CA,Tehama County,8-Hour Ozone (2015),,"Tuscan Buttes, CA",FALSE,21,22,23,  -   -,Yes,Marginal (Rural Transport),P,0,06,103,g,Ozone_8-hr.2015.Tuscan_Buttes,9/30/2023
+CALIFORNIA,CA,Tulare County,8-Hour Ozone (2008),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,442179,06,107,a,Ozone_8-hr.2008.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Tulare County,8-Hour Ozone (2015),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Extreme,W,442179,06,107,a,Ozone_8-hr.2015.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Tulare County,PM-2.5 (1997),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,442179,06,107,d,PM-2.5.1997.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Tulare County,PM-2.5 (2006),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,442179,06,107,d,PM-2.5.2006.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Tulare County,PM-2.5 (2012),,"San Joaquin Valley, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,442179,06,107,A,PM-2.5.2012.San_Joaquin_Valley,9/30/2023
+CALIFORNIA,CA,Tuolumne County,8-Hour Ozone (2015),,"Tuolumne County, CA",FALSE,21,22,23,  -   -,Yes,Marginal,W,55365,06,109,f,Ozone_8-hr.2015.Tuolumne_Co,9/30/2023
+CALIFORNIA,CA,Ventura County,8-Hour Ozone (2008),,"Ventura County, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,823262,06,111,d,Ozone_8-hr.2008.Ventura_Co,9/30/2023
+CALIFORNIA,CA,Ventura County,8-Hour Ozone (2015),,"Ventura County, CA",FALSE,21,22,23,  -   -,Yes,Serious,P,820808,06,111,d,Ozone_8-hr.2015.Ventura_Co,9/30/2023
+CALIFORNIA,CA,Yolo County,8-Hour Ozone (2008),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Severe 15,W,200849,06,113,c,Ozone_8-hr.2008.Sacramento,9/30/2023
+CALIFORNIA,CA,Yolo County,8-Hour Ozone (2015),,"Sacramento Metro, CA",FALSE,21,22,23,  -   -,Yes,Serious,W,200849,06,113,d,Ozone_8-hr.2015.Sacramento,9/30/2023
+CALIFORNIA,CA,Yolo County,PM-2.5 (2006),,"Sacramento, CA",FALSE,21,22,23,  -   -,Yes,Moderate,P,199151,06,113,e,PM-2.5.2006.Sacramento,9/30/2023
+COLORADO,CO,Adams County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,W,441603,08,001,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Adams County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,W,441603,08,001,e,Ozone_8-hr.2015.Denver,9/30/2023
+COLORADO,CO,Arapahoe County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,W,572003,08,005,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Arapahoe County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,W,572003,08,005,e,Ozone_8-hr.2015.Denver,9/30/2023
+COLORADO,CO,Boulder County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,W,294567,08,013,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Boulder County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,W,294567,08,013,e,Ozone_8-hr.2015.Denver,9/30/2023
+COLORADO,CO,Broomfield County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,W,55889,08,014,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Broomfield County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,W,55889,08,014,e,Ozone_8-hr.2015.Denver,9/30/2023
+COLORADO,CO,Denver County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,W,600158,08,031,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Denver County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,W,600158,08,031,e,Ozone_8-hr.2015.Denver,9/30/2023
+COLORADO,CO,Douglas County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,W,285465,08,035,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Douglas County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,W,285465,08,035,e,Ozone_8-hr.2015.Denver,9/30/2023
+COLORADO,CO,Jefferson County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,W,534543,08,059,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Jefferson County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,W,534543,08,059,e,Ozone_8-hr.2015.Denver,9/30/2023
+COLORADO,CO,Larimer County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,P,294389,08,069,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Larimer County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,P,294170,08,069,e,Ozone_8-hr.2015.Denver,9/30/2023
+COLORADO,CO,Weld County,8-Hour Ozone (2008),,"Denver-Boulder-Greeley-Ft. Collins-Loveland, CO",FALSE,21,22,23,  -   -,Yes,Severe 15,P,251522,08,123,c,Ozone_8-hr.2008.Denver,9/30/2023
+COLORADO,CO,Weld County,8-Hour Ozone (2015),,"Denver Metro/North Front Range, CO",FALSE,21,22,23,  -   -,Yes,Moderate,W,252825,08,123,e,Ozone_8-hr.2015.Denver,9/30/2023
+CONNECTICUT,CT,Fairfield County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,916829,09,001,c,Ozone_8-hr.2008.New_York,9/30/2023
+CONNECTICUT,CT,Fairfield County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,916829,09,001,e,Ozone_8-hr.2015.New_York,9/30/2023
+CONNECTICUT,CT,Hartford County,8-Hour Ozone (2008),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Serious,W,894014,09,003,d,Ozone_8-hr.2008.Connecticut,9/30/2023
+CONNECTICUT,CT,Hartford County,8-Hour Ozone (2015),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,894014,09,003,e,Ozone_8-hr.2015.Connecticut,9/30/2023
+CONNECTICUT,CT,Litchfield County,8-Hour Ozone (2008),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Serious,W,189927,09,005,d,Ozone_8-hr.2008.Connecticut,9/30/2023
+CONNECTICUT,CT,Litchfield County,8-Hour Ozone (2015),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,189927,09,005,e,Ozone_8-hr.2015.Connecticut,9/30/2023
+CONNECTICUT,CT,Middlesex County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,165676,09,007,c,Ozone_8-hr.2008.New_York,9/30/2023
+CONNECTICUT,CT,Middlesex County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,165676,09,007,e,Ozone_8-hr.2015.New_York,9/30/2023
+CONNECTICUT,CT,New Haven County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,862477,09,009,c,Ozone_8-hr.2008.New_York,9/30/2023
+CONNECTICUT,CT,New Haven County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,862477,09,009,e,Ozone_8-hr.2015.New_York,9/30/2023
+CONNECTICUT,CT,New London County,8-Hour Ozone (2008),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Serious,W,274055,09,011,d,Ozone_8-hr.2008.Connecticut,9/30/2023
+CONNECTICUT,CT,New London County,8-Hour Ozone (2015),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,274055,09,011,e,Ozone_8-hr.2015.Connecticut,9/30/2023
+CONNECTICUT,CT,Tolland County,8-Hour Ozone (2008),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Serious,W,152691,09,013,d,Ozone_8-hr.2008.Connecticut,9/30/2023
+CONNECTICUT,CT,Tolland County,8-Hour Ozone (2015),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,152691,09,013,e,Ozone_8-hr.2015.Connecticut,9/30/2023
+CONNECTICUT,CT,Windham County,8-Hour Ozone (2008),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Serious,W,118428,09,015,d,Ozone_8-hr.2008.Connecticut,9/30/2023
+CONNECTICUT,CT,Windham County,8-Hour Ozone (2015),,"Greater Connecticut, CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,118428,09,015,e,Ozone_8-hr.2015.Connecticut,9/30/2023
+DELAWARE,DE,New Castle County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,538479,10,003,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+DELAWARE,DE,New Castle County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,538479,10,003,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+DELAWARE,DE,Sussex County,8-Hour Ozone (2008),,"Seaford, DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,197145,10,005,f,Ozone_8-hr.2008.Sussex_Co,9/30/2023
+DISTRICT OF COLUMBIA,DC,District of Columbia,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,601723,11,001,e,Ozone_8-hr.2015.Washington,9/30/2023
+GUAM,GU,Guam,Sulfur Dioxide (1971),,"Piti, GU",FALSE,21,22,23,  -   -,Yes,Primary,P,1000,66,010,A,SO2.1978.Piti,9/30/2023
+GUAM,GU,Guam,Sulfur Dioxide (1971),,"Tanguisson, GU",FALSE,21,22,23,  -   -,Yes,Primary,P,1000,66,010,A,SO2.1978.Tanguisson,9/30/2023
+GUAM,GU,Guam,Sulfur Dioxide (2010),,"Piti-Cabras, GU",FALSE,21,22,23,  -   -,Yes,,P,6116,66,010,A,SO2.2010.Piti-Cabras,9/30/2023
+IDAHO,ID,Bannock County,PM-10 (1987),,"Power-Bannock Counties; Fort Hall Indian Reservation, ID",FALSE,21,22,23,  -   -,Yes,Moderate,P,315,16,005,B,PM-10.1990.Fort_Hall,9/30/2023
+IDAHO,ID,Power County,PM-10 (1987),,"Power-Bannock Counties; Fort Hall Indian Reservation, ID",FALSE,21,22,23,  -   -,Yes,Moderate,P,276,16,077,B,PM-10.1990.Fort_Hall,9/30/2023
+ILLINOIS,IL,Cook County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,W,5194675,17,031,e,Ozone_8-hr.2015.Chicago,9/30/2023
+ILLINOIS,IL,DuPage County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,W,916924,17,043,e,Ozone_8-hr.2015.Chicago,9/30/2023
+ILLINOIS,IL,Grundy County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,19251,17,063,e,Ozone_8-hr.2015.Chicago,9/30/2023
+ILLINOIS,IL,Kane County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,W,515269,17,089,e,Ozone_8-hr.2015.Chicago,9/30/2023
+ILLINOIS,IL,Kendall County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,49334,17,093,e,Ozone_8-hr.2015.Chicago,9/30/2023
+ILLINOIS,IL,Lake County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,W,703462,17,097,e,Ozone_8-hr.2015.Chicago,9/30/2023
+ILLINOIS,IL,Madison County,8-Hour Ozone (2015),,"St. Louis, MO-IL",FALSE,21,22,23,  -   -,Yes,Moderate,W,269282,17,119,e,Ozone_8-hr.2015.St_Louis,9/30/2023
+ILLINOIS,IL,Madison County,Sulfur Dioxide (2010),,"Alton Township, IL",FALSE,21,22,23,  -   -,Yes,,P,0,17,119,A,SO2.2010.Alton,9/30/2023
+ILLINOIS,IL,McHenry County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,W,308760,17,111,e,Ozone_8-hr.2015.Chicago,9/30/2023
+ILLINOIS,IL,Monroe County,8-Hour Ozone (2015),,"St. Louis, MO-IL",FALSE,21,22,23,  -   -,Yes,Moderate,W,32957,17,133,e,Ozone_8-hr.2015.St_Louis,9/30/2023
+ILLINOIS,IL,St. Clair County,8-Hour Ozone (2015),,"St. Louis, MO-IL",FALSE,21,22,23,  -   -,Yes,Moderate,W,270056,17,163,e,Ozone_8-hr.2015.St_Louis,9/30/2023
+ILLINOIS,IL,Will County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,W,677560,17,197,e,Ozone_8-hr.2015.Chicago,9/30/2023
+INDIANA,IN,Huntington County,Sulfur Dioxide (2010),,"Huntington, IN",FALSE,21,22,23,  -   -,Yes,,P,20838,18,069,A,SO2.2010.Huntington_IN,9/30/2023
+INDIANA,IN,Lake County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,421162,18,089,e,Ozone_8-hr.2015.Chicago,9/30/2023
+INDIANA,IN,Porter County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,140700,18,127,e,Ozone_8-hr.2015.Chicago,9/30/2023
+IOWA,IA,Muscatine County,Sulfur Dioxide (2010),,"Muscatine, IA",FALSE,21,22,23,  -   -,Yes,,P,30329,19,139,A,SO2.2010.Muscatine_Co,9/30/2023
+KANSAS,KS,Saline County,Lead (2008),,"Saline County, KS",FALSE,21,22,23,  -   -,Yes,,P,9,20,169,A,Lead.2008.Salina,9/30/2023
+KENTUCKY,KY,Boone County,8-Hour Ozone (2015),,"Cincinnati, OH-KY",TRUE,21,22,23,  -   -,Yes,Moderate,P,113158,21,015,e,Ozone_8-hr.2015.Cincinnati,9/30/2023
+KENTUCKY,KY,Bullitt County,8-Hour Ozone (2015),,"Louisville, KY-IN",TRUE,21,22,23,  -   -,Yes,Moderate,W,74319,21,029,e,Ozone_8-hr.2015.Louisville,9/30/2023
+KENTUCKY,KY,Campbell County,8-Hour Ozone (2015),,"Cincinnati, OH-KY",TRUE,21,22,23,  -   -,Yes,Moderate,P,82634,21,037,e,Ozone_8-hr.2015.Cincinnati,9/30/2023
+KENTUCKY,KY,Henderson County,Sulfur Dioxide (2010),,"Henderson-Webster Counties, KY",FALSE,21,22,23,  -   -,Yes,,P,3783,21,101,A,SO2.2010.Henderson_Webster_Cos,9/30/2023
+KENTUCKY,KY,Jefferson County,8-Hour Ozone (2015),,"Louisville, KY-IN",TRUE,21,22,23,  -   -,Yes,Moderate,W,741096,21,111,e,Ozone_8-hr.2015.Louisville,9/30/2023
+KENTUCKY,KY,Kenton County,8-Hour Ozone (2015),,"Cincinnati, OH-KY",TRUE,21,22,23,  -   -,Yes,Moderate,P,152176,21,117,e,Ozone_8-hr.2015.Cincinnati,9/30/2023
+KENTUCKY,KY,Oldham County,8-Hour Ozone (2015),,"Louisville, KY-IN",TRUE,21,22,23,  -   -,Yes,Moderate,W,60316,21,185,e,Ozone_8-hr.2015.Louisville,9/30/2023
+KENTUCKY,KY,Webster County,Sulfur Dioxide (2010),,"Henderson-Webster Counties, KY",FALSE,21,22,23,  -   -,Yes,,P,3149,21,233,A,SO2.2010.Henderson_Webster_Cos,9/30/2023
+LOUISIANA,LA,Evangeline Parish,Sulfur Dioxide (2010),,"Evangeline Parish (Partial), LA",FALSE,21,22,23,  -   -,Yes,,P,124,22,039,A,SO2.2010.Evangeline_Par,9/30/2023
+LOUISIANA,LA,St. Bernard Parish,Sulfur Dioxide (2010),,"St. Bernard Parish, LA",FALSE,21,22,23,  -   -,Yes,,W,35897,22,087,A,SO2.2010.St_Bernard_Par,9/30/2023
+MARYLAND,MD,Anne Arundel County,8-Hour Ozone (2008),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,537656,24,003,e,Ozone_8-hr.2008.Baltimore,9/30/2023
+MARYLAND,MD,Anne Arundel County,8-Hour Ozone (2015),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,537656,24,003,e,Ozone_8-hr.2015.Baltimore,9/30/2023
+MARYLAND,MD,Anne Arundel County,Sulfur Dioxide (2010),,"Anne Arundel County and Baltimore County, MD",FALSE,21,22,23,  -   -,Yes,,P,479620,24,003,A,SO2.2010.Baltimore,9/30/2023
+MARYLAND,MD,Baltimore County,8-Hour Ozone (2008),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,805029,24,005,e,Ozone_8-hr.2008.Baltimore,9/30/2023
+MARYLAND,MD,Baltimore County,8-Hour Ozone (2015),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,805029,24,005,e,Ozone_8-hr.2015.Baltimore,9/30/2023
+MARYLAND,MD,Baltimore County,Sulfur Dioxide (2010),,"Anne Arundel County and Baltimore County, MD",FALSE,21,22,23,  -   -,Yes,,P,510713,24,005,A,SO2.2010.Baltimore,9/30/2023
+MARYLAND,MD,Baltimore city,8-Hour Ozone (2008),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,620961,24,510,e,Ozone_8-hr.2008.Baltimore,9/30/2023
+MARYLAND,MD,Baltimore city,8-Hour Ozone (2015),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,620961,24,510,e,Ozone_8-hr.2015.Baltimore,9/30/2023
+MARYLAND,MD,Calvert County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,88737,24,009,e,Ozone_8-hr.2015.Washington,9/30/2023
+MARYLAND,MD,Carroll County,8-Hour Ozone (2008),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,167134,24,013,e,Ozone_8-hr.2008.Baltimore,9/30/2023
+MARYLAND,MD,Carroll County,8-Hour Ozone (2015),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,167134,24,013,e,Ozone_8-hr.2015.Baltimore,9/30/2023
+MARYLAND,MD,Cecil County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,101108,24,015,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+MARYLAND,MD,Cecil County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,101108,24,015,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+MARYLAND,MD,Charles County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,146551,24,017,e,Ozone_8-hr.2015.Washington,9/30/2023
+MARYLAND,MD,Frederick County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,233385,24,021,e,Ozone_8-hr.2015.Washington,9/30/2023
+MARYLAND,MD,Harford County,8-Hour Ozone (2008),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,244826,24,025,e,Ozone_8-hr.2008.Baltimore,9/30/2023
+MARYLAND,MD,Harford County,8-Hour Ozone (2015),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,244826,24,025,e,Ozone_8-hr.2015.Baltimore,9/30/2023
+MARYLAND,MD,Howard County,8-Hour Ozone (2008),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,287085,24,027,e,Ozone_8-hr.2008.Baltimore,9/30/2023
+MARYLAND,MD,Howard County,8-Hour Ozone (2015),,"Baltimore, MD",FALSE,21,22,23,  -   -,Yes,Moderate,W,287085,24,027,e,Ozone_8-hr.2015.Baltimore,9/30/2023
+MARYLAND,MD,Montgomery County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,971777,24,031,e,Ozone_8-hr.2015.Washington,9/30/2023
+MARYLAND,MD,Prince George's County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,863420,24,033,e,Ozone_8-hr.2015.Washington,9/30/2023
+MASSACHUSETTS,MA,Dukes County,8-Hour Ozone (2008),,"Dukes County, MA",FALSE,21,22,23,  -   -,Yes,Marginal,W,16535,25,007,f,Ozone_8-hr.2008.Dukes_Co,9/30/2023
+MICHIGAN,MI,Allegan County,8-Hour Ozone (2015),,"Allegan County, MI",FALSE,21,22,23,  -   -,Yes,Moderate,P,46615,26,005,e,Ozone_8-hr.2015.Allegan_Co,9/30/2023
+MICHIGAN,MI,Berrien County,8-Hour Ozone (2015),,"Berrien County, MI",FALSE,21,22,23,  -   -,Yes,Moderate,W,156813,26,021,e,Ozone_8-hr.2015.Benton_Harbor,9/30/2023
+MICHIGAN,MI,Muskegon County,8-Hour Ozone (2015),,"Muskegon County, MI",FALSE,21,22,23,  -   -,Yes,Moderate,P,146852,26,121,e,Ozone_8-hr.2015.Muskegon,9/30/2023
+MICHIGAN,MI,St. Clair County,Sulfur Dioxide (2010),,"St. Clair, MI",FALSE,21,22,23,  -   -,Yes,,P,52102,26,147,A,SO2.2010.St_Clair,9/30/2023
+MICHIGAN,MI,Wayne County,Sulfur Dioxide (2010),,"Detroit, MI",FALSE,21,22,23,  -   -,Yes,,P,254079,26,163,A,SO2.2010.Detroit,9/30/2023
+MINNESOTA,MN,Dakota County,Lead (2008),,"Eagan, MN",FALSE,21,22,23,  -   -,Yes,,P,8997,27,037,A,Lead.2008.Eagan,9/30/2023
+MISSOURI,MO,Dent County,Lead (2008),,"Iron, Dent, and Reynolds Counties, MO",FALSE,21,22,23,  -   -,Yes,,P,106,29,065,A,Lead.2008.Iron,9/30/2023
+MISSOURI,MO,Franklin County,8-Hour Ozone (2015),,"St. Louis, MO-IL",FALSE,21,22,23,  -   -,Yes,Moderate,P,18108,29,071,e,Ozone_8-hr.2015.St_Louis,9/30/2023
+MISSOURI,MO,Iron County,Lead (2008),,"Iron, Dent, and Reynolds Counties, MO",FALSE,21,22,23,  -   -,Yes,,P,253,29,093,A,Lead.2008.Iron,9/30/2023
+MISSOURI,MO,Jefferson County,8-Hour Ozone (2015),,"St. Louis, MO-IL",FALSE,21,22,23,  -   -,Yes,Moderate,W,218733,29,099,e,Ozone_8-hr.2015.St_Louis,9/30/2023
+MISSOURI,MO,Jefferson County,Lead (1978),,"Jefferson County (part); Herculaneum, MO",FALSE,21,22,23,  -   -,Yes,,P,2560,29,099,A,Lead.1992.Herculaneum,9/30/2023
+MISSOURI,MO,Jefferson County,Lead (2008),,"Jefferson County, MO",FALSE,21,22,23,  -   -,Yes,,P,4814,29,099,A,Lead.2008.Herculaneum,9/30/2023
+MISSOURI,MO,New Madrid County,Sulfur Dioxide (2010),,"New Madrid County, MO",FALSE,21,22,23,  -   -,Yes,,P,2,29,143,A,SO2.2010.New_Madrid_Co,9/30/2023
+MISSOURI,MO,Reynolds County,Lead (2008),,"Iron, Dent, and Reynolds Counties, MO",FALSE,21,22,23,  -   -,Yes,,P,101,29,179,A,Lead.2008.Iron,9/30/2023
+MISSOURI,MO,St. Charles County,8-Hour Ozone (2015),,"St. Louis, MO-IL",FALSE,21,22,23,  -   -,Yes,Moderate,W,360485,29,183,e,Ozone_8-hr.2015.St_Louis,9/30/2023
+MISSOURI,MO,St. Louis County,8-Hour Ozone (2015),,"St. Louis, MO-IL",FALSE,21,22,23,  -   -,Yes,Moderate,W,998954,29,189,e,Ozone_8-hr.2015.St_Louis,9/30/2023
+MISSOURI,MO,St. Louis city,8-Hour Ozone (2015),,"St. Louis, MO-IL",FALSE,21,22,23,  -   -,Yes,Moderate,W,319294,29,510,e,Ozone_8-hr.2015.St_Louis,9/30/2023
+MONTANA,MT,Lake County,PM-10 (1987),,"Lake County; Polson, MT",FALSE,21,22,23,  -   -,Yes,Moderate,P,4099,30,047,B,PM-10.1990.Polson,9/30/2023
+MONTANA,MT,Lake County,PM-10 (1987),,"Lake County; Ronan, MT",FALSE,21,22,23,  -   -,Yes,Moderate,P,2734,30,047,B,PM-10.1990.Ronan,9/30/2023
+MONTANA,MT,Rosebud County,PM-10 (1987),,"Rosebud County; Lame Deer, MT",FALSE,21,22,23,  -   -,Yes,Moderate,P,527,30,087,B,PM-10.1990.Lame_Deer,9/30/2023
+MONTANA,MT,Yellowstone County,Sulfur Dioxide (1971),,"Laurel Area (Yellowstone County), MT",FALSE,21,22,23,  -   -,Yes,Primary,P,6525,30,111,A,SO2.1978.Laurel,9/30/2023
+NEVADA,NV,Clark County,8-Hour Ozone (2015),,"Las Vegas, NV",FALSE,21,22,23,  -   -,Yes,Moderate,P,1892250,32,003,e,Ozone_8-hr.2015.Las_Vegas,9/30/2023
+NEW JERSEY,NJ,Atlantic County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,274549,34,001,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Atlantic County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,274549,34,001,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Bergen County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,905116,34,003,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Bergen County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,905116,34,003,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Burlington County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,448734,34,005,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Burlington County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,448734,34,005,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Camden County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,513657,34,007,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Camden County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,513657,34,007,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Cape May County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,97265,34,009,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Cape May County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,97265,34,009,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Cumberland County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,156898,34,011,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Cumberland County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,156898,34,011,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Essex County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,783969,34,013,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Essex County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,783969,34,013,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Gloucester County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,288288,34,015,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Gloucester County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,288288,34,015,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Hudson County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,634266,34,017,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Hudson County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,634266,34,017,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Hunterdon County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,128349,34,019,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Hunterdon County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,128349,34,019,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Mercer County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,366513,34,021,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Mercer County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,366513,34,021,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Middlesex County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,809858,34,023,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Middlesex County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,809858,34,023,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Monmouth County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,630380,34,025,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Monmouth County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,630380,34,025,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Morris County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,492276,34,027,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Morris County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,492276,34,027,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Ocean County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,576567,34,029,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Ocean County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,576567,34,029,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Passaic County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,501226,34,031,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Passaic County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,501226,34,031,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Salem County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,66083,34,033,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Salem County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,66083,34,033,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+NEW JERSEY,NJ,Somerset County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,323444,34,035,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Somerset County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,323444,34,035,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Sussex County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,149265,34,037,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Sussex County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,149265,34,037,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Union County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,536499,34,039,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Union County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,536499,34,039,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Warren County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,108692,34,041,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW JERSEY,NJ,Warren County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,108692,34,041,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW JERSEY,NJ,Warren County,Sulfur Dioxide (1971),,"Warren County, NJ",FALSE,21,22,23,  -   -,Yes,"Primary, Secondary",P,108696,34,041,B,SO2.1978.Warren_Co,9/30/2023
+NEW MEXICO,NM,Dona Ana County,8-Hour Ozone (2015),,"El Paso-Las Cruces, TX-NM",FALSE,21,22,23,  -   -,Yes,Marginal,P,12675,35,013,f,Ozone_8-hr.2015.El_Paso,9/30/2023
+NEW MEXICO,NM,Dona Ana County,PM-10 (1987),,"Dona Ana County; Anthony, NM",FALSE,21,22,23,  -   -,Yes,Moderate,P,3096,35,013,B,PM-10.1990.Anthony,9/30/2023
+NEW YORK,NY,Bronx County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,1385108,36,005,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,Bronx County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,1385108,36,005,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW YORK,NY,Chautauqua County,8-Hour Ozone (2008),,"Jamestown, NY",FALSE,21,22,23,  -   -,Yes,Marginal,W,134905,36,013,f,Ozone_8-hr.2008.Jamestown,9/30/2023
+NEW YORK,NY,Kings County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,2504700,36,047,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,Kings County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,2504700,36,047,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW YORK,NY,Nassau County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,1339532,36,059,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,Nassau County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,1339532,36,059,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW YORK,NY,New York County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,1585873,36,061,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,New York County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,1585873,36,061,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW YORK,NY,New York County,PM-10 (1987),,"New York County, NY",FALSE,21,22,23,  -   -,Yes,Moderate,W,1585873,36,061,B,PM-10.1990.New_York,9/30/2023
+NEW YORK,NY,Queens County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,2230722,36,081,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,Queens County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,2230722,36,081,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW YORK,NY,Richmond County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,468730,36,085,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,Richmond County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,468730,36,085,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW YORK,NY,Rockland County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,311687,36,087,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,Rockland County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,311687,36,087,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW YORK,NY,St. Lawrence County,Sulfur Dioxide (2010),,"St. Lawrence County, NY",FALSE,21,22,23,  -   -,Yes,,P,11922,36,089,A,SO2.2010.St_Lawrence_Co,9/30/2023
+NEW YORK,NY,Suffolk County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,1493350,36,103,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,Suffolk County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,1493350,36,103,e,Ozone_8-hr.2015.New_York,9/30/2023
+NEW YORK,NY,Westchester County,8-Hour Ozone (2008),,"New York-N. New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Severe 15,W,949113,36,119,c,Ozone_8-hr.2008.New_York,9/30/2023
+NEW YORK,NY,Westchester County,8-Hour Ozone (2015),,"New York-Northern New Jersey-Long Island, NY-NJ-CT",FALSE,21,22,23,  -   -,Yes,Moderate,W,949113,36,119,e,Ozone_8-hr.2015.New_York,9/30/2023
+OHIO,OH,Cuyahoga County,8-Hour Ozone (2015),,"Cleveland, OH",FALSE,21,22,23,  -   -,Yes,Moderate,W,1280122,39,035,e,Ozone_8-hr.2015.Cleveland,9/30/2023
+OHIO,OH,Geauga County,8-Hour Ozone (2015),,"Cleveland, OH",FALSE,21,22,23,  -   -,Yes,Moderate,W,93389,39,055,e,Ozone_8-hr.2015.Cleveland,9/30/2023
+OHIO,OH,Lake County,8-Hour Ozone (2015),,"Cleveland, OH",FALSE,21,22,23,  -   -,Yes,Moderate,W,230041,39,085,e,Ozone_8-hr.2015.Cleveland,9/30/2023
+OHIO,OH,Lorain County,8-Hour Ozone (2015),,"Cleveland, OH",FALSE,21,22,23,  -   -,Yes,Moderate,W,301356,39,093,e,Ozone_8-hr.2015.Cleveland,9/30/2023
+OHIO,OH,Medina County,8-Hour Ozone (2015),,"Cleveland, OH",FALSE,21,22,23,  -   -,Yes,Moderate,W,172332,39,103,e,Ozone_8-hr.2015.Cleveland,9/30/2023
+OHIO,OH,Morgan County,Sulfur Dioxide (2010),,"Muskingum River, OH",FALSE,21,22,23,  -   -,Yes,,P,743,39,115,A,SO2.2010.Muskingum_River,9/30/2023
+OHIO,OH,Portage County,8-Hour Ozone (2015),,"Cleveland, OH",FALSE,21,22,23,  -   -,Yes,Moderate,W,161419,39,133,e,Ozone_8-hr.2015.Cleveland,9/30/2023
+OHIO,OH,Stark County,Lead (2008),,"Canton-Stark County, OH",FALSE,,,23,  -   -,Yes,,P,6188,39,151,A,Lead.2008.Canton,9/30/2023
+OHIO,OH,Summit County,8-Hour Ozone (2015),,"Cleveland, OH",FALSE,21,22,23,  -   -,Yes,Moderate,W,541781,39,153,e,Ozone_8-hr.2015.Cleveland,9/30/2023
+OHIO,OH,Washington County,Sulfur Dioxide (2010),,"Muskingum River, OH",FALSE,21,22,23,  -   -,Yes,,P,3713,39,167,A,SO2.2010.Muskingum_River,9/30/2023
+OREGON,OR,Klamath County,PM-2.5 (2006),,"Klamath Falls, OR",FALSE,21,22,23,  -   -,Yes,Moderate,P,46969,41,035,e,PM-2.5.2006.Klamath_Falls,9/30/2023
+PENNSYLVANIA,PA,Allegheny County,8-Hour Ozone (2008),,"Pittsburgh-Beaver Valley, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,1223348,42,003,f,Ozone_8-hr.2008.Pittsburgh,9/30/2023
+PENNSYLVANIA,PA,Allegheny County,PM-2.5 (1997),,"Liberty-Clairton, PA",FALSE,21,22,23,  -   -,Yes,Moderate,P,20789,42,003,e,PM-2.5.1997.Liberty-Clairton,9/30/2023
+PENNSYLVANIA,PA,Allegheny County,PM-2.5 (2006),,"Liberty-Clairton, PA",FALSE,21,22,23,  -   -,Yes,Moderate,P,20789,42,003,e,PM-2.5.2006.Liberty-Clairton,9/30/2023
+PENNSYLVANIA,PA,Allegheny County,PM-2.5 (2012),,"Allegheny County, PA",FALSE,21,22,23,  -   -,Yes,Moderate,W,1223348,42,003,B,PM-2.5.2012.Allegheny_Co,9/30/2023
+PENNSYLVANIA,PA,Allegheny County,Sulfur Dioxide (2010),,"Allegheny, PA",FALSE,21,22,23,  -   -,Yes,,P,126934,42,003,A,SO2.2010.Liberty-Clairton,9/30/2023
+PENNSYLVANIA,PA,Armstrong County,8-Hour Ozone (2008),,"Pittsburgh-Beaver Valley, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,68941,42,005,f,Ozone_8-hr.2008.Pittsburgh,9/30/2023
+PENNSYLVANIA,PA,Armstrong County,Sulfur Dioxide (1971),,"Armstrong County: Madison, Mahoning, Boggs, Washington, Pine, PA",FALSE,21,22,23,  -   -,Yes,Primary,P,4516,42,005,A,SO2.1978.Armstrong_Co,9/30/2023
+PENNSYLVANIA,PA,Armstrong County,Sulfur Dioxide (2010),,"Indiana, PA",FALSE,21,22,23,  -   -,Yes,,P,3898,42,005,A,SO2.2010.Indiana_Co,9/30/2023
+PENNSYLVANIA,PA,Beaver County,8-Hour Ozone (2008),,"Pittsburgh-Beaver Valley, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,170539,42,007,f,Ozone_8-hr.2008.Pittsburgh,9/30/2023
+PENNSYLVANIA,PA,Beaver County,Lead (2008),,"Lower Beaver Valley, PA",FALSE,21,22,23,  -   -,Yes,,P,17654,42,007,A,Lead.2008.Lower_Beaver_Valley,9/30/2023
+PENNSYLVANIA,PA,Beaver County,Sulfur Dioxide (2010),,"Beaver, PA",FALSE,21,22,23,  -   -,Yes,,P,14780,42,007,A,SO2.2010.Lower_Beaver_Valley,9/30/2023
+PENNSYLVANIA,PA,Berks County,8-Hour Ozone (2008),,"Reading, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,411442,42,011,f,Ozone_8-hr.2008.Reading,9/30/2023
+PENNSYLVANIA,PA,Berks County,Lead (2008),,"Lyons, PA",FALSE,21,22,23,  -   -,Yes,,P,19480,42,011,A,Lead.2008.Lyons,9/30/2023
+PENNSYLVANIA,PA,Berks County,Lead (2008),,"North Reading, PA",FALSE,21,22,23,  -   -,Yes,,P,29334,42,011,A,Lead.2008.Reading,9/30/2023
+PENNSYLVANIA,PA,Bucks County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,625249,42,017,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Bucks County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,625249,42,017,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Butler County,8-Hour Ozone (2008),,"Pittsburgh-Beaver Valley, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,183862,42,019,f,Ozone_8-hr.2008.Pittsburgh,9/30/2023
+PENNSYLVANIA,PA,Carbon County,8-Hour Ozone (2008),,"Allentown-Bethlehem-Easton, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,65249,42,025,f,Ozone_8-hr.2008.Allentown,9/30/2023
+PENNSYLVANIA,PA,Chester County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,498886,42,029,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Chester County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,498886,42,029,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Delaware County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,558979,42,045,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Delaware County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,558979,42,045,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Fayette County,8-Hour Ozone (2008),,"Pittsburgh-Beaver Valley, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,136606,42,051,f,Ozone_8-hr.2008.Pittsburgh,9/30/2023
+PENNSYLVANIA,PA,Indiana County,Sulfur Dioxide (2010),,"Indiana, PA",FALSE,21,22,23,  -   -,Yes,,W,88880,42,063,A,SO2.2010.Indiana_Co,9/30/2023
+PENNSYLVANIA,PA,Lancaster County,8-Hour Ozone (2008),,"Lancaster, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,519445,42,071,f,Ozone_8-hr.2008.Lancaster,9/30/2023
+PENNSYLVANIA,PA,Lehigh County,8-Hour Ozone (2008),,"Allentown-Bethlehem-Easton, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,349497,42,077,f,Ozone_8-hr.2008.Allentown,9/30/2023
+PENNSYLVANIA,PA,Montgomery County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,799874,42,091,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Montgomery County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,799874,42,091,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Northampton County,8-Hour Ozone (2008),,"Allentown-Bethlehem-Easton, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,297735,42,095,f,Ozone_8-hr.2008.Allentown,9/30/2023
+PENNSYLVANIA,PA,Philadelphia County,8-Hour Ozone (2008),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Marginal,W,1526006,42,101,f,Ozone_8-hr.2008.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Philadelphia County,8-Hour Ozone (2015),,"Philadelphia-Wilmington-Atlantic City, PA-NJ-MD-DE",FALSE,21,22,23,  -   -,Yes,Moderate,W,1526006,42,101,e,Ozone_8-hr.2015.Philadelphia,9/30/2023
+PENNSYLVANIA,PA,Warren County,Sulfur Dioxide (2010),,"Warren, PA",FALSE,21,22,23,  -   -,Yes,,P,18056,42,123,A,SO2.2010.Warren_Co,9/30/2023
+PENNSYLVANIA,PA,Washington County,8-Hour Ozone (2008),,"Pittsburgh-Beaver Valley, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,207820,42,125,f,Ozone_8-hr.2008.Pittsburgh,9/30/2023
+PENNSYLVANIA,PA,Westmoreland County,8-Hour Ozone (2008),,"Pittsburgh-Beaver Valley, PA",FALSE,21,22,23,  -   -,Yes,Marginal,W,365169,42,129,f,Ozone_8-hr.2008.Pittsburgh,9/30/2023
+PUERTO RICO,PR,Arecibo Municipio,Lead (2008),,"Arecibo, PR",FALSE,21,22,23,  -   -,Yes,,P,32185,72,013,A,Lead.2008.Arecibo,9/30/2023
+PUERTO RICO,PR,Bayamon Municipio,Sulfur Dioxide (2010),,"San Juan, PR",FALSE,21,22,23,  -   -,Yes,,P,22921,72,021,A,SO2.2010.San_Juan,9/30/2023
+PUERTO RICO,PR,Catano Municipio,Sulfur Dioxide (2010),,"San Juan, PR",FALSE,21,22,23,  -   -,Yes,,W,28140,72,033,A,SO2.2010.San_Juan,9/30/2023
+PUERTO RICO,PR,Guaynabo Municipio,Sulfur Dioxide (2010),,"San Juan, PR",FALSE,21,22,23,  -   -,Yes,,P,23802,72,061,A,SO2.2010.San_Juan,9/30/2023
+PUERTO RICO,PR,Salinas Municipio,Sulfur Dioxide (2010),,"Guayama-Salinas, PR",FALSE,21,22,23,  -   -,Yes,,P,23401,72,123,A,SO2.2010.Guayama-Salinas,9/30/2023
+PUERTO RICO,PR,San Juan Municipio,Sulfur Dioxide (2010),,"San Juan, PR",FALSE,21,22,23,  -   -,Yes,,P,147963,72,127,A,SO2.2010.San_Juan,9/30/2023
+PUERTO RICO,PR,Toa Baja Municipio,Sulfur Dioxide (2010),,"San Juan, PR",FALSE,21,22,23,  -   -,Yes,,P,52441,72,137,A,SO2.2010.San_Juan,9/30/2023
+TENNESSEE,TN,Sullivan County,Sulfur Dioxide (2010),,"Sullivan County, TN",FALSE,21,22,23,  -   -,Yes,,P,15289,47,163,A,SO2.2010.Kingsport,9/30/2023
+TEXAS,TX,Anderson County,Sulfur Dioxide (2010),,"Freestone and Anderson Counties, TX",FALSE,21,22,23,  -   -,Yes,,P,7,48,001,A,SO2.2010.Freestone_Anderson_Cos,9/30/2023
+TEXAS,TX,Bexar County,8-Hour Ozone (2015),,"San Antonio, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,1714773,48,029,e,Ozone_8-hr.2015.San_Antonio,9/30/2023
+TEXAS,TX,Brazoria County,8-Hour Ozone (2008),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,313166,48,039,c,Ozone_8-hr.2008.Houston,9/30/2023
+TEXAS,TX,Brazoria County,8-Hour Ozone (2015),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,313166,48,039,e,Ozone_8-hr.2015.Houston,9/30/2023
+TEXAS,TX,Chambers County,8-Hour Ozone (2008),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,35096,48,071,c,Ozone_8-hr.2008.Houston,9/30/2023
+TEXAS,TX,Chambers County,8-Hour Ozone (2015),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,35096,48,071,e,Ozone_8-hr.2015.Houston,9/30/2023
+TEXAS,TX,Collin County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,782341,48,085,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Collin County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,782341,48,085,e,Ozone_8-hr.2015.Dallas,9/30/2023
+TEXAS,TX,Dallas County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,2368139,48,113,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Dallas County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,2368139,48,113,e,Ozone_8-hr.2015.Dallas,9/30/2023
+TEXAS,TX,Denton County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,662614,48,121,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Denton County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,662614,48,121,e,Ozone_8-hr.2015.Dallas,9/30/2023
+TEXAS,TX,El Paso County,8-Hour Ozone (2015),,"El Paso-Las Cruces, TX-NM",FALSE,21,22,23,  -   -,Yes,Marginal,W,800647,48,141,f,Ozone_8-hr.2015.El_Paso,9/30/2023
+TEXAS,TX,El Paso County,PM-10 (1987),,"El Paso County, TX",FALSE,21,22,23,  -   -,Yes,Moderate,P,649121,48,141,B,PM-10.1990.El_Paso,9/30/2023
+TEXAS,TX,Ellis County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,149610,48,139,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Ellis County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,149610,48,139,e,Ozone_8-hr.2015.Dallas,9/30/2023
+TEXAS,TX,Fort Bend County,8-Hour Ozone (2008),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,585375,48,157,c,Ozone_8-hr.2008.Houston,9/30/2023
+TEXAS,TX,Fort Bend County,8-Hour Ozone (2015),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,585375,48,157,e,Ozone_8-hr.2015.Houston,9/30/2023
+TEXAS,TX,Freestone County,Sulfur Dioxide (2010),,"Freestone and Anderson Counties, TX",FALSE,21,22,23,  -   -,Yes,,P,4087,48,161,A,SO2.2010.Freestone_Anderson_Cos,9/30/2023
+TEXAS,TX,Galveston County,8-Hour Ozone (2008),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,291309,48,167,c,Ozone_8-hr.2008.Houston,9/30/2023
+TEXAS,TX,Galveston County,8-Hour Ozone (2015),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,291309,48,167,e,Ozone_8-hr.2015.Houston,9/30/2023
+TEXAS,TX,Harris County,8-Hour Ozone (2008),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,4092459,48,201,c,Ozone_8-hr.2008.Houston,9/30/2023
+TEXAS,TX,Harris County,8-Hour Ozone (2015),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,4092459,48,201,e,Ozone_8-hr.2015.Houston,9/30/2023
+TEXAS,TX,Howard County,Sulfur Dioxide (2010),,"Howard County, TX",FALSE,21,22,23,  -   -,Yes,,P,281,48,227,A,SO2.2010.Howard_Co,9/30/2023
+TEXAS,TX,Hutchinson County,Sulfur Dioxide (2010),,"Hutchinson County, TX",FALSE,21,22,23,  -   -,Yes,,P,14593,48,233,A,SO2.2010.Hutchinson_Co,9/30/2023
+TEXAS,TX,Johnson County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,150934,48,251,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Johnson County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,150934,48,251,e,Ozone_8-hr.2015.Dallas,9/30/2023
+TEXAS,TX,Kaufman County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,103350,48,257,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Kaufman County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,103350,48,257,e,Ozone_8-hr.2015.Dallas,9/30/2023
+TEXAS,TX,Liberty County,8-Hour Ozone (2008),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,75643,48,291,c,Ozone_8-hr.2008.Houston,9/30/2023
+TEXAS,TX,Montgomery County,8-Hour Ozone (2008),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,455746,48,339,c,Ozone_8-hr.2008.Houston,9/30/2023
+TEXAS,TX,Montgomery County,8-Hour Ozone (2015),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,455746,48,339,e,Ozone_8-hr.2015.Houston,9/30/2023
+TEXAS,TX,Navarro County,Sulfur Dioxide (2010),,"Navarro County, TX",FALSE,21,22,23,  -   -,Yes,,P,1593,48,349,A,SO2.2010.Navarro_Co,9/30/2023
+TEXAS,TX,Panola County,Sulfur Dioxide (2010),,"Rusk and Panola Counties, TX",FALSE,21,22,23,  -   -,Yes,,P,24,48,365,A,SO2.2010.Rusk_Panola_Cos,9/30/2023
+TEXAS,TX,Parker County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,116927,48,367,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Parker County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,116927,48,367,e,Ozone_8-hr.2015.Dallas,9/30/2023
+TEXAS,TX,Rockwall County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,78337,48,397,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Rusk County,Sulfur Dioxide (2010),,"Rusk and Panola Counties, TX",FALSE,21,22,23,  -   -,Yes,,P,1656,48,401,A,SO2.2010.Rusk_Panola_Cos,9/30/2023
+TEXAS,TX,Tarrant County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,1809034,48,439,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Tarrant County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,1809034,48,439,e,Ozone_8-hr.2015.Dallas,9/30/2023
+TEXAS,TX,Titus County,Sulfur Dioxide (2010),,"Titus County, TX",FALSE,21,22,23,  -   -,Yes,,P,211,48,449,A,SO2.2010.Titus_Co,9/30/2023
+TEXAS,TX,Waller County,8-Hour Ozone (2008),,"Houston-Galveston-Brazoria, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,43205,48,473,c,Ozone_8-hr.2008.Houston,9/30/2023
+TEXAS,TX,Wise County,8-Hour Ozone (2008),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Severe 15,W,59127,48,497,c,Ozone_8-hr.2008.Dallas,9/30/2023
+TEXAS,TX,Wise County,8-Hour Ozone (2015),,"Dallas-Fort Worth, TX",FALSE,21,22,23,  -   -,Yes,Moderate,W,59127,48,497,e,Ozone_8-hr.2015.Dallas,9/30/2023
+UTAH,UT,Box Elder County,PM-2.5 (2006),,"Salt Lake City, UT",FALSE,21,22,23,  -   -,Yes,Serious,P,49057,49,003,d,PM-2.5.2006.Salt_Lake,9/30/2023
+UTAH,UT,Davis County,8-Hour Ozone (2015),,"Northern Wasatch Front, UT",FALSE,21,22,23,  -   -,Yes,Moderate,W,306479,49,011,e,Ozone_8-hr.2015.Salt_Lake,9/30/2023
+UTAH,UT,Davis County,PM-2.5 (2006),,"Salt Lake City, UT",FALSE,21,22,23,  -   -,Yes,Serious,W,306479,49,011,d,PM-2.5.2006.Salt_Lake,9/30/2023
+UTAH,UT,Duchesne County,8-Hour Ozone (2015),,"Uinta Basin, UT",FALSE,21,22,23,  -   -,Yes,Marginal,P,15338,49,013,f,Ozone_8-hr.2015.Uinta_Basin,9/30/2023
+UTAH,UT,Salt Lake County,8-Hour Ozone (2015),,"Northern Wasatch Front, UT",FALSE,21,22,23,  -   -,Yes,Moderate,W,1029655,49,035,e,Ozone_8-hr.2015.Salt_Lake,9/30/2023
+UTAH,UT,Salt Lake County,PM-2.5 (2006),,"Salt Lake City, UT",FALSE,21,22,23,  -   -,Yes,Serious,W,1029655,49,035,d,PM-2.5.2006.Salt_Lake,9/30/2023
+UTAH,UT,Salt Lake County,Sulfur Dioxide (1971),,"Salt Lake County, UT",FALSE,21,22,23,  -   -,Yes,"Primary, Secondary",W,1029655,49,035,B,SO2.1978.Salt_Lake,9/30/2023
+UTAH,UT,Tooele County,8-Hour Ozone (2015),,"Northern Wasatch Front, UT",FALSE,21,22,23,  -   -,Yes,Moderate,P,54857,49,045,e,Ozone_8-hr.2015.Salt_Lake,9/30/2023
+UTAH,UT,Tooele County,PM-2.5 (2006),,"Salt Lake City, UT",FALSE,21,22,23,  -   -,Yes,Serious,P,54958,49,045,d,PM-2.5.2006.Salt_Lake,9/30/2023
+UTAH,UT,Tooele County,Sulfur Dioxide (1971),,"Tooele County, UT",FALSE,21,22,23,  -   -,Yes,"Primary, Secondary",P,58218,49,045,B,SO2.1978.Tooele_Co,9/30/2023
+UTAH,UT,Uintah County,8-Hour Ozone (2015),,"Uinta Basin, UT",FALSE,21,22,23,  -   -,Yes,Marginal,P,31979,49,047,f,Ozone_8-hr.2015.Uinta_Basin,9/30/2023
+UTAH,UT,Utah County,8-Hour Ozone (2015),,"Southern Wasatch Front, UT",FALSE,21,22,23,  -   -,Yes,Marginal,P,515895,49,049,f,Ozone_8-hr.2015.Provo,9/30/2023
+UTAH,UT,Utah County,PM-2.5 (2006),,"Provo, UT",FALSE,21,22,23,  -   -,Yes,Serious,P,517537,49,049,d,PM-2.5.2006.Provo,9/30/2023
+UTAH,UT,Weber County,8-Hour Ozone (2015),,"Northern Wasatch Front, UT",FALSE,21,22,23,  -   -,Yes,Moderate,P,224583,49,057,e,Ozone_8-hr.2015.Salt_Lake,9/30/2023
+UTAH,UT,Weber County,PM-2.5 (2006),,"Salt Lake City, UT",FALSE,21,22,23,  -   -,Yes,Serious,P,224988,49,057,d,PM-2.5.2006.Salt_Lake,9/30/2023
+VIRGINIA,VA,Alexandria city,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,139966,51,510,e,Ozone_8-hr.2015.Washington,9/30/2023
+VIRGINIA,VA,Arlington County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,207627,51,013,e,Ozone_8-hr.2015.Washington,9/30/2023
+VIRGINIA,VA,Fairfax County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,1081726,51,059,e,Ozone_8-hr.2015.Washington,9/30/2023
+VIRGINIA,VA,Fairfax city,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,22565,51,600,e,Ozone_8-hr.2015.Washington,9/30/2023
+VIRGINIA,VA,Falls Church city,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,12332,51,610,e,Ozone_8-hr.2015.Washington,9/30/2023
+VIRGINIA,VA,Giles County,Sulfur Dioxide (2010),,"Giles County, VA",FALSE,21,22,23,  -   -,Yes,,P,183,51,071,A,SO2.2010.Giles_Co,9/30/2023
+VIRGINIA,VA,Loudoun County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,312311,51,107,e,Ozone_8-hr.2015.Washington,9/30/2023
+VIRGINIA,VA,Manassas Park city,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,14273,51,685,e,Ozone_8-hr.2015.Washington,9/30/2023
+VIRGINIA,VA,Manassas city,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,37821,51,683,e,Ozone_8-hr.2015.Washington,9/30/2023
+VIRGINIA,VA,Prince William County,8-Hour Ozone (2015),,"Washington, DC-MD-VA",FALSE,21,22,23,  -   -,Yes,Moderate,W,402002,51,153,e,Ozone_8-hr.2015.Washington,9/30/2023
+WASHINGTON,WA,Whatcom County,Sulfur Dioxide (2010),,"Whatcom County, WA",FALSE,21,22,23,  -   -,Yes,,P,32,53,073,A,SO2.2010.Whatcom_Co,9/30/2023
+WISCONSIN,WI,Kenosha County,8-Hour Ozone (2015),,"Chicago, IL-IN-WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,127547,55,059,e,Ozone_8-hr.2015.Chicago,9/30/2023
+WISCONSIN,WI,Milwaukee County,8-Hour Ozone (2015),,"Milwaukee, WI",FALSE,21,22,23,  -   -,Yes,Moderate,W,947735,55,079,e,Ozone_8-hr.2015.Milwaukee,9/30/2023
+WISCONSIN,WI,Ozaukee County,8-Hour Ozone (2015),,"Milwaukee, WI",FALSE,21,22,23,  -   -,Yes,Moderate,W,86395,55,089,e,Ozone_8-hr.2015.Milwaukee,9/30/2023
+WISCONSIN,WI,Racine County,8-Hour Ozone (2015),,"Milwaukee, WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,152786,55,101,e,Ozone_8-hr.2015.Milwaukee,9/30/2023
+WISCONSIN,WI,Sheboygan County,8-Hour Ozone (2015),,"Sheboygan County, WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,67710,55,117,e,Ozone_8-hr.2015.Sheboygan,9/30/2023
+WISCONSIN,WI,Washington County,8-Hour Ozone (2015),,"Milwaukee, WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,77434,55,131,e,Ozone_8-hr.2015.Milwaukee,9/30/2023
+WISCONSIN,WI,Waukesha County,8-Hour Ozone (2015),,"Milwaukee, WI",FALSE,21,22,23,  -   -,Yes,Moderate,P,383334,55,133,e,Ozone_8-hr.2015.Milwaukee,9/30/2023
+WYOMING,WY,Lincoln County,8-Hour Ozone (2008),,"Upper Green River Basin Area, WY",FALSE,21,22,23,  -   -,Yes,Marginal,P,799,56,023,f,Ozone_8-hr.2008.Green_River,9/30/2023
+WYOMING,WY,Sublette County,8-Hour Ozone (2008),,"Upper Green River Basin Area, WY",FALSE,21,22,23,  -   -,Yes,Marginal,W,10247,56,035,f,Ozone_8-hr.2008.Green_River,9/30/2023
+WYOMING,WY,Sweetwater County,8-Hour Ozone (2008),,"Upper Green River Basin Area, WY",FALSE,21,22,23,  -   -,Yes,Marginal,P,452,56,037,f,Ozone_8-hr.2008.Green_River,9/30/2023
