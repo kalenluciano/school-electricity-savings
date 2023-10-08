@@ -10,6 +10,7 @@ const {
 	NonattainmentAreas,
 	SchoolDistrictGeographies,
 	SchoolDistrictsInPoverty,
+	RuralSchoolDistricts,
 } = require('../models');
 
 const getCensusTractGeographies = async (
@@ -339,6 +340,7 @@ const getSchoolDistrictId = async (censusTractGeoId) => {
 	}
 };
 
+// Get high-need school status
 const getHighNeedSchoolStatus = async (schoolDistrictId, stateFipsCode) => {
 	const stateSchoolDistrictId = schoolDistrictId.slice(0, 2);
 	const localSchoolDistrictId = schoolDistrictId.slice(2);
@@ -363,6 +365,18 @@ const getHighNeedSchoolStatus = async (schoolDistrictId, stateFipsCode) => {
 		return { high_need_school: true };
 	}
 	return { high_need_school: false };
+};
+
+// Get rural school district status
+const getRuralSchoolDistrictStatus = async (schoolDistrictId) => {
+	const ruralSchoolDistrict = await RuralSchoolDistricts.findOne({
+		where: { lea_id: schoolDistrictId },
+	});
+	if (ruralSchoolDistrict !== null) {
+		return { rural_school: true };
+	} else {
+		return { rural_school: false };
+	}
 };
 
 const CalculateQualifications = async (req, res) => {
@@ -453,6 +467,11 @@ const CalculateQualifications = async (req, res) => {
 		const highNeedSchoolStatus = await getHighNeedSchoolStatus(
 			schoolDistrictId,
 			stateFipsCode
+		);
+
+		// Get rural school district status
+		const ruralSchoolDistrictStatus = await getRuralSchoolDistrictStatus(
+			schoolDistrictId
 		);
 
 		res.send(addressGeos);
