@@ -27,6 +27,10 @@ module.exports = {
 			school_with_children_on_indian_land: {
 				type: Sequelize.BOOLEAN,
 			},
+			prioritized_clean_bus_school: {
+				type: Sequelize.BOOLEAN,
+			},
+			self_certifiable_clean_bus_school: { type: Sequelize.BOOLEAN },
 			createdAt: {
 				allowNull: false,
 				type: Sequelize.DATE,

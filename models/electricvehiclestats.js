@@ -21,6 +21,8 @@ module.exports = (sequelize, DataTypes) => {
 			rural_school: DataTypes.BOOLEAN,
 			bureau_funded_school: DataTypes.BOOLEAN,
 			school_with_children_on_indian_land: DataTypes.BOOLEAN,
+			prioritized_clean_bus_school: DataTypes.BOOLEAN,
+			self_certifiable_clean_bus_school: DataTypes.BOOLEAN,
 		},
 		{
 			sequelize,
