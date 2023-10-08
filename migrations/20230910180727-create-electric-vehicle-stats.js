@@ -18,15 +18,6 @@ module.exports = {
 			high_need_school: {
 				type: Sequelize.BOOLEAN,
 			},
-			students_in_poverty: {
-				type: Sequelize.BOOLEAN,
-			},
-			title_i_funded_school: {
-				type: Sequelize.BOOLEAN,
-			},
-			selected_us_territory: {
-				type: Sequelize.BOOLEAN,
-			},
 			rural_school: {
 				type: Sequelize.BOOLEAN,
 			},
