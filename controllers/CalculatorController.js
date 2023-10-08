@@ -8,6 +8,8 @@ const {
 	AddressGeosQualifications,
 	SolarGeoBatteryStats,
 	NonattainmentAreas,
+	SchoolDistrictGeographies,
+	SchoolDistrictsInPoverty,
 } = require('../models');
 
 const getCensusTractGeographies = async (
@@ -67,7 +69,7 @@ const getCensusTractGeographies = async (
 		const addressGeos = await AddressGeosQualifications.create(addressGeosData);
 		return addressGeos;
 	} catch (error) {
-		console.log('Error getting geographies:', error.message);
+		console.log('Error getting geographies: ', error.message);
 		return { error: error.message };
 	}
 };
@@ -126,7 +128,7 @@ const getLowIncomeStats = async (
 		}
 		return lowIncomeStats;
 	} catch (error) {
-		console.log('Error getting poverty rate by census tract:', error.message);
+		console.log('Error getting poverty rate by census tract: ', error.message);
 		return { error: error.message };
 	}
 };
@@ -316,11 +318,51 @@ const getNonattainmentStatus = async (countyFipsCode, stateFipsCode) => {
 		}
 	} catch (error) {
 		console.log(
-			'Error getting nonattainment status for school:',
+			'Error getting nonattainment status for school: ',
 			error.message
 		);
 		return { error: error.message };
 	}
+};
+
+const getSchoolDistrictId = async (censusTractGeoId) => {
+	try {
+		const schoolDistrict = await SchoolDistrictGeographies.findOne({
+			where: {
+				tract: censusTractGeoId,
+			},
+		});
+		return schoolDistrict.lea_id;
+	} catch (error) {
+		console.log('Error getting school district id: ', error.message);
+		return { error: error.message };
+	}
+};
+
+const getHighNeedSchoolStatus = async (schoolDistrictId, stateFipsCode) => {
+	const stateSchoolDistrictId = schoolDistrictId.slice(0, 2);
+	const localSchoolDistrictId = schoolDistrictId.slice(2);
+	const highNeedSchool = await SchoolDistrictsInPoverty.findOne({
+		where: {
+			state_fips_code: stateSchoolDistrictId,
+			district_id: localSchoolDistrictId,
+		},
+	});
+	if (highNeedSchool !== null) {
+		if (parseFloat(highNeedSchool.poverty_rate) > 20) {
+			return { high_need_school: true };
+		}
+	}
+	// Check if the school district is in one of the territories deemed high-need
+	if (
+		stateFipsCode === '78' ||
+		stateFipsCode === '60' ||
+		stateFipsCode === '66' ||
+		stateFipsCode === '69'
+	) {
+		return { high_need_school: true };
+	}
+	return { high_need_school: false };
 };
 
 const CalculateQualifications = async (req, res) => {
@@ -404,7 +446,16 @@ const CalculateQualifications = async (req, res) => {
 			stateFipsCode
 		);
 
-		res.send(solarGeoBatteryStats);
+		// Get school district id
+		const schoolDistrictId = await getSchoolDistrictId(censusTractGeoId);
+
+		// Get high-need school district status
+		const highNeedSchoolStatus = await getHighNeedSchoolStatus(
+			schoolDistrictId,
+			stateFipsCode
+		);
+
+		res.send(addressGeos);
 	} catch (error) {
 		return res.status(500).json({ error: error.message });
 	}
