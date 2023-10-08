@@ -7,6 +7,7 @@ const {
 	CoalMineCensusTracts,
 	AddressGeosQualifications,
 	SolarGeoBatteryStats,
+	NonattainmentAreas,
 } = require('../models');
 
 const getCensusTractGeographies = async (
@@ -300,6 +301,28 @@ const calculateSolarGeoBatteryStats = async (
 	return solarGeoBatterStats;
 };
 
+const getNonattainmentStatus = async (countyFipsCode, stateFipsCode) => {
+	try {
+		const nonattainmentAreas = await NonattainmentAreas.findAll({
+			where: {
+				fips_cnty: countyFipsCode,
+				fips_state: stateFipsCode,
+			},
+		});
+		if (nonattainmentAreas.length > 0) {
+			return { poor_air_quality_area: false };
+		} else {
+			return { poor_air_quality_area: true };
+		}
+	} catch (error) {
+		console.log(
+			'Error getting nonattainment status for school:',
+			error.message
+		);
+		return { error: error.message };
+	}
+};
+
 const CalculateQualifications = async (req, res) => {
 	try {
 		// Get census tract geographies
@@ -373,6 +396,12 @@ const CalculateQualifications = async (req, res) => {
 		const solarGeoBatteryStats = await calculateSolarGeoBatteryStats(
 			addressGeos,
 			solarGeoBatteryData
+		);
+
+		// Get nonattainment status
+		const nonattainmentStatus = await getNonattainmentStatus(
+			countyFipsCode,
+			stateFipsCode
 		);
 
 		res.send(solarGeoBatteryStats);
