@@ -9,8 +9,9 @@ const {
 	SolarGeoBatteryStats,
 	NonattainmentAreas,
 	SchoolDistrictGeographies,
-	SchoolDistrictsInPoverty,
-	RuralSchoolDistricts,
+	PrioritizedCleanBusSchools,
+	SelfCertifiableDistricts,
+	ElectricVehicleStats,
 } = require('../models');
 
 const getCensusTractGeographies = async (
@@ -340,43 +341,52 @@ const getSchoolDistrictId = async (censusTractGeoId) => {
 	}
 };
 
-// Get high-need school status
-const getHighNeedSchoolStatus = async (schoolDistrictId, stateFipsCode) => {
-	const stateSchoolDistrictId = schoolDistrictId.slice(0, 2);
-	const localSchoolDistrictId = schoolDistrictId.slice(2);
-	const highNeedSchool = await SchoolDistrictsInPoverty.findOne({
-		where: {
-			state_fips_code: stateSchoolDistrictId,
-			district_id: localSchoolDistrictId,
-		},
+const getCleanBusProgramStats = async (schoolDistrictId) => {
+	const cleanBusProgramStats = {};
+	const prioritizedSchool = await PrioritizedCleanBusSchools.findOne({
+		where: { nces_id: schoolDistrictId },
 	});
-	if (highNeedSchool !== null) {
-		if (parseFloat(highNeedSchool.poverty_rate) > 20) {
-			return { high_need_school: true };
-		}
+	if (prioritizedSchool === null) {
+		cleanBusProgramStats.prioritized_clean_bus_school = false;
+		const selfCertifiableSchool = await SelfCertifiableDistricts.findOne({
+			where: { nces_id: schoolDistrictId },
+		});
+		cleanBusProgramStats.self_certifiable_clean_bus_school =
+			selfCertifiableSchool === null ? false : true;
+	} else {
+		cleanBusProgramStats.prioritized_clean_bus_school = true;
+		cleanBusProgramStats.high_need_school =
+			prioritizedSchool.high_need === 'Yes' ? true : false;
+		cleanBusProgramStats.rural_school =
+			prioritizedSchool.rural === 'Yes' ? true : false;
+		cleanBusProgramStats.school_with_children_on_indian_land =
+			prioritizedSchool.school_with_children_on_indian_land === 'Yes'
+				? true
+				: false;
+		cleanBusProgramStats.bureau_funded_school =
+			prioritizedSchool.bureau_funded_school === 'Yes' ? true : false;
 	}
-	// Check if the school district is in one of the territories deemed high-need
-	if (
-		stateFipsCode === '78' ||
-		stateFipsCode === '60' ||
-		stateFipsCode === '66' ||
-		stateFipsCode === '69'
-	) {
-		return { high_need_school: true };
-	}
-	return { high_need_school: false };
+	return cleanBusProgramStats;
 };
 
-// Get rural school district status
-const getRuralSchoolDistrictStatus = async (schoolDistrictId) => {
-	const ruralSchoolDistrict = await RuralSchoolDistricts.findOne({
-		where: { lea_id: schoolDistrictId },
-	});
-	if (ruralSchoolDistrict !== null) {
-		return { rural_school: true };
-	} else {
-		return { rural_school: false };
-	}
+// Calculate electric vehicle stats
+const calculateElectricVehicleStats = async (
+	addressGeos,
+	electricVehicleData
+) => {
+	electricVehicleData.available_grants = 3;
+
+	// Store calculations and data
+	const electricVehicleStats = await ElectricVehicleStats.create(
+		electricVehicleData
+	);
+	await AddressGeosQualifications.update(
+		{
+			electric_vehicles_id: electricVehicleStats.id,
+		},
+		{ where: { id: addressGeos.id } }
+	);
+	return electricVehicleStats;
 };
 
 const CalculateQualifications = async (req, res) => {
@@ -463,18 +473,22 @@ const CalculateQualifications = async (req, res) => {
 		// Get school district id
 		const schoolDistrictId = await getSchoolDistrictId(censusTractGeoId);
 
-		// Get high-need school district status
-		const highNeedSchoolStatus = await getHighNeedSchoolStatus(
-			schoolDistrictId,
-			stateFipsCode
-		);
-
-		// Get rural school district status
-		const ruralSchoolDistrictStatus = await getRuralSchoolDistrictStatus(
+		// Get clean bus program stats
+		const cleanBusProgramStats = await getCleanBusProgramStats(
 			schoolDistrictId
 		);
 
-		res.send(addressGeos);
+		// Calculate and store electric vehicle stats
+		const electricVehicleData = {
+			...nonattainmentStatus,
+			...cleanBusProgramStats,
+		};
+		const electricVehicleStats = await calculateElectricVehicleStats(
+			addressGeos,
+			electricVehicleData
+		);
+
+		res.send(electricVehicleStats);
 	} catch (error) {
 		return res.status(500).json({ error: error.message });
 	}

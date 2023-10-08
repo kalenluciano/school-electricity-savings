@@ -2,17 +2,32 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
 	async up(queryInterface, Sequelize) {
-		await queryInterface.createTable('rural_school_districts', {
+		await queryInterface.createTable('self_certifiable_districts', {
 			id: {
 				allowNull: false,
 				autoIncrement: true,
 				primaryKey: true,
 				type: Sequelize.INTEGER,
 			},
-			lea_id: {
+			nces_id: {
 				type: Sequelize.STRING,
 			},
-			locale: {
+			district_name: {
+				type: Sequelize.STRING,
+			},
+			city: {
+				type: Sequelize.STRING,
+			},
+			state: {
+				type: Sequelize.STRING,
+			},
+			region: {
+				type: Sequelize.INTEGER,
+			},
+			district_in_saipe: {
+				type: Sequelize.STRING,
+			},
+			large_district: {
 				type: Sequelize.STRING,
 			},
 			createdAt: {
@@ -26,6 +41,6 @@ module.exports = {
 		});
 	},
 	async down(queryInterface, Sequelize) {
-		await queryInterface.dropTable('rural_school_districts');
+		await queryInterface.dropTable('self_certifiable_districts');
 	},
 };

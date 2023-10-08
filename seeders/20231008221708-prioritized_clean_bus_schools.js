@@ -9,7 +9,7 @@ module.exports = {
 		const seedData = [];
 
 		return new Promise((resolve, reject) => {
-			fs.createReadStream('data/rural_school_districts.csv')
+			fs.createReadStream('data/prioritized_clean_bus_schools.csv')
 				.pipe(csv())
 				.on('data', (row) => {
 					seedData.push({
@@ -21,7 +21,7 @@ module.exports = {
 				.on('end', async () => {
 					try {
 						await queryInterface.bulkInsert(
-							'rural_school_districts',
+							'prioritized_clean_bus_schools',
 							seedData,
 							{}
 						);
@@ -34,6 +34,6 @@ module.exports = {
 	},
 
 	async down(queryInterface, Sequelize) {
-		queryInterface.bulkDelete('rural_school_districts');
+		queryInterface.bulkDelete('prioritized_clean_bus_schools');
 	},
 };

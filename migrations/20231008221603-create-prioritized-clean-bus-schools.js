@@ -2,32 +2,38 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
 	async up(queryInterface, Sequelize) {
-		await queryInterface.createTable('school_districts_in_poverty', {
+		await queryInterface.createTable('prioritized_clean_bus_schools', {
 			id: {
 				allowNull: false,
 				autoIncrement: true,
 				primaryKey: true,
 				type: Sequelize.INTEGER,
 			},
-			state_postal_code: {
+			nces_id: {
 				type: Sequelize.STRING,
 			},
-			state_fips_code: {
+			district_name: {
 				type: Sequelize.STRING,
 			},
-			district_id: {
+			city: {
 				type: Sequelize.STRING,
 			},
-			name: {
+			state: {
 				type: Sequelize.STRING,
 			},
-			estimated_5_to_17_population: {
+			region: {
 				type: Sequelize.STRING,
 			},
-			estimated_5_to_17_poverty_population: {
+			high_need: {
 				type: Sequelize.STRING,
 			},
-			poverty_rate: {
+			rural: {
+				type: Sequelize.STRING,
+			},
+			school_with_children_on_indian_land: {
+				type: Sequelize.STRING,
+			},
+			bureau_funded_schools: {
 				type: Sequelize.STRING,
 			},
 			createdAt: {
@@ -41,6 +47,6 @@ module.exports = {
 		});
 	},
 	async down(queryInterface, Sequelize) {
-		await queryInterface.dropTable('school_districts_in_poverty');
+		await queryInterface.dropTable('prioritized_clean_bus_schools');
 	},
 };
