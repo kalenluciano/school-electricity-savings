@@ -5,7 +5,6 @@ const {
 	BrownfieldSites,
 	FossilFuelEmploymentMSAs,
 	CoalMineCensusTracts,
-	Saving,
 	AddressGeosQualifications,
 	SolarGeoBatteryStats,
 } = require('../models');
