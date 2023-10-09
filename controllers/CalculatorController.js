@@ -17,28 +17,33 @@ const {
 } = require('../models');
 
 const getCensusTractGeographies = async (
-	streetAddress,
-	city,
-	state,
-	zipCode
+	address,
+	coordinatesLat,
+	coordinatesLng
 ) => {
 	try {
-		const googleResults = await axios.get(
-			`https://maps.googleapis.com/maps/api/geocode/json?address=${streetAddress}%20${city}%20${state}%20${zipCode}&key=${process.env.API_KEY_GOOGLE}`
-		);
-		const coordinates = googleResults.data.results[0].geometry.location;
+		let coordinates;
+		if (coordinatesLat.length === 0 && coordinatesLng.length === 0) {
+			const googleResults = await axios.get(
+				`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${process.env.API_KEY_GOOGLE}`
+			);
+			coordinates = googleResults.data.results[0].geometry.location;
+			coordinatesLat = coordinates.lat;
+			coordinatesLng = coordinates.lng;
+		}
 		const censusResultsByCoordinates = await axios.get(
-			`https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=${coordinates.lng}&y=${coordinates.lat}&benchmark=Public_AR_Census2020&vintage=Census2020_Census2020&format=json&layers=6,10,34,36,2,4,42,76`
+			`https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=${coordinatesLng}&y=${coordinatesLat}&benchmark=Public_AR_Census2020&vintage=Census2020_Census2020&format=json&layers=6,10,34,36,2,4,42,76`
 		);
 		const coordinateGeographies =
 			censusResultsByCoordinates.data.result.geographies;
+		const formattedAddress = address.replaceAll('%2C', ',').split(',');
 		const addressGeosData = {
-			street_address: streetAddress.replaceAll('+', ' '),
-			city: city.replaceAll('+', ' '),
-			state: state.replaceAll('+', ' '),
-			zip_code: zipCode.replaceAll('+', ' '),
-			coordinates_lng: coordinates.lng,
-			coordinates_lat: coordinates.lat,
+			street_address: formattedAddress[0].trim(),
+			city: formattedAddress[1].trim(),
+			state: formattedAddress[2].trim().slice(0, -5).trim(),
+			zip_code: formattedAddress[2].trim().slice(-5).trim(),
+			coordinates_lng: coordinatesLng,
+			coordinates_lat: coordinatesLat,
 			census_tract_geoid:
 				coordinateGeographies?.['Census Tracts']?.[0]?.['GEOID'] ?? null,
 			census_tract_fips_code:
@@ -440,20 +445,18 @@ const getAddressGeosQualifications = async (addressGeosId) => {
 const CalculateQualifications = async (req, res) => {
 	try {
 		// Get census tract geographies
-		const streetAddress = req.params.streetAddress.replaceAll('%20', '+');
-		const city = req.params.city.replaceAll('%20', '+');
-		const state = req.params.state.replaceAll('%20', '+');
-		const zipCode = req.params.zipCode.replaceAll('%20', '+');
+		const address = req.params.address;
+		let coordinatesLat = req.params.coordinatesLat;
+		let coordinatesLng = req.params.coordinatesLng;
 		const addressGeos = await getCensusTractGeographies(
-			streetAddress,
-			city,
-			state,
-			zipCode
+			address,
+			coordinatesLat,
+			coordinatesLng
 		);
 
 		// Get 2010 census tract geographies
-		const coordinatesLat = addressGeos.coordinates_lat;
-		const coordinatesLng = addressGeos.coordinates_lng;
+		coordinatesLat = addressGeos.coordinates_lat;
+		coordinatesLng = addressGeos.coordinates_lng;
 		const censusTract2010Geographies = await get2010CensusTractGeographies(
 			coordinatesLat,
 			coordinatesLng
