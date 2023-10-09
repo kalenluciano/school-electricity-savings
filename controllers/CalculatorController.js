@@ -12,6 +12,8 @@ const {
 	PrioritizedCleanBusSchools,
 	SelfCertifiableDistricts,
 	ElectricVehicleStats,
+	DisadvantagedCommunities,
+	EVChargerStats,
 } = require('../models');
 
 const getCensusTractGeographies = async (
@@ -396,10 +398,44 @@ const calculateElectricVehicleStats = async (
 };
 
 // Get disadvantaged community status
-const getDisadvantagedCommunityStatus = async (
-	coordinatesLat,
-	coordinatesLng
-) => {};
+const getDisadvantagedCommunityStatus = async (censusTract2010Geographies) => {
+	const censusTractGeoId =
+		censusTract2010Geographies['Census Tracts'][0]['GEOID'];
+	const disadvantagedCommunity = await DisadvantagedCommunities.findOne({
+		where: { census_tract_id_2010: censusTractGeoId },
+	});
+	if (disadvantagedCommunity === null) {
+		return { disadvantaged_community: false };
+	} else {
+		return { disadvantaged_community: true };
+	}
+};
+
+const calculateEvChargerStats = async (addressGeos, evChargerData) => {
+	evChargerData.available_grants = 2;
+
+	// Store calculations and data
+	const evChargerStats = await EVChargerStats.create(evChargerData);
+	await AddressGeosQualifications.update(
+		{
+			ev_chargers_id: evChargerStats.id,
+		},
+		{ where: { id: addressGeos.id } }
+	);
+	return evChargerStats;
+};
+
+const getAddressGeosQualifications = async (addressGeosId) => {
+	const addressGeosQualifications = await AddressGeosQualifications.findOne({
+		where: { id: addressGeosId },
+		include: [
+			{ model: SolarGeoBatteryStats, as: 'SolarGeoBatteryStat' },
+			{ model: ElectricVehicleStats, as: 'ElectricVehicleStat' },
+			{ model: EVChargerStats, as: 'EVChargerStat' },
+		],
+	});
+	return addressGeosQualifications;
+};
 
 const CalculateQualifications = async (req, res) => {
 	try {
@@ -476,10 +512,7 @@ const CalculateQualifications = async (req, res) => {
 			...fossilFuelUnemploymentStats,
 			...coalMineStats,
 		};
-		const solarGeoBatteryStats = await calculateSolarGeoBatteryStats(
-			addressGeos,
-			solarGeoBatteryData
-		);
+		await calculateSolarGeoBatteryStats(addressGeos, solarGeoBatteryData);
 
 		// Get nonattainment status
 		const nonattainmentStatus = await getNonattainmentStatus(
@@ -500,17 +533,26 @@ const CalculateQualifications = async (req, res) => {
 			...nonattainmentStatus,
 			...cleanBusProgramStats,
 		};
-		const electricVehicleStats = await calculateElectricVehicleStats(
-			addressGeos,
-			electricVehicleData
-		);
+		await calculateElectricVehicleStats(addressGeos, electricVehicleData);
 
 		// Get disadvantaged community status
 		const disadvantagedCommunityStatus = await getDisadvantagedCommunityStatus(
 			censusTract2010Geographies
 		);
 
-		res.send(addressGeos);
+		// Calculate and store EV charger stats
+		const evChargerData = {
+			...nonattainmentStatus,
+			...disadvantagedCommunityStatus,
+		};
+		await calculateEvChargerStats(addressGeos, evChargerData);
+
+		// Get updated address geos qualifications
+		const addressGeosQualifications = await getAddressGeosQualifications(
+			addressGeos.id
+		);
+
+		res.send(addressGeosQualifications);
 	} catch (error) {
 		return res.status(500).json({ error: error.message });
 	}
