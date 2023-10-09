@@ -76,6 +76,18 @@ const getCensusTractGeographies = async (
 	}
 };
 
+const get2010CensusTractGeographies = async (
+	coordinatesLat,
+	coordinatesLng
+) => {
+	const coordinateCensusTract2010 = await axios.get(
+		`https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=${coordinatesLng}&y=${coordinatesLat}&benchmark=Public_AR_Current&vintage=Census2010_Current&format=json`
+	);
+	const censusTract2010Geographies =
+		coordinateCensusTract2010.data.result.geographies;
+	return censusTract2010Geographies;
+};
+
 const getLowIncomeStats = async (
 	censusTractNumber,
 	censusTractCounty,
@@ -141,8 +153,7 @@ const getIndianLandStats = async (
 	offReservationTrustLands,
 	alaskaNativeVillageStatAreas,
 	federalAmericanIndianReservation,
-	coordinatesLat,
-	coordinatesLng
+	censusTract2010Geographies
 ) => {
 	const indianLandStats = {};
 
@@ -172,11 +183,6 @@ const getIndianLandStats = async (
 		}
 	} else {
 		// If Indian land status is still false, check if the census tract has a majority of the population enrolled in a Tribe
-		const coordinateCensusTract2010 = await axios.get(
-			`https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=${coordinatesLng}&y=${coordinatesLat}&benchmark=Public_AR_Current&vintage=Census2010_Current&format=json`
-		);
-		const censusTract2010Geographies =
-			coordinateCensusTract2010.data.result.geographies;
 		const censusTractNumber2010 =
 			censusTract2010Geographies['Census Tracts'][0]['TRACT'];
 		const censusTractState2010 =
@@ -389,6 +395,12 @@ const calculateElectricVehicleStats = async (
 	return electricVehicleStats;
 };
 
+// Get disadvantaged community status
+const getDisadvantagedCommunityStatus = async (
+	coordinatesLat,
+	coordinatesLng
+) => {};
+
 const CalculateQualifications = async (req, res) => {
 	try {
 		// Get census tract geographies
@@ -401,6 +413,14 @@ const CalculateQualifications = async (req, res) => {
 			city,
 			state,
 			zipCode
+		);
+
+		// Get 2010 census tract geographies
+		const coordinatesLat = addressGeos.coordinates_lat;
+		const coordinatesLng = addressGeos.coordinates_lng;
+		const censusTract2010Geographies = await get2010CensusTractGeographies(
+			coordinatesLat,
+			coordinatesLng
 		);
 
 		// Get low income stats
@@ -423,16 +443,13 @@ const CalculateQualifications = async (req, res) => {
 			addressGeos.alaska_native_village_aiannh_code;
 		const federalAmericanIndianReservation =
 			addressGeos.reservation_aiannh_code;
-		const coordinatesLat = addressGeos.coordinates_lat;
-		const coordinatesLng = addressGeos.coordinates_lng;
 		const indianLandStats = await getIndianLandStats(
 			tribalBlockGroup,
 			tribalCensusTract,
 			offReservationTrustLands,
 			alaskaNativeVillageStatAreas,
 			federalAmericanIndianReservation,
-			coordinatesLat,
-			coordinatesLng
+			censusTract2010Geographies
 		);
 
 		// Get brownfield site stats
@@ -488,7 +505,12 @@ const CalculateQualifications = async (req, res) => {
 			electricVehicleData
 		);
 
-		res.send(electricVehicleStats);
+		// Get disadvantaged community status
+		const disadvantagedCommunityStatus = await getDisadvantagedCommunityStatus(
+			censusTract2010Geographies
+		);
+
+		res.send(addressGeos);
 	} catch (error) {
 		return res.status(500).json({ error: error.message });
 	}
