@@ -143,6 +143,8 @@ const getLowIncomeStats = async (
 				0.8 * lowIncomeStats['metro_area_family_median_income']
 			) {
 				lowIncomeStats.low_income_status = true;
+			} else {
+				lowIncomeStats.low_income_status = false;
 			}
 		} else {
 			lowIncomeStats.low_income_status = false;
