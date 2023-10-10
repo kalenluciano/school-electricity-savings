@@ -23,7 +23,8 @@ const getCensusTractGeographies = async (
 ) => {
 	try {
 		let coordinates;
-		if (coordinatesLat.length === 0 && coordinatesLng.length === 0) {
+		console.log(address, coordinatesLat, coordinatesLng);
+		if (coordinatesLat === ' ' || coordinatesLng === ' ') {
 			const googleResults = await axios.get(
 				`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${process.env.API_KEY_GOOGLE}`
 			);
