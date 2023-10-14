@@ -290,7 +290,7 @@ const calculateSolarGeoBatteryStats = async (
 ) => {
 	// Calculate credits
 	solarGeoBatteryData.base_credit = 30;
-	solarGeoBatteryData.additional_credit = 0;
+	solarGeoBatteryData.additional_credit = 10;
 	if (
 		solarGeoBatteryData.low_income_status ||
 		solarGeoBatteryData.indian_land_status
