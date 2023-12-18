@@ -349,6 +349,9 @@ const getSchoolDistrictId = async (censusTractGeoId) => {
 				tract: censusTractGeoId,
 			},
 		});
+		if (schoolDistrict === null) {
+			return null
+		}
 		return schoolDistrict.lea_id;
 	} catch (error) {
 		console.log('Error getting school district id: ', error.message);
